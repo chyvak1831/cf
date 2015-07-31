@@ -100,12 +100,14 @@
 	</header>
 
 	<div class="container custom_padding proxima_novalight">
-		<ol class="breadcrumb">
-			<li><a href="#">CollectorsFolio</a></li>
-			<li><a href="#">Shop</a></li>
-			<li><a href="#">Einstein Rare Books</a></li>
-			<li class="active">All Listings</li>
-		</ol>
+		<section class="box_top_dealer hidden-xs">
+			<ol class="breadcrumb">
+				<li><a href="#">CollectorsFolio</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Einstein Rare Books</a></li>
+				<li class="active">All Listings</li>
+			</ol>
+		</section>
 
 		<div class="row jsTopScrollEl">
 			<h1 class="author_name_shop col-md-6"><span class="content_name_txt">Einstein Rare Books</span><span class="author_help">New York, NY</span><span class="author_help">ABAA ILAB</span></h1>
@@ -122,13 +124,13 @@
 				<div class="box_aside_item browse_section jsListingBtPC">
 					<div class="hidden-xs">
 						<span class="title_section">Browse</span>
-						<span class="big_title" data-target="#dealerScienceCatg" data-toggle="collapse" aria-expanded="false">Science <i class="fa fa-angle-down"></i></span>
+						<span class="big_title" data-target="#dealerScienceCatg" data-toggle="collapse" aria-expanded="true">Science <i class="fa fa-angle-down"></i></span>
 					</div>
 					<a href="#" class="jsMobileListing mobile_title_collapse visible-xs-block" data-target="#dealerAllListings">Listings <i class="fa fa-angle-down"></i></a>
 					<div class="dropdown dropdown_mobile mobile_category_dealer">
 						<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle visible-xs-block" href="#"><span class="jsSelectValue">All</span> <span class="caret"></span></a>
 						<div class="dropdown-menu drop_nav jsDropdownToggle">
-							<div class="collapse listing_collapse" id="dealerScienceCatg">
+							<div class="collapse listing_collapse in" id="dealerScienceCatg">
 								<ul class="list_in_nav_left list-unstyled">
 									<li class="active"><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt jsAllBt">All</a></li>
 									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">Physics</a></li>
@@ -180,7 +182,7 @@
 					<a href="#" class="jsMobileCatgBt collapsed mobile_title_collapse visible-xs-block" data-target="#dealerCatalogues">Catalogues <i class="fa fa-angle-down"></i></a>
 					<section class="tab-pane list_view dealer_catalogues" id="dealerCatalogues"><div class="jsAjaxTaget"></div></section>
 					<div class="jsListingBtMobile"></div>
-					<section class="tab-pane list_view active wrapp_dealer_listing jsListGrid" id="dealerAllListings">
+					<section class="tab-pane active list_view wrapp_dealer_listing jsListGrid" id="dealerAllListings">
 						<ul class="view_sort_filter list-inline text-right">
 							<li class="dropdown">
 								<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="jsSelectValue">Sort by</span> <span class="caret"></span></a>
@@ -271,6 +273,58 @@
 		</div><!-- modal-dialog -->
 	</div><!-- modal -->
 	<!-- END book_modal -->
+
+	<!-- Modal -->
+	<article class="catalog_preview modal fade" id="catalogPreview" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<h1>Modern Literature Catalogue</h1>
+				<p class="name">Einstein rare books</p>
+				<p class="date">July 15, 2015</p>
+			</div>
+			<div class="modal-content">
+				<div class="wrapper scroll_wrapper">
+					<div class="scroller">
+						<p>"A Brave Refrain" (p) by James-Whitcomb-Riley Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+						<p>"A Bruised Reed Shall He Not Break" (p) by Christina-Georgina-Rossetti</p>
+						<p>"A Death in the Desert" (s) by Willa-Cather</p>
+						<p>"A man was drawing near to me" (p) by Thomas-Hardy</p>
+						<p>"A Noted Traveler" (p) by James-Whitcomb-Riley</p>
+						<p>"A Poor Stick" (s) by Arthur-Morrison  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+						<p>"A Rough Shed" (s) by Henry-Lawson</p>
+						<p>"According To Gunter" (s) by Falconbridge</p>
+						<p>"According to the Mighty Working" (p) by Thomas-Hardy</p>
+						<p>"Ad Amicos" (p) by Oliver-Wendell-Holmes</p>
+						<p>"After" Jenkins (s) by Mark-Twain</p>
+						<p>"Ah, Bleak And Barren Was The Moor." (p) by William-Makepeace-Thackeray</p>
+						<p>"All The Day Idle" (p) by T.-S.-Arthur</p>
+						<p>"All The Rage" (p) by Hattie-Howard</p>
+						<p>"America For Me" (p) by Henry-Van Dyke</p>
+						<p>"And He Said, Fight On" (p) by E. Pauline-Johnson</p>
+						<p>"And Oh--That The Man I Am Might Cease To Be--" (p) by D.-H.-Lawrence</p>
+						<p>"And there was a great calm" (p) by Thomas-Hardy</p>
+						<p>"And These--Are These Indeed The End" (p) by William-Watson</p>
+						<p>"Angutivaun Taina" (p) by Rudyard-Kipling</p>
+						<p>"As 'twere to-night" (p) by Thomas-Hardy</p>
+						<p>"As The Bell Clinks" (p) by Rudyard-Kipling</p>
+						<p>"As weary pilgrim now at rest" (p) by Anne-Bradstreet</p>
+						<p>"Au Revoir", A Dramatic Vignette (p) by Austin-Dobson</p>
+						<p>"The Avenue Of The Allies" (p) by Alfred-Noyes</p>
+						<p>'A Clergyman' (1918) (e) by Max-Beerbohm</p>
+						<p>'A Long-Bow Story' (s) by Andrew-Lang</p>
+					</div>
+					<div class="scroller_bar_wrapper">
+						<div class="scroller_bar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#">View e-Catalogue</a>
+				<a href="#">Download PDF</a>
+			</div>
+		</div>
+	</article>
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUdGmG2UEnlQ4GPmYakg7C2BHVX3WCsbM&amp;sensor=false"></script> -->

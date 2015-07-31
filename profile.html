@@ -187,87 +187,7 @@
 							<span class="counter">12</span>
 						</span>
 					</li>
-					<li class="dropdown user_dropdown jsMegaDrop">
-						<a class="color_blue text-uppercase dropdown-toggle fw_semibold jsMegaDropBt" href="#">Modernfirsts<i class="color_black caret"></i></a>
-						<div class="box_user_drop dropdown-menu">
-							<div class="wrapper scroll_wrapper">
-								<div class="scroller">
-									<div class="col-sm-3 wrapp_snapshot">
-										<div class="profile_avatar box_flex_centered jsUserDropAva">
-											<div class="jsDropTemplate">
-												<picture>
-													<img src="" alt="" class="img-responsive" data-dz-thumbnail>
-												</picture>
-												<a href="#" class="del_bt" data-dz-remove>
-													<span class="delete_txt">Delete</span>
-												</a>
-											</div>
-											<div class="dz-message" data-dz-message>
-												<span class="sign">?</span>
-												<p class="select_txt">Select a Profile Picture</p>
-												<p class="help_txt">(Use a photo of anything you’d like)</p>
-											</div>
-										</div>
-										<p>
-											<span class="profile_name">PaperbackWriter</span>
-											<span class="profile_since">Member since 4/5/203</span>
-										</p>
-										<div class="profile_box keywords empty_editable jsEditParent">
-											<h3 class="profile_small_title">Keywords <a href="jsEditableTags" class="jsEditCloneBt">(edit)</a></h3>
-											<div class="box_edit_profile"><p data-type="select2" class="editable-empty jsEditableTags"></p></div>
-										</div>
-									</div><!-- wrapp_snapshot -->
-									<div class="col-sm-5 wrapp_edit_info">
-										<div class="profile_box my_collection empty_editable jsEditParent">
-											<h3 class="profile_small_title">My collection <a href="jsEditCollection" class="jsEditCloneBt">(edit)</a></h3>
-											<div class="box_edit_profile"><p data-type="textarea" class="editable-empty jsEditCollection"></p></div>
-										</div>
-										<div class="profile_box">
-											<h3 class="profile_small_title">Looking to acquire<a href="#" class="view_all">(6 total, view all)</a></h3>
-											<ul class="box_edit_profile profile_list list-unstyled">
-												<li><p class="title"><i class="fa fa-angle-right"></i>First Edition of Huck Finn by Mark Twain (Samuel Clements)</p></li>
-												<li><p class="title"><i class="fa fa-angle-right"></i>I own a fairly extensive collection of books on coolsite collectorsfolio</p></li>
-												<li><p class="title"><i class="fa fa-angle-right"></i>Trevanian Shibumi, signed, fine</p></li>
-												<li><p class="title"><i class="fa fa-angle-right"></i>I own a fairly extensive collection of books on.</p></li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-sm-4 wrapp_user_nav">
-										<div class="profile_box">
-											<ul class="user_drop_nav list-unstyled">
-												<li><a href="#"><i class="fa fa-user"></i>View Full Profile</a></li>
-												<li><a href="#"><i class="fa fa-globe"></i>Create a Want Lisitng</a></li>
-												<li><a href="#"><i class="fa fa-tags"></i>Something to Sell?</a></li>
-												<li><a href="#" class="logout pull-right">Log Out</a><a href="#"><i class="fa fa-cog"></i>My Settings</a></li>
-											</ul>
-										</div>
-										<div class="profile_box">
-											<h3 class="profile_small_title"><a href="#" class="view_all pull-right">view all</a>Recent favorites</h3>
-											<ul class="saved_list_img list-inline">
-												<li class="box_flex_centered">
-													<picture>
-														<source srcset="images/saved02.jpg, images/2x/saved02.jpg 2x" media="(min-width:768px)">
-														<img src="" alt="" class="img-responsive">
-													</picture>
-												</li>
-												<li class="box_flex_centered">
-													<picture>
-														<source srcset="images/saved03.jpg, images/2x/saved03.jpg 2x" media="(min-width:768px)">
-														<img src="" alt="" class="img-responsive">
-													</picture>
-												</li>
-											</ul>
-											<div class="text-center hide">
-												<i class="placehold_icon fa fa-star-o"></i>
-												<p class="placehold_txt">“Save” books for later and watch them appear in this space.</p>
-											</div>
-										</div>
-									</div>
-								</div><!-- scroller -->
-								<div class="scroller_bar_wrapper"><div class="scroller_bar"></div></div>
-							</div><!-- scroll_wrapper -->
-						</div><!-- box_user_drop -->
-					</li>
+					<li><a href="#" class="color_blue text-uppercase fw_semibold">Log out</a></li>
 				</ul>
 				<form action="" class="search_form">
 					<div class="box_icon_in_input">
@@ -391,7 +311,7 @@
 				</div>
 				<div class="profile_box want_listing jsEditParent empty_editable">
 					<h3 class="profile_small_title">Looking to acquire<a href="jsEditWantListings" class="jsEditCloneBt">(edit)</a></h3>
-					<div class="box_edit_profile"><p data-type="textarea" class="editable-empty jsEditWantListings"></p></div>
+					<div class="box_edit_profile"><a class="editable-empty editable" href="#" data-toggle="modal" data-target="#createListingModal">Create your first Want Listing</a><!-- <p data-type="textarea" class="editable-empty jsEditWantListings"></p> --></div>
 				</div>
 				<div class="profile_box">
 					<h3 class="profile_small_title">Favorites</h3>
@@ -507,7 +427,7 @@
 								</header>
 								<p class="describe_txt">36 landmark works in science and mathematics including first editions by Archimedes, Pappus of Alexandria, Fermat, Huygens, Gilbert, Gauss, and more. The items in this catalogue are offered for sale. For pricing information please call or email info@collectorsfolio.com.</p>
 								<footer class="catg_author_footer">
-									<a href="#"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
+									<a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
 									<a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a>
 									<a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a>
 								</footer>
@@ -525,7 +445,7 @@
 								</header>
 								<p class="describe_txt">A complete collection of Ruscha's 16 artist books, most signed or inscribed. </p>
 								<footer class="catg_author_footer">
-									<a href="#"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
+									<a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
 									<a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a>
 									<a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a>
 								</footer>
@@ -543,7 +463,7 @@
 								</header>
 								<p class="describe_txt">A private collection of rare and important first editions in a range of fields including: Quantum Mechanics, Atomic Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics,Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics,Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics,</p>
 								<footer class="catg_author_footer">
-									<a href="#"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
+									<a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
 									<a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a>
 									<a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a>
 								</footer>
@@ -603,6 +523,108 @@
 	</div><!-- modal -->
 	<!-- END book_modal -->
 
+	<!-- Modal -->
+	<article class="modal_with_scroll catalog_preview modal fade jsModalFullHeight" id="catalogPreview" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<a href="#" class="jsPrevCatalog prev fa fa-angle-left"></a>
+			<a href="#" class="jsNextCatalog next fa fa-angle-right"></a>
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<h1>Modern Literature Catalogue</h1>
+				<p class="name">Einstein rare books<span class="date">July 15, 2015</span></p>
+				<p class="header_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="modal-content">
+				<div class="wrapper scroll_wrapper">
+					<div class="scroller">
+						<p>"A Brave Refrain" (p) by James-Whitcomb-Riley Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+						<p>"A Bruised Reed Shall He Not Break" (p) by Christina-Georgina-Rossetti</p>
+						<p>"A Death in the Desert" (s) by Willa-Cather</p>
+						<p>"A man was drawing near to me" (p) by Thomas-Hardy</p>
+						<p>"A Noted Traveler" (p) by James-Whitcomb-Riley</p>
+						<p>"A Poor Stick" (s) by Arthur-Morrison  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+						<p>"A Rough Shed" (s) by Henry-Lawson</p>
+						<p>"According To Gunter" (s) by Falconbridge</p>
+						<p>"According to the Mighty Working" (p) by Thomas-Hardy</p>
+						<p>"Ad Amicos" (p) by Oliver-Wendell-Holmes</p>
+						<p>"After" Jenkins (s) by Mark-Twain</p>
+						<p>"Ah, Bleak And Barren Was The Moor." (p) by William-Makepeace-Thackeray</p>
+						<p>"All The Day Idle" (p) by T.-S.-Arthur</p>
+						<p>"All The Rage" (p) by Hattie-Howard</p>
+						<p>"America For Me" (p) by Henry-Van Dyke</p>
+						<p>"And He Said, Fight On" (p) by E. Pauline-Johnson</p>
+						<p>"And Oh--That The Man I Am Might Cease To Be--" (p) by D.-H.-Lawrence</p>
+						<p>"And there was a great calm" (p) by Thomas-Hardy</p>
+						<p>"And These--Are These Indeed The End" (p) by William-Watson</p>
+						<p>"Angutivaun Taina" (p) by Rudyard-Kipling</p>
+						<p>"As 'twere to-night" (p) by Thomas-Hardy</p>
+						<p>"As The Bell Clinks" (p) by Rudyard-Kipling</p>
+						<p>"As weary pilgrim now at rest" (p) by Anne-Bradstreet</p>
+						<p>"Au Revoir", A Dramatic Vignette (p) by Austin-Dobson</p>
+						<p>"The Avenue Of The Allies" (p) by Alfred-Noyes</p>
+						<p>'A Clergyman' (1918) (e) by Max-Beerbohm</p>
+						<p>'A Long-Bow Story' (s) by Andrew-Lang</p>
+					</div>
+					<div class="scroller_bar_wrapper">
+						<div class="scroller_bar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#">View e-Catalogue</a>
+				<a href="#">Download PDF</a>
+			</div>
+		</div>
+	</article>
+
+
+	<!-- Modal -->
+	<article class="create_listing_modal modal fade" id="createListingModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class=" main_h1_modal">Create a Want Listing</h1>
+					</div>
+					<div class="col-sm-6">
+						<p class="help_txt">Do you have a Word or Excel file of your wants?</p>
+						<p class="help_txt">Call 212 980 2100 or <a href="mailto:info@collectorsfolio.com">email us</a> and we will assist you in posting it.</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-content">
+				<form action="">
+					<div class="form-group">
+						<input type="text" class="form-control md" placeholder="Headline">
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<input type="text" class="form-control md" placeholder="Author">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control md" placeholder="Title">
+							</div>
+							<div class="form-group">
+								<select class="form-control md">
+									<option>Category</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6"><textarea class="form-control description" rows="7" placeholder="Description"></textarea></div>
+					</div>
+					<div class="form-group"><button type="button" class="btn_submit btn btn-primary btn-lg btn-block">Save listing</button></div>
+					<p class="bt_save_add"><a href="#">Save &amp; Add Another Listing</a></p>
+				</form>
+			</div>
+		</div>
+	</article>
+
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 	<script src="js/select2.js"></script>
@@ -622,102 +644,5 @@
 
 	<script src="js/script.js"></script>
 
-	<script>
-		$(document).ready(function(){
-
-
-			// top dropdowns
-			$('.jsMegaDropBt').on('click', function (e) {
-				e.preventDefault();
-				var parentBt = $(this).parent();
-				$('.jsMegaDrop').not(parentBt).removeClass('open');
-				$(parentBt).toggleClass('open');
-				
-			});
-
-			function heightMegaDrop() {
-				var heightHeader = $('.main_header').height();
-				var heightForScroll = $(window).height() - heightHeader;
-				$('.scroll_notification .scroller').css('max-height', heightForScroll - 70);
-				$('.box_user_drop .scroller').css('max-height', heightForScroll - 20);
-			}
-			heightMegaDrop();
-			$(window).resize(function() {
-				heightMegaDrop()
-			});
-
-
-			// editable
-			$('.jsEditCollection').editable({
-				placement: 'bottom',
-				emptytext: 'Add a description of your collection here',
-				mode: 'inline'
-			});
-			$('.jsEditWantListings').editable({
-				placement: 'top',
-				emptytext: 'Create your first Want Listing',
-				mode: 'inline'
-			});
-			$('.jsEditableTags').editable({
-				emptytext: '',
-				emptytext: 'What topics and authors are you most interested in?',
-				select2: {
-					tags: ['Astrophysics', 'Particle Physics', 'Space', 'Great Discoveries', '20th Century Scientists', 'Classical Science'],
-					tokenSeparators: [",", " "]
-				},
-				mode: 'inline'
-			});
-			$('.jsEditCollection, .jsEditWantListings, .jsEditableTags').on('hidden', function(e, reason) {
-				if($(this).hasClass('editable-empty')) {
-					$(this).closest('.jsEditParent').addClass('empty_editable');
-				}
-				else{
-					$(this).closest('.jsEditParent').removeClass('empty_editable');
-				};
-			});
-
-			$('.jsEditCloneBt').on('click', function (e) {
-				e.preventDefault();
-				e.stopPropagation();
-				var editThis = $(this).attr('href');
-				$(this).closest('.jsEditParent').find('.' + editThis).editable('toggle');
-			})
-
-
-
-			// dropzone user dropdown
-			Dropzone.autoDiscover = false;
-			var previewNode = document.querySelector(".jsDropTemplate");
-			previewNode.id = "";
-			var previewTemplate = previewNode.parentNode.innerHTML;
-			previewNode.parentNode.removeChild(previewNode);
-			function dropInit () {
-				if ($( ".jsUserDropAva" ).length) {
-					$(".jsUserDropAva").dropzone({
-						url: "upload.php",
-						autoProcessQueue: false,
-						previewTemplate: previewTemplate,
-						acceptedFiles: 'image/*',
-						maxFiles:1,
-						thumbnailWidth: 320,
-						thumbnailHeight: 320,
-						init: function() {
-							this.on("maxfilesexceeded", function(file) {
-								this.removeAllFiles();
-								this.addFile(file);
-							});
-						}
-					});
-				}
-			}
-			dropInit();
-
-			$('.jsDelBt').on('click', function (e) {
-				e.preventDefault();
-				$(this).closest('.wrapper_product').remove();
-			})
-
-		});
-	</script>
 </body>
 </html>

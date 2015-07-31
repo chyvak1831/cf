@@ -10,7 +10,7 @@
 		</header>
 		<p class="describe_txt">36 landmark works in science and mathematics including first editions by Archimedes, Pappus of Alexandria, Fermat, Huygens, Gilbert, Gauss, and more. The items in this catalogue are offered for sale. For pricing information please call or email info@collectorsfolio.com.</p>
 		<footer class="catg_author_footer">
-			<a href="#"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
+			<a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
 			<a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a>
 			<a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a>
 		</footer>
@@ -28,7 +28,7 @@
 			</header>
 			<p class="describe_txt">A complete collection of Ruscha's 16 artist books, most signed or inscribed. </p>
 			<footer class="catg_author_footer">
-				<a href="#"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
+				<a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
 				<a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a>
 				<a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a>
 			</footer>
@@ -47,7 +47,7 @@
 			</header>
 			<p class="describe_txt">A private collection of rare and important first editions in a range of fields including: Quantum Mechanics, Atomic Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics,Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics,Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics,</p>
 			<footer class="catg_author_footer">
-				<a href="#"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
+				<a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a>
 				<a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a>
 				<a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a>
 			</footer>
