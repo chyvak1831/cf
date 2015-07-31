@@ -613,6 +613,18 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 .box_edit_profile .editable-input, .box_edit_profile .editableform .form-control, 
 .box_edit_profile .select2-container, .box_edit_profile .select2-container-multi .select2-choices .select2-search-field input {width: 100%;}
 .box_edit_profile .editable-buttons {margin-left: 0;}
+
+
+.arrow_step {
+	background: url('../images/2x/arrow_step.png');
+	background-size: 100% 100%;
+	display: block;
+	height: 30px;
+	margin-right: 10px;
+	opacity: 0.1;
+	width: 30px;
+}
+.arrow_step:hover {opacity: 0.4;}
 /*END SNIPPETS */
 
 
@@ -1395,3 +1407,138 @@ button.close {
 }
 .form_post .btn {margin: 28px 0 25px;}
 /* END post modal */
+
+
+
+/*catalog preview and dealer modal*/
+@media (min-width: 992px) {.modal_with_scroll .modal-dialog {width: 950px;}}
+.modal_with_scroll .modal-dialog {
+	background-color: #fff;
+	box-shadow: 0 3px 17.1px 1.9px rgba(0, 0, 0, 0.6);
+}
+.modal_with_scroll a:hover {opacity: 0.5;}
+.modal_with_scroll .modal-content {
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 -13px 8px -4px rgba(195, 195, 195, 0.3) inset;
+	padding: 40px 5px 30px 40px;
+}
+.modal_with_scroll .modal-header {
+	border-bottom: 1px solid #c3c3c3;
+	box-shadow: 0 13px 8px -4px rgba(195, 195, 195, 0.2);
+	padding: 3px 40px 13px;
+	position: relative;
+	z-index: 3;
+}
+.modal_with_scroll .modal-header .close {
+	font-size: 38px;
+	position: absolute;
+	right: 17px;
+	top: 12px;
+}
+.modal_with_scroll .modal-footer {
+	background-color: #f4f4f4;
+	border-top: 1px solid #c3c3c3;
+	text-align: center;
+}
+.modal_with_scroll .modal-footer a {
+	color: #3102a9;
+	font: 18px/1.611111111111111 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.05em;
+	margin: 0 34px;
+}
+/*END catalog preview and dealer modal*/
+/*catalog preview modal*/
+.catalog_preview .prev, .catalog_preview .next {
+	color: #fff;
+	font-size: 48px;
+	margin-top: -22px;
+	position: absolute;
+	top: 50%;
+	text-shadow: 0 4px 4.6px rgba(0, 0, 0, 0.35);
+}
+.catalog_preview .prev {left: -50px;}
+.catalog_preview .next {right: -50px;}
+.catalog_preview .modal-header h1 {
+	font: 22px/1.4em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	letter-spacing: 0.04em;
+	margin-bottom: 0;
+}
+.catalog_preview .modal-header .name {
+	color: #0e1886;
+	font: 14px/1.7em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	letter-spacing: 0.03em;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+.catalog_preview .modal-header .date {
+	color: #777;
+	font: 12px/2em 'proxima_novalight', 'Open Sans', sans-serif;
+	letter-spacing: 0.04em;
+	text-transform: none;
+	margin-left: 9px;
+}
+.catalog_preview .modal-header .header_txt {
+	font-size: 12px;
+	letter-spacing: -0.013em;
+	line-height: 1.166666666666667em;
+}
+.catalog_preview .modal-content .scroller, .dealer_modal .modal-content .scroller {
+	min-height: 245px;
+	padding-right: 40px;
+}
+.catalog_preview .modal-content p {
+	font: 17px/1.4em 'proxima_novalight', 'Open Sans', sans-serif;
+	letter-spacing: 0.025em;
+	opacity: 0.9;
+	margin-bottom: 22px;
+}
+/*END catalog preview modal*/
+/*dealer modal*/
+.dealer_modal .modal_main_h1 {
+	font: 42px/1em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: 0.018em;
+	margin: 33px 0 9px;
+}
+.dealer_modal .modal_main_h1 .content_name_txt {margin-right: 58px;}
+.dealer_modal .modal_main_h1 .author_help {
+	color: #666;
+	display: inline-block;
+	font: 14px "proxima_novalight";
+	margin-right: 21px;
+	text-transform: uppercase;
+}
+.dealer_modal .modal_main_h1 .author_help:last-child {margin-right: 0;}
+.dealer_modal .header_txt {
+	font: 16px/1.375em 'proxima_novalight', 'Open Sans', sans-serif;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	height: 4.125em;
+	letter-spacing: 0.01em;
+	overflow: hidden;
+	margin: 0 215px 0 0;
+}
+.dealer_modal .header_nav {text-align: right;}
+.dealer_modal .link_more {
+	color: #0026a0;
+	font: 16px 'proxima_novalight', 'Open Sans', sans-serif;
+}
+.dealer_modal .header_nav a {
+	color: #0a0181;
+	font: 14px/1.571428571428571em 'proxima_novalight', 'Open Sans', sans-serif;
+	letter-spacing: 0.01em;
+}
+.dealer_modal .header_nav a .fa {margin-right: 6px;}
+@media (max-width: 767px) {
+	.dealer_modal .modal_main_h1 {font-size: 28px;}
+}
+@media (max-width: 600px) {
+	.dealer_modal .modal-header {text-align: center;}
+	.dealer_modal .modal_main_h1 .content_name_txt {display: block;margin: 0;}
+	.dealer_modal .modal_main_h1 .author_help {margin: 0 10px;}
+	.dealer_modal .header_txt, .dealer_modal .link_more {display: none;}
+	.dealer_modal .header_nav {float: none !important;text-align: center;}
+	.dealer_modal .header_nav li {display: inline-block;margin: 0 4px 4px;}
+}
+/*END dealer modal*/

@@ -12,16 +12,6 @@
 	padding-left: 9px;
 	white-space: nowrap;
 }
-.arrow_step {
-	background: url('../images/2x/arrow_step.png');
-	background-size: 100% 100%;
-	display: block;
-	height: 30px;
-	margin-right: 10px;
-	opacity: 0.1;
-	width: 30px;
-}
-.arrow_step:hover {opacity: 0.4;}
 @media screen and (max-width: 767px) {
 	.main_h1_step2 {
 		font-size: 30px;

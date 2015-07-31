@@ -64,3 +64,63 @@
 	line-height: 14px;
 }
 .wrapp_profile_catg .profile_small_title {margin-bottom: 46px;}
+
+
+/* create listing modal */
+.create_listing_modal a:hover {opacity: 0.5;}
+.create_listing_modal .modal-dialog {background-color: #fff;}
+.create_listing_modal .modal-content, .create_listing_modal .modal-header {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.create_listing_modal .modal-header {
+	letter-spacing: 0.005em;
+	padding: 0 0 24px;
+}
+.create_listing_modal .close {
+	position: absolute;
+	right: 17px;
+	top: 17px;
+}
+.create_listing_modal .main_h1_modal {
+	font: 22px/1.3em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	margin: 0;
+}
+.create_listing_modal .help_txt {
+	color: #949494;
+	font: 10px/13px 'proxima_novaregular', 'Open Sans', sans-serif;	
+	margin-bottom: 0;
+	text-align: right;
+}
+.create_listing_modal [href*="mailto"] {text-decoration: underline;}
+.create_listing_modal .description {height: 135px;}
+.create_listing_modal .btn_submit {
+	font: 15px/1.3em 'proxima_novaregular', 'Open Sans', sans-serif;	
+	text-transform: uppercase;
+}
+.create_listing_modal .bt_save_add {
+	color: #040d6e;
+	font: 13px/1.3em 'proxima_novaregular', 'Open Sans', sans-serif;	
+	letter-spacing: 0.01em;
+	margin: 0;
+	text-align: center;
+	text-decoration: underline;
+}
+@media (min-width: 992px) {
+	.create_listing_modal .modal-lg {
+		padding: 29px 56px;
+		width: 800px;
+	}
+}
+@media (max-width: 991px) {
+	.create_listing_modal .modal-lg {padding: 25px;}
+	.create_listing_modal .help_txt {margin-right: 20px;}
+}
+@media (max-width: 767px) {
+	.create_listing_modal .help_txt {
+		margin-top: 5px;
+		text-align: left;
+	}
+}
+/* END create listing modal */

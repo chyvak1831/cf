@@ -1,10 +1,22 @@
-.blog2_main_content {padding: 49px 7px 0 60px;}
+@media (min-width: 992px) {.blog2_main_content {padding: 29px 7px 0 60px;}}
+.blog2_main_content {margin-top: 20px;}
 .blog2_main_content a:hover {opacity: 0.5;}
 .blog2_main_content .text_price {
 	color: #03007f;
 	font: 15px/1em 'Libre Baskerville', serif;
 	letter-spacing: 0.02em;
 	padding-left: 33px;
+	position: relative;
+}
+.blog2_main_content .text_price::before {
+	background: url('../images/2x/icon_chart.jpg') no-repeat;
+	background-size: 100%;
+	content: '';
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
 }
 .blog2_mainh1 {
 	font-size: 32px;
@@ -65,16 +77,82 @@
 	list-style-position: inside;
 	padding-left: 0;
 }
+.wrapp_options_list {padding: 5px 0 0 4px;}
+.wrapp_options_list h4 {
+	font-size: 13px;
+	letter-spacing: 0.045em;
+	line-height: 1.846153846153846em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.wrapp_options_list .options_list li {
+	font-size: 13px;
+	letter-spacing: 0.04em;
+	line-height: 1.9em;
+	padding-left: 32px;
+	position: relative;
+}
+.wrapp_options_list .options_list li::before {
+	content: "\f105";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	position: absolute;
+	left: 17px;
+	top: 4px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+	transform: translate(0, 0);
+}
 
 .blog2_main_content .wrapp_subscribe {margin: 93px 0 50px;}
 
+.blog2_main_content .next_article {margin-bottom: 28px;}
+.blog2_main_content .social_list {border-bottom: 1px solid #bdbdbd;}
+.blog2_main_content .social_list li {padding: 0 0 0 23px;}
 
 
 /*aside*/
-.blog2_aside {padding: 53px 0 0 37px;}
-.blog2_side_ava {
+@media (min-width: 992px) {.blog2_aside {padding: 33px 15px 0 36px;}}
+.blog2_aside {margin-top: 20px;}
+.blog2_ava, .blog2_history_chart, .blog2_aside .social_list {
 	border: 1px solid #ebebeb;
-	display: block;
+	margin: 0 0 27px;
 	padding: 15px;
 }
+.blog2_history_chart .history_title {
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	line-height: 1.5em;
+	margin: 15px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.blog2_aside .social_list {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 5px 9px;
+}
+.blog2_aside .social_list a {margin-bottom: 0;}
+.aside_nav {
+	letter-spacing: 0.06em;
+	margin-left: 14px;
+}
+.aside_nav a:hover {opacity: 0.5;}
+.aside_nav > li > a {
+	display: block;
+	font-size: 18px;
+	line-height: 1.4em;
+	margin-bottom: 11px;
+	text-transform: uppercase;
+}
+.aside_nav .sub_nav {padding-bottom: 33px;}
+.aside_nav .sub_nav a {
+	color: #000379;
+	display: block;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.aside_nav .sub_nav .comlete_list a {margin: 23px 0 8px;}
 /*END aside*/
