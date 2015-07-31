@@ -1,0 +1,68 @@
+@media screen and (min-width: 991px) {.wrapper_sell {width: 563px;}}
+@media screen and (min-width: 768px) {
+	.way_sell_page {margin-top: 41px;}
+	.wrapper_sell {padding-right: 88px;}
+	.list_books_sell {float: left;}
+}
+.wrapper_center_cell {
+	margin: auto;
+	max-width: 788px;
+}
+.wrapper_sell a {color: #0e1886;}
+.wrapper_sell a:hover {opacity: 0.5;}
+.wrapper_sell .main_title_sell {
+	font: 49px "ACaslonProRegular","Times New Roman","Times";
+	text-align: center;
+}
+@media screen and (max-width: 767px) {.wrapper_sell .main_title_sell {font-size: 35px;}}
+
+.way_sell .panel_sell_way {border-bottom: 1px solid #ccc;}
+.way_sell .title_colps {
+	display: block;
+	font-size: 18px;
+	padding: 25px 0 8px 0;
+}
+.way_sell .title_colps a {
+	font-size: 12px;
+	padding-top: 6px;
+}
+.way_sell .title_colps a .close_icon {display: none;}
+.way_sell .title_colps a.collapsed .open_icon {display: none;}
+.way_sell .title_colps a.collapsed .close_icon {display: inline-block;}
+.way_sell .content_txt {
+	color: #737373;
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	line-height: 16px;
+	padding: 10px 0 20px 13px;
+}
+
+.way_sell_page .complete_or_call_txt {
+	font: 20px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	margin: 61px 0 35px 3px;
+}
+.way_sell_page .complete_or_call_txt .phone {white-space: nowrap;}
+@media screen and (max-width: 767px) {.way_sell_page .complete_or_call_txt {margin: 31px 0 30px 3px;}}
+
+.sell_form {padding: 0 2px 0 5px;}
+.sell_form .form-group {margin-bottom: 19px;}
+.sell_form label {
+	font-size: 14px;
+	font-weight: 300;
+}
+.sell_form .help_txt {
+	color: #7c7c7c;
+	font-size: 11px;
+	margin-bottom: 15px;
+	position: relative;
+	top: -6px;
+}
+.sell_form .btn_submit {margin-top: 27px;}
+.box_fileuploder li {margin: 14px 22px 7px 0;}
+.list_books_sell {margin-top: 80px;}
+.list_books_sell .sell_book {
+	display: block;
+	margin-bottom: 29px;
+	max-width: 210px;
+}
+@media screen and (max-width: 767px) {.list_books_sell .sell_book {margin: 0 auto 29px;}}

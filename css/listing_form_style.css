@@ -1,0 +1,67 @@
+.listing_form .control-label {
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	margin-top: 2px;
+	text-transform: uppercase;
+}
+.radio_list {margin-left: 0;}
+.box_fileuploder {margin-left: 29px;}
+.box_fileuploder li {margin: 0 10px;}
+.category_checkboxes {padding-left: 45px;}
+.category_wrapper {padding: 13px 0 24px;}
+.subcateg_checklist {padding: 5px 0 5px 23px;}
+.subcateg_checklist li {margin-top: -7px !important;}
+.listing_name_company {
+	color: #929292;
+	font-size: 15px;
+	margin: 43px 0 51px;
+}
+.listing_name_company span {
+	color: #8f8f8f;
+	font-weight: 600;
+}
+.help-block {
+	color: #999;
+	font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.listing_form .description_company textarea {
+	min-height: 243px;
+	max-height: 550px;
+	resize: vertical;
+}
+.btn_submit {margin-top: 36px;}
+.listing_form .margTopSmall {margin-top: -3px;}
+.dropzone .dz-message {
+	color: #999;
+	line-height: 2.55em 0 2em;
+	font-size: 20px;
+}
+.dropzone {border: 2px dashed #e1e1e1;}
+.signed_dropdown {display: none;}
+@media (max-width: 767px) {.listing_name_company {margin: 30px 0;}}
+ul.custom_checkbox.signed_dropdown {margin: 0 0 0 20px;}
+.box_success_create {margin: 41px 73px 0 0;}
+.box_success_create .txt {
+	display: inline-block;
+	vertical-align: top;
+}
+.box_success_create .txt_author {
+	font-family: 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin: 16px 0 1px;
+}
+.box_success_create .title {letter-spacing: -0.037em;}
+.box_success_create h4 {
+	color: #0E1886;
+	font: 15px 'proxima_novasemibold', 'Open Sans', sans-serif;
+}
+.box_success_create .created_img {
+	display: inline-block;
+	margin-left: 6px;
+	max-width: 82px;
+}
+.box_success_create .txt .box_btns a {
+	display: inline-block;
+	margin: 8px 3px 0;
+}
+.box_success_create .txt .box_btns a:hover {opacity: 0.5;}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Dealer page</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,300,600' rel='stylesheet'>
+	<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dealer_page_style.css">
+	<script src="js/picturefill.min.js"></script>
+</head>
+<body>
+	<header class="main_header sticky_header">
+		<div class="container custom_padding">
+				<a href="#" class="logo logo_scroll pull-left hide">
+					<span>CF</span>
+				</a>
+				<div class="top_box">
+					<a href="#" class="logo pull-left">
+						<span class="hidden-xs"><img class="img-responsive" src="images/mar23-cf-logo.png" alt="Logo"></span>
+						<span class="visible-xs-block">CF</span>
+					</a>
+					<ul class="top_right_block nav navbar-nav navbar-right">
+						<li>
+							<a class="color_blue text-uppercase fw_semibold" href="#">Log in</a>
+						</li>
+						<li>
+							<a class="color_blue text-uppercase fw_semibold" data-toggle="modal" href="#signInModal">Sign up</a>
+						</li>
+					</ul>
+					<form action="" class="search_form">
+						<div class="box_icon_in_input">
+							<input type="text" class="form-control">
+							<button type='submit' class="icon fa fa-search"></button>
+						</div>
+					</form>
+				</div>
+
+				<nav class="main_nav row" role="navigation" class="row">
+					<!-- Toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle jsBtNav">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nav_box" id="sidr">
+						<ul class="list-inline list_justify text-uppercase pc_nav">
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Literature</a></li>
+							<li class="hide_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+							<li class="dropdown scroll_add_nav">
+								<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">More<span class="color_black caret"></span></a>
+								<ul role="menu" class="dropdown-menu left_arrow">
+									<li><a href="#">History &amp; culture</a></li>
+									<li><a href="#">Sciences</a></li>
+									<li class="show_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+									<li class="show_link_768_991"><a href="#">Classifieds</a></li>
+								</ul>
+							</li>
+							<li class="hide_link"><a href="#">History &amp; culture</a></li>
+							<li class="hide_link"><a href="#">Sciences</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li class="hide_link_768_991"><a href="#">Classifieds</a></li>
+							<li><a href="#">Market Notes</a></li>
+							<li class="helper"></li>
+						</ul>
+						<ul class="mobile_nav list-unstyled visible-xs-block">
+							<li><a href="#" class="empty_link"></a>&nbsp;</li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Literature</a></li>
+							<li><a href="#">Art &amp; photobooks</a></li>
+							<li><a href="#">History &amp; culture</a></li>
+							<li><a href="#">Sciences</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li><a href="#">Classifieds</a></li>
+							<li><a href="#">Market Notes</a></li>
+							<li><a href="#" class="empty_link"></a>&nbsp;</li>
+							<li><a class="fw_normal text-uppercase" data-toggle="modal" href="#">Sign In</a></li>
+							<li><a class="fw_normal text-uppercase" href="#">Join</a></li>
+						</ul>
+					</div>
+				</nav>
+
+		</div>
+	</header>
+
+
+	<div class="container custom_padding dealer_page proxima_novalight">
+		<div class="top_dealer_page">
+			<h1 class="main_h1">Find a dealer:
+				<div class="dropdown drop_litra">
+					<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle proxima_novalight" href="#">Literature<span class="caret"></span></a>
+					<ul role="menu" class="dropdown-menu left_arrow">
+						<li><a href="#">History &amp; culture</a></li>
+						<li><a href="#">Sciences</a></li>
+					</ul>
+				</div><!-- drop_litra -->
+			</h1><!-- main_h1 -->
+
+			<ul class="genres_nav list-inline">
+				<li class="active"><a href="#">All</a></li>
+				<li><a href="#">Modern First Editions</a></li>
+				<li><a href="#">American</a></li>
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">South American</a></li>
+				<li><a href="#">World</a></li>
+				<li><a href="#">Poetry</a></li>
+				<li><a href="#">Drama</a></li>
+				<li><a href="#">Nobel Prize</a></li>
+				<li><a href="#">Signed &amp; Inscribed</a></li>
+			</ul><!-- genres_nav -->
+
+			<h2 class="leading_dealers">Leading dealers in Literature <a href="#" class="shop_link pull-right">Shop literature</a></h2>
+		</div><!-- top_dealer_page -->
+
+		<ul class="lead_dealer_list row og-grid list-unstyled" id="og-grid">
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer"
+					data-title="Einstein Rare Book Company"
+					data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure."
+					data-dealerlink="blabla.com"
+					data-largesrc="images/book-image.jpg, images/2x/book-image.jpg 2x"
+					data-bookname="First edition of Einstein's first autobiography"
+					data-bookprice="$5,000"
+					data-listinglink="parampampam.com"
+					data-recentlist='<li class="jsRecentItem" data-largesrc="images/recently_joined_img.jpg, images/2x/recently_joined_img.jpg 2x" data-bookname="Second edition of Einsteins">Stories of Rad Bradbury, First Edition, Signed by Bradbury</li><li class="jsRecentItem" data-largesrc="images/lead_dealer03.jpg, images/2x/lead_dealer03.jpg 2x" data-bookname="Five edition of">Stories of Rad Bradbury, First Edition, Signed by  Bradbury</li>'>
+					<picture class="box_img">
+						<source srcset="images/lead_dealer01.jpg, images/2x/lead_dealer01.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveriessics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer"
+					data-title="Best Book"
+					data-description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure."
+					data-dealerlink="para-bpa.com"
+					data-pricebook="$3,126"
+					data-largesrc="images/recently_joined_img.jpg, images/2x/recently_joined_img.jpg 2x"
+					data-bookname="Bestsellers of 20-th centure"
+					data-listinglink="adfw.com"
+					>
+					<picture class="box_img">
+						<source srcset="images/lead_dealer02.jpg, images/2x/lead_dealer02.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer" data-pricebook="$126" data-largesrc="images/blog.jpg, images/2x/blog.jpg 2x" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+					<picture class="box_img">
+						<source srcset="images/lead_dealer03.jpg, images/2x/lead_dealer03.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer" data-pricebook="$2126" data-largesrc="images/dealer_big.jpg, images/2x/dealer_big.jpg 2x" data-title="New book" data-description="quis nostrud exercitation ullamco laboris nisi Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+					<picture class="box_img">
+						<source srcset="images/lead_dealer04.jpg, images/2x/lead_dealer04.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer" data-href="blabla.com" data-linklisting="parampampam.com" data-pricebook="$5,000" data-largesrc="images/book-image.jpg, images/2x/book-image.jpg 2x" data-namebook="First edition of Einstein's first autobiography" data-title="Einstein Rare Book Company" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.">
+					<picture class="box_img">
+						<source srcset="images/lead_dealer01.jpg, images/2x/lead_dealer01.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer" data-pricebook="$3,126" data-largesrc="images/recently_joined_img.jpg, images/2x/recently_joined_img.jpg 2x" data-namebook="Bestsellers of 20-th centure" data-title="Best Book" data-description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.">
+					<picture class="box_img">
+						<source srcset="images/lead_dealer02.jpg, images/2x/lead_dealer02.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer" data-pricebook="$126" data-largesrc="images/blog.jpg, images/2x/blog.jpg 2x" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+					<picture class="box_img">
+						<source srcset="images/lead_dealer03.jpg, images/2x/lead_dealer03.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+			<li class="wrapp_lead_dealer">
+				<article class="lead_dealer" data-pricebook="$2126" data-largesrc="images/dealer_big.jpg, images/2x/dealer_big.jpg 2x" data-title="New book" data-description="quis nostrud exercitation ullamco laboris nisi Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+					<picture class="box_img">
+						<source srcset="images/lead_dealer04.jpg, images/2x/lead_dealer04.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+						<div class="wrapp_overlay">
+							<span class="some_info pull-right">Abba</span>
+							<div class="wrapp_company_name">
+								<h1 class="company_name">Einstein Rare Book Company</h1>
+								<span class="company_city">London</span>
+							</div>
+						</div>
+					</picture>
+					<div class="wrapp_about_dealer">
+						<h2 class="spec_in_title">Specialists In</h2>
+						<p class="genre_list">Science, Astrophysics, Chemistry, Physics, Great Discoveries, 20th Century Science</p>
+						<span class="owner">Albert Einstein, Owner</span>
+						<span class="date_foumded">Founded: 1999</span>
+					</div>
+				</article>
+			</li>
+		</ul><!-- lead_dealer_list -->
+	</div><!-- dealer_page -->
+
+	<!-- <div class="jsTemplateTest"> -->
+	<div class="modal fade dealer_modal jsDealerModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+			<div class="og-expander clearfix">
+				<span class="og-close" data-dismiss="modal"></span>
+				<i class="fa fa-angle-left left_arr jsLeftSlide"></i>
+				<i class="fa fa-angle-right right_arr jsRightSlide"></i>
+				<div class="col-md-5">
+					<h1 class="name_company jsTitle"></h1>
+					<p class="content_txt jsDescription"></p>
+					<a href="#" class="bt_transparent btn-block jsDealerLink">Visit dealer</a>
+				</div>
+				<picture class="col-md-4 box_img">
+					<source srcset="images/book-image.jpg, images/2x/book-image.jpg 2x" class="jsBookImg">
+					<img src="" alt="" class="img-responsive">
+				</picture>
+				<div class="col-md-3">
+					<p class="help_txt">Featured listing</p>
+					<h2 class="book_name jsBookName"></h2>
+					<p class="box_price">
+						<span class="price jsBookPrice"></span>
+						<a href="" class="jsListingLink">View Listing</a>
+					</p>
+					<div class="wrapp_recent">
+						<p class="help_txt">More Recent Highlights</p>
+						<ul class="recent_listings jsRecentList list-unstyled"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- </div> -->
+
+
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<!-- left mobile nav -->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!-- END left mobile nav -->
+	<!-- <script src="js/grid.js"></script> -->
+	<script src="js/script.js"></script>
+	<script>
+			// var thisData = $(this).data();
+			// $.each( thisData, function( key, value ) {
+			// });
+			function updateDataModal () {
+				$('.jsDealerModal .jsTitle').html($('.jsDealerOpened').data('title'));
+				$('.jsDealerModal .jsDescription').html($('.jsDealerOpened').data('description'));
+				$('.jsDealerModal .jsDealerLink').attr('href', $('.jsDealerOpened').data('dealerlink'));
+				$('.jsDealerModal .jsBookImg').attr('srcset', $('.jsDealerOpened').data('largesrc'));
+				$('.jsDealerModal .jsBookName').html($('.jsDealerOpened').data('bookname'));
+				$('.jsDealerModal .jsBookPrice').html($('.jsDealerOpened').data('bookprice'));
+				$('.jsDealerModal .jsListingLink').attr('href', $('.jsDealerOpened').data('listinglink'));
+				$('.jsDealerModal .jsRecentList').html($('.jsDealerOpened').data('recentlist'));
+				$('.jsRecentItem').on( 'click', function() {
+					$(' .jsBookImg ' ).attr( 'srcset',$('.jsDealerOpened').data('largesrc'));
+					$(' .jsBookName ' ).html($('.jsDealerOpened').data('bookname'));
+				})
+				var prevSelector = $('.jsDealerOpened').closest('.wrapp_lead_dealer').prev().find('.lead_dealer');
+				if (!prevSelector.hasClass('lead_dealer')) {
+					$('.jsLeftSlide').addClass('hide');
+				} else{
+					$('.jsLeftSlide').removeClass('hide');
+				};
+				var nextSelector = $('.jsDealerOpened').closest('.wrapp_lead_dealer').next().find('.lead_dealer');
+				if (!nextSelector.hasClass('lead_dealer')) {
+					$('.jsRightSlide').addClass('hide');
+				} else{
+					$('.jsRightSlide').removeClass('hide');
+				};
+			}
+
+
+		$('.lead_dealer').on( 'click', function() {
+			$(this).addClass('jsDealerOpened');
+			$('.jsDealerModal').modal('show');
+			updateDataModal ();
+		})
+
+		$('.jsDealerModal').on('hide.bs.modal', function () {
+			$('.lead_dealer').removeClass('jsDealerOpened');
+		});
+		$('.jsDealerModal').on('hidden.bs.modal', function () {
+			$('.jsDealerModal .jsTitle, .jsDealerModal .jsDescription, .jsDealerModal .jsBookName, .jsDealerModal .jsBookPrice, .jsDealerModal .jsRecentList').html('');
+			$('.jsDealerModal .jsDealerLink, .jsDealerModal .jsListingLink').attr('href', '');
+			$('.jsDealerModal .jsBookImg').attr('srcset', '');
+		})
+
+		$('.jsLeftSlide').on( 'click', function() {
+			var prevSelector = $('.jsDealerOpened').closest('.wrapp_lead_dealer').prev().find('.lead_dealer');
+			$('.lead_dealer').removeClass('jsDealerOpened');
+			$(prevSelector).addClass('jsDealerOpened');
+			updateDataModal ();
+		})
+		$('.jsRightSlide').on( 'click', function() {
+			var nextSelector = $('.jsDealerOpened').closest('.wrapp_lead_dealer').next().find('.lead_dealer');
+			$('.lead_dealer').removeClass('jsDealerOpened');
+			$(nextSelector).addClass('jsDealerOpened');
+			updateDataModal ();
+		})
+	</script>
+	<!-- <script>$(function() {Grid.init();});</script> -->
+</body>
+</html>

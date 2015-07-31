@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {.sign_in_modal .modal-dialog {max-width: 462px;}}
+.sign_in_modal .modal-content {
+	background-color: #f8f8f8;
+	border-radius: 0;
+	color: #000;
+	text-align: center;
+}
+.sign_in_modal .modal-header {
+	border-bottom: 1px solid #b7b7b7;
+	margin: 0 30px;
+}
+.sign_in_modal .modal-body {padding: 3px 65px 13px;}
+@media screen and (max-width: 500px) {.sign_in_modal .modal-body {padding: 3px 35px 13px;}}
+@media screen and (max-width: 380px) {.sign_in_modal .modal-body {padding: 3px 20px 13px;}}
+.sign_in_modal .modal-header .close {
+	color: #7b7b7b;
+	font-size: 27.32px;
+	position: absolute;
+	right: 13px;
+	top: 9px;
+}
+.sign_in_modal .modal-header .close:hover {opacity: 0.7;}
+.sign_in_modal .modal-header .logo {
+	margin: 0 auto -4px;
+	padding: 9.5px 20px 0;
+	max-width: 237px;
+}
+.sign_in_modal .main_h1 {
+	font: 21px/29px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: 0.01em;
+	margin-bottom: 23px;
+}
+.sign_in_modal .form_signup_modal .form-group {margin-bottom: 8.5px;}
+.sign_in_modal .form_signup_modal .form-control {
+	background-color: #ebebeb;
+	border-color: #ebebeb;
+	font-size: 15px;
+	height: 33px;
+}
+.sign_in_modal .form_signup_modal .form-control:focus {
+	background-color: #fff;
+	box-shadow: none;
+}
+.sign_in_modal .form_signup_modal .btn_submit {
+	background-color: #040d6e;
+	border-color: #040d6e;
+	font: 15px/1.75em 'proxima_novaregular';
+	margin-top: 20px;
+}
+.sign_in_modal .form_signup_modal .btn_submit:hover {opacity: 0.5;}
+.sign_in_modal .already_member {
+	font: 13.655px/26.55px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	margin: 20px 0;
+}
+.sign_in_modal .already_member a {text-decoration: underline;}
+.sign_in_modal .already_member a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}

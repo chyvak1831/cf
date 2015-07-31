@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Listing form</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,300,600' rel='stylesheet'>
+	<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/dropzone.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/listing_form_style.css">
+	<script src="js/picturefill.min.js"></script>
+</head>
+<body>
+	<header class="main_header sticky_header">
+		<div class="container custom_padding">
+				<a href="#" class="logo logo_scroll pull-left hide">
+					<span>CF</span>
+				</a>
+				<div class="top_box">
+					<a href="#" class="logo pull-left">
+						<span class="hidden-xs"><img class="img-responsive" src="images/mar23-cf-logo.png" alt="Logo"></span>
+						<span class="visible-xs-block">CF</span>
+					</a>
+					<ul class="top_right_block nav navbar-nav navbar-right">
+						<li>
+							<a class="color_blue text-uppercase fw_semibold" href="#">Log in</a>
+						</li>
+						<li>
+							<a class="color_blue text-uppercase fw_semibold" href="#">Sign up</a>
+						</li>
+					</ul>
+					<form action="" class="search_form">
+						<div class="box_icon_in_input">
+							<input type="text" class="form-control">
+							<button type='submit' class="icon fa fa-search"></button>
+						</div>
+					</form>
+				</div>
+
+				<nav class="main_nav row" role="navigation" class="row">
+					<!-- Toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle jsBtNav">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nav_box" id="sidr">
+						<ul class="list-inline list_justify text-uppercase pc_nav">
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Literature</a></li>
+							<li class="hide_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+							<li class="dropdown scroll_add_nav">
+								<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">More<span class="color_black caret"></span></a>
+								<ul role="menu" class="dropdown-menu left_arrow">
+									<li><a href="#">History &amp; culture</a></li>
+									<li><a href="#">Sciences</a></li>
+									<li class="show_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+									<li class="show_link_768_991"><a href="#">Classifieds</a></li>
+								</ul>
+							</li>
+							<li class="hide_link"><a href="#">History &amp; culture</a></li>
+							<li class="hide_link"><a href="#">Sciences</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li class="hide_link_768_991"><a href="#">Classifieds</a></li>
+							<li><a href="#">Market Notes</a></li>
+							<li class="helper"></li>
+						</ul>
+						<ul class="mobile_nav list-unstyled visible-xs-block">
+							<li><a href="#" class="empty_link"></a>&nbsp;</li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Literature</a></li>
+							<li><a href="#">Art &amp; photobooks</a></li>
+							<li><a href="#">History &amp; culture</a></li>
+							<li><a href="#">Sciences</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li><a href="#">Classifieds</a></li>
+							<li><a href="#">Market Notes</a></li>
+							<li><a href="#" class="empty_link"></a>&nbsp;</li>
+							<li><a class="fw_normal text-uppercase" href="#">Sign In</a></li>
+							<li><a class="fw_normal text-uppercase" href="#">Join</a></li>
+						</ul>
+					</div>
+				</nav>
+
+		</div>
+	</header>
+
+	<div class="container custom_padding dealer_form_page proxima_novalight">
+		<div class="box_success_create text-right">
+			<h4><i class="icon"></i>Listing Created Successfully</h4>
+			<div class="txt">
+				<p class="txt_author text-uppercase">[Clemens, Samuel]. Twain, Mark</p>
+				<em class="title">Adventures of Huckleberry Finn (Tom Sawyer's Compade)</em>
+				<div class="box_btns">
+					<a href="#" class="color_blue">View</a>
+					<a href="#" class="color_blue">Edit</a>
+				</div>
+			</div>
+			<picture class="created_img">
+				<source srcset="images/book1.jpg, images/2x/book1.jpg 2x">
+				<img src="" alt="" class="img-responsive">
+			</picture>
+		</div>
+		<p class="listing_name_company">Einstein Rare Book Company: <span> Add Listing</span></p>
+		<h1 class="visible-xs-block">Can't do this on mobile</h1>
+		
+		<form class="form-horizontal listing_form col-md-10 col-md-offset-1 hidden-xs">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Listing Headline</label>
+					<div class="col-sm-9 custom_paddingL">
+						<input type="text" class="md form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Author</label>
+					<div class="col-sm-9 custom_paddingL">
+						<input type="text" class="md form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Title</label>
+					<div class="col-sm-9 custom_paddingL">
+						<input type="text" class="md form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">KEYWORDS</label>
+					<div class="col-sm-9 custom_paddingL">
+						<input type="text" class="md form-control">
+						<p class="help-block">Separate keywords with commas</p>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Place Published</label>
+					<div class="col-sm-9 custom_paddingL">
+						<input type="text" class="md form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Publisher</label>
+					<div class="col-sm-9 custom_paddingL">
+						<input type="text" class="md form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Date Published</label>
+					<div class="col-sm-2 custom_paddingL">
+						<input type="text" class="md form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">EDITION</label>
+					<div class="col-sm-2 custom_paddingL">
+						<select class="md form-control" name="" id="">
+							<option value="">Select</option>
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Signed Or Inscribed</label>
+					<div class="col-sm-9">
+						<ul class="radio_list custom_checkbox list-inline">
+							<li class="checkbox">
+								<label><input name="inscribed" class="jsSubcatgYes" type="radio"><i class="check"></i>Yes</label>
+								<ul class="signed_dropdown jsSigned custom_checkbox list-inline">
+									<li class="checkbox">
+										<label><input name="signed" type="radio"><i class="check"></i>Signed by the author</label>
+									</li>
+									<li class="checkbox">
+										<label><input name="signed" type="radio"><i class="check"></i>Inscribed by the author</label>
+									</li>
+									<li class="checkbox">
+										<label><input name="signed" type="radio"><i class="check"></i>Signed by the author/illustrator</label>
+									</li>
+									<li class="checkbox">
+										<label><input name="signed" type="radio"><i class="check"></i>Inscribed by the author/illustrator</label>
+									</li>
+								</ul>
+							</li>
+							<li class="checkbox">
+								<label><input name="inscribed" class="jsSubcatgNo" checked type="radio"><i class="check"></i>No</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="form-group description_company">
+					<label class="col-sm-3 control-label">Description</label>
+					<div class="col-sm-9 custom_paddingL">
+						<textarea maxlength="4000" class="form-control" name="" id=""></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Price (USD)</label>
+					<div class="col-sm-3 custom_paddingL">
+						<input type="text" class="md form-control" placeholder="$">
+					</div>
+				</div>
+				<div class="form-group category_wrapper">
+					<label class="col-sm-3 control-label">SELECT Category</label>
+					<div class="col-sm-9 custom_paddingL category_checkboxes">
+						
+						<div class="col-sm-4">
+							<ul class="custom_checkbox list-unstyled">
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Science</label>
+								</li>
+								<li class="checkbox">
+									<label data-toggle="collapse" data-target="#collapse01"><input type="checkbox"><i class="check"></i>Literature</label>
+									<ul id="collapse01" class="list-unstyled collapse">
+										<li class="subcateg_checklist">
+											<ul class="custom_checkbox list-unstyled">
+												<li class="checkbox">
+													<label><input type="checkbox"><i class="check"></i>Subcategory 1</label>
+												</li>
+												<li class="checkbox">
+													<label><input type="checkbox"><i class="check"></i>Subcategory 2</label>
+												</li>
+												<li class="checkbox">
+													<label><input type="checkbox"><i class="check"></i>Subcategory 3</label>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>American Literautre</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>English Literature</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>World Literature</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Poetry</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Drama</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="custom_checkbox list-unstyled">
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Science</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>American Literautre</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>English Literature</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>World Literature</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Poetry</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Drama</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="custom_checkbox list-unstyled">
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Americana</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>American Literautre</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>English Literature</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>World Literature</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Poetry</label>
+								</li>
+								<li class="checkbox">
+									<label><input type="checkbox"><i class="check"></i>Drama</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label margTopSmall">Upload UP to 4 Images</label>
+					<div class="col-sm-9">
+						<div class="clearfix dropzone" name="">
+							<div class="dz-message">Drop files here or click to upload (maximum 5 files).</div>
+							<div id="previews"></div>
+						</div>
+					</div>
+				</div>
+
+			<div class="form-group">
+				<div class="col-sm-offset-3 col-sm-9 custom_paddingL">
+					<button class="btn_submit btn btn-primary-gradient btn-md btn-block" type="button">Save &amp; Continue</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/dropzone.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<!-- left mobile nav -->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!-- END left mobile nav -->
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function(){
+			new Dropzone(document.body, { // Make the whole body a dropzone
+				url: "/", // Set the url
+				previewsContainer: "#previews", // Define the container to display the previews
+				clickable: ".dropzone", // Define the element that should be used as click trigger to select files.
+				maxFiles: 5
+			});
+
+			$('.jsSubcatgYes, .jsSubcatgNo').change(function(){
+				if ($('.jsSubcatgYes').is(':checked')) {
+					$('.jsSigned').slideDown();
+					console.log('jsSubcatgYes')
+				}
+				else if ($('.jsSubcatgNo').is(':checked')) {
+					$('.jsSigned').slideUp();
+					console.log('NO')
+				}
+			})
+			/*var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+				url: "/target-url", // Set the url
+				thumbnailWidth: 80,
+				thumbnailHeight: 80,
+				parallelUploads: 20,
+				previewTemplate: previewTemplate,
+				previewsContainer: "#previews", // Define the container to display the previews
+				clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+			});*/
+		});
+	</script>
+</body>
+</html>

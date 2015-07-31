@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Dealer page</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,300,600' rel='stylesheet'>
+	<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dealer_style.css">
+	<script src="js/picturefill.min.js"></script>
+</head>
+<body>
+	<div class="modal-backdrop-preloader loading">
+		<div class="animation container-preloader">
+			<div class="content preloader">
+				<div class="circle"></div>
+				<div class="circle1"></div>
+			</div>
+		</div>
+	</div>
+
+	<header class="main_header sticky_header">
+		<div class="container custom_padding">
+			<a href="#" class="logo logo_scroll pull-left hide">
+				<span>CF</span>
+			</a>
+			<div class="top_box">
+				<a href="#" class="logo pull-left">
+					<span class="hidden-xs"><img class="img-responsive" src="images/mar23-cf-logo.png" alt="Logo"></span>
+					<span class="visible-xs-block">CF</span>
+				</a>
+				<ul class="top_right_block nav navbar-nav navbar-right">
+					<li>
+						<a class="color_blue text-uppercase fw_semibold" href="#">Log in</a>
+					</li>
+					<li>
+						<a class="color_blue text-uppercase fw_semibold" href="#">Sign up</a>
+					</li>
+				</ul>
+				<form action="post" class="search_form">
+					<div class="box_icon_in_input">
+						<input type="text" class="form-control">
+						<button type='submit' class="icon fa fa-search"></button>
+					</div>
+				</form>
+			</div>
+
+			<nav class="main_nav row" role="navigation">
+				<!-- Toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle jsBtNav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="nav_box" id="sidr" style="display: none">
+					<ul class="list-inline list_justify text-uppercase pc_nav">
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Literature</a></li>
+						<li class="hide_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+						<li class="dropdown scroll_add_nav">
+							<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">More<span class="color_black caret"></span></a>
+							<ul role="menu" class="dropdown-menu left_arrow">
+								<li><a href="#">History &amp; culture</a></li>
+								<li><a href="#">Sciences</a></li>
+								<li class="show_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+								<li class="show_link_768_991"><a href="#">Classifieds</a></li>
+							</ul>
+						</li>
+						<li class="hide_link"><a href="#">History &amp; culture</a></li>
+						<li class="hide_link"><a href="#">Sciences</a></li>
+						<li><a href="#">Catalogues</a></li>
+						<li class="hide_link_768_991"><a href="#">Classifieds</a></li>
+						<li><a href="#">Market Notes</a></li>
+						<li class="helper"></li>
+					</ul>
+					<ul class="mobile_nav list-unstyled visible-xs-block">
+						<li><a href="#" class="empty_link"></a>&nbsp;</li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Literature</a></li>
+						<li><a href="#">Art &amp; photobooks</a></li>
+						<li><a href="#">History &amp; culture</a></li>
+						<li><a href="#">Sciences</a></li>
+						<li><a href="#">Catalogues</a></li>
+						<li><a href="#">Classifieds</a></li>
+						<li><a href="#">Market Notes</a></li>
+						<li><a href="#" class="empty_link"></a>&nbsp;</li>
+						<li><a class="fw_normal text-uppercase" href="#">Sign In</a></li>
+						<li><a class="fw_normal text-uppercase" href="#">Join</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container custom_padding proxima_novalight">
+		<section class="box_top_dealer hidden-xs">
+			<ol class="breadcrumb">
+				<li><a href="#">CollectorsFolio</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Einstein Rare Books</a></li>
+				<li class="active">All Listings</li>
+			</ol>
+			<div class="top_dealer_info">
+				<picture class="top_dealer_info">
+					<source srcset="images/dealer_big.jpg, images/2x/dealer_big.jpg 2x">
+					<img src="" alt="" class="img-responsive">
+				</picture>
+				<div class="bottom_info">
+					<picture class="author_photo">
+						<source srcset="images/author_photo.jpg, images/2x/author_photo.jpg 2x">
+						<img src="" alt="" class="img-responsive">
+					</picture>
+					<div class="bottom_panel clearfix">
+						<ul class="pull-left list-inline">
+							<li><span class="name_author">Albert Einstein, Manager</span></li>
+							<li><a href="#"><i class="fa fa-envelope-o"></i> Direct Message</a></li>
+						</ul>
+						<ul class="right_nav pull-right list-inline">
+							<li><a href="ajax_dealer_about.php" data-target="#dealer_about" class="jsAjaxBt jsAboutBt jsMapReload">About Us&nbsp;&nbsp;&nbsp;|</a></li>
+							<li><a href="#">Our Guarantee</a></li>
+						</ul>
+					</div>
+				</div><!-- bottom_info -->
+			</div><!-- top_dealer_info -->
+		</section>
+
+		<div class="row jsTopScrollEl">
+			<h1 class="author_name_shop col-md-9 col-sm-8"><span class="content_name_txt">Einstein Rare Books</span><span class="author_help">New York, NY</span><span class="author_help">ABAA ILAB</span></h1>
+			<ul class="dealer_about_our visible-xs-block list-inline">
+				<li><a href="#" class="jsAboutMobileBt">About Us&nbsp;&nbsp;&nbsp;|</a></li>
+				<li><a href="#">Our Guarantee</a></li>
+			</ul>
+		</div><!-- jsTopScrollEl - main title -->
+
+		<div class="row">
+			<aside class="literature_nav col-md-3 col-sm-4 jsScrollTop">
+				<div class="box_aside_item browse_section jsListingBtPC">
+					<div class="hidden-xs">
+						<span class="title_section">Browse</span>
+						<span class="big_title" data-target="#dealerScienceCatg" data-toggle="collapse" aria-expanded="true">Science <i class="fa fa-angle-down"></i></span>
+					</div>
+					<a href="#" class="jsMobileListing mobile_title_collapse visible-xs-block" data-target="#dealerAllListings">Listings <i class="fa fa-angle-down"></i></a>
+					<div class="dropdown dropdown_mobile mobile_category_dealer">
+						<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle visible-xs-block" href="#"><span class="jsSelectValue">All</span> <span class="caret"></span></a>
+						<div class="dropdown-menu drop_nav jsDropdownToggle">
+							<div class="collapse listing_collapse in" id="dealerScienceCatg">
+								<ul class="list_in_nav_left list-unstyled">
+									<li class="active"><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt jsAllBt">All</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">Physics</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">Astrophysics</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">Quantum Physics</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">Biophysics</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">PMM</a></li>
+								</ul>
+							</div>
+							<span class="big_title hidden-xs" data-target="#dealerLit" data-toggle="collapse" aria-expanded="false">Literature <i class="fa fa-angle-down"></i></span>
+							<div class="collapse listing_collapse" id="dealerLit">
+								<ul class="list_in_nav_left list-unstyled">
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">English Literature</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">American Literature</a></li>
+									<li><a href="ajax_dealer_listing.php" data-target="#dealerAllListings" class="jsAjaxBt">Poery</a></li>
+								</ul>
+							</div>
+						</div><!-- jsDropdownToggle -->
+					</div><!-- mobile_category_dealer -->
+				</div><!-- box_aside_item browse_section -->
+
+				<div class="box_aside_item extra_wrapp_list hidden-xs">
+					<span class="title_section">Catalogues</span>
+					<ul class="list-unstyled">
+						<li><a href="ajax_dealer_catalog.php" data-target="#dealerCatalogues" class="jsAjaxBt jsCatalogFirst">Landmark Works in Science and Mathematics</a></li>
+						<li><a href="ajax_dealer_catalog.php" data-target="#dealerCatalogues" class="jsAjaxBt">Landmark Works in Science and Mathematics</a></li>
+						<li><a href="ajax_dealer_catalog.php" data-target="#dealerCatalogues" class="jsAjaxBt">Landmark Works in Science and Mathematics</a></li>
+					</ul>
+				</div>
+
+				<div class="box_aside_item exhibiting hidden-xs">
+					<span class="title_section">Ehxibiting</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+				<div class="dealer_contacts_small hidden-xs">
+					<span class="title_section collapsed" data-toggle="collapse" data-target="#contactCollapse" aria-expanded="false">Contact information <i class="caret"></i></span>
+					<div id="contactCollapse" class="collapse">
+						<a class="phone" href="tel:+12123214545">+1 (212) 321-4545</a>
+						<a href="mailto:info@einsteinrarebooks.com">info@einsteinrarebooks.com</a>
+						<a href="#">www.einsteinrarebooks.com</a>
+					</div>
+				</div>
+			</aside>
+			<!-- literature_nav -->
+
+			<div class="col-md-9 col-sm-8">
+				<div class="tab-content">
+					<a href="#" class="jsMobileCatgBt collapsed mobile_title_collapse visible-xs-block" data-target="#dealerCatalogues">Catalogues <i class="fa fa-angle-down"></i></a>
+					<section class="tab-pane list_view dealer_catalogues" id="dealerCatalogues"><div class="jsAjaxTaget"></div></section>
+					<div class="jsListingBtMobile"></div>
+					<section class="tab-pane active list_view wrapp_dealer_listing jsListGrid" id="dealerAllListings">
+						<ul class="view_sort_filter list-inline text-right">
+							<li class="dropdown">
+								<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="jsSelectValue">Sort by</span> <span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu right_dropdown jsDropdownToggle">
+									<li><a href="#">Most Recent</a></li>
+									<li><a href="#">Most Viewed</a></li>
+									<li><a href="#">Price: High - Low</a></li>
+									<li><a href="#">Price: Low - High</a></li>
+									<li><a href="#">Author: A - Z</a></li>
+									<li><a href="#">Author: Z - A</a></li>
+									<li><a href="#">Date: High - Low</a></li>
+									<li><a href="#">Date: Low - High</a></li>
+								</ul>
+							</li>
+							<li class="list_grid_bt">
+								<i class="jsListBt active bt list_bt">
+									<i class="el"></i>
+									<i class="el"></i>
+									<i class="el"></i>
+								</i>
+								<i class="jsGridBt bt grid_bt">
+									<i class="el"></i>
+									<i class="el"></i>
+								</i>
+							</li>
+						</ul><!-- view_sort_filter -->
+						<div class="jsAjaxTaget wrapp_listing_content row"></div>
+					</section>
+					<section class="tab-pane author_about_us" id="dealer_about"><div class="jsAjaxTaget"></div></section>
+				</div><!-- tab-content -->
+			</div><!-- col-md-9 col-sm-8 -->
+
+			<div class="col-xs-12 visible-xs-block">
+				<span class="mobile_title_collapse collapsed" data-toggle="collapse" data-target="#exibitingCollapseMob">Exibiting <i class="fa fa-angle-down"></i></span>
+				<div id="exibitingCollapseMob" class="collapse">
+					<div class="mobile_collapse_content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+				<span class="mobile_title_collapse collapsed" data-toggle="collapse" data-target="#contactCollapseMob">Contact information <i class="fa fa-angle-down"></i></span>
+				<div id="contactCollapseMob" class="collapse">
+					<ul class="mobile_collapse_content list-unstyled">
+						<li><a class="phone" href="tel:+12123214545">+1 (212) 321-4545</a></li>
+						<li><a href="mailto:info@einsteinrarebooks.com">info@einsteinrarebooks.com</a></li>
+						<li><a href="#">www.einsteinrarebooks.com</a></li>
+					</ul>
+				</div>
+			</div><!-- mobile contact and exibiting -->
+		</div><!-- row -->
+	</div><!-- custom_padding -->
+
+	<!-- book_modal -->
+	<div class="modal_book fade modal jsModalQueickView" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<div class="row">
+					<div class="paddingL0 text-center col-sm-5">
+						<picture class="book_image">
+							<source class="jsBookImg" srcset="images/modal_book.jpg, images/2x/modal_book.jpg 2x">
+							<img src="" alt="" class="img-responsive">
+						</picture>
+						<div class="offered_box">
+							<span class="offered">OFFERED BY</span><br>
+							<a class="author color_blue" href="#">EINSTEIN RARE BOOKS</a>
+						</div>
+						<span class="savebox color_blue jsSave"></span>
+					</div>
+					<article class="paddingL0 col-sm-7">
+						<header class="header_book">
+							<h1 class="jsTitle">Good book</h1>
+							<h2 class="jsSomeTxt">Interesting book</h2>
+							<p class="where_wrote jsWhereWrote"></p>
+						</header>
+						<div class="book_describe wrapper scroll_wrapper">
+							<div class="inner_book_describe scroller jsContentTxt"></div>
+							<div class="scroller_bar_wrapper">
+								<div class="scroller_bar"></div>
+							</div>
+						</div>
+						<footer class="footer_book clearfix">
+							<span class="pull-left jsPrice"></span>
+							<a href="#" class="full_listing pull-right">View Full Listing</a>
+						</footer>
+					</article>
+				</div><!-- row -->
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog -->
+	</div><!-- modal -->
+	<!-- END book_modal -->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUdGmG2UEnlQ4GPmYakg7C2BHVX3WCsbM&amp;sensor=false"></script> -->
+	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<!-- left mobile nav -->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!-- END left mobile nav -->
+	<!-- custom scrollbar -->
+	<script src="js/baron.js"></script>
+	<!-- END custom scrollbar -->
+	<script src="js/script.js"></script>
+
+	<!--script>
+		/* ==============================================
+		Google Map
+		=============================================== */  
+		if ($('#map').length > 0){
+			// When the window has finished loading create our google map below
+
+			google.maps.event.addDomListener(window, 'load', function () {
+				initGoogleMap('light');
+			});
+
+			/* ==============================================
+			Slap Text for Typography
+			=============================================== */  
+			/*greyscale map*/
+			// When the window has finished loading create our google map below
+			//google.maps.event.addDomListener(window, 'load', init);
+			function initGoogleMap(styleMap) {
+				var styles = '';
+				if (styleMap=='dark') {
+					styles = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]}];
+				};
+				if (styleMap=='light') {
+					styles = [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}];
+				};
+				// Basic options for a simple Google Map
+				// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+				var mapOptions = {
+					// How zoomed in you want the map to start at (always required)
+					zoom: 11,
+					// The latitude and longitude to center the map (always required)
+					center: new google.maps.LatLng(40.6700, -73.9400), // New York
+					// How you would like to style the map. 
+					// This is where you would paste any style found on Snazzy Maps.
+					styles: styles
+				};
+				// Get the HTML DOM element that will contain your map 
+				// We are using a div with id="map" seen below in the <body>
+				var mapElement = document.getElementById('map');
+				// Create the Google Map using out element and options defined above
+				var map = new google.maps.Map(mapElement, mapOptions);
+			}
+		}
+
+		$('.jsMapReload').on('shown.bs.tab', function (e) {
+			console.log('asdf');
+			initGoogleMap('light');
+		})
+		/*END Google Map*/
+	</script-->
+</body>
+</html>

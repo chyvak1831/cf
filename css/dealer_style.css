@@ -1,0 +1,246 @@
+/* DEALER PAGE */
+/* top large block */
+.top_dealer_info {
+	display: block;
+	position: relative;
+}
+.top_dealer_info picture {display: block;}
+.top_dealer_info .bottom_info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.top_dealer_info .author_photo {
+	background-color: #fff;
+	border: 1px solid #edeceb;
+	box-shadow: 0 4px 10px 8px rgba(0, 0, 0, 0.35);
+	float: left;
+	max-height: 120px;
+	margin: 0 15px 15px;
+	padding: 2px;
+	max-width: 120px;
+}
+.top_dealer_info .bottom_panel {
+	background-color: rgba(0, 0, 0, 0.74);
+	clear: both;
+	color: #fff;
+	font-size: 12px;
+	padding: 7px 12px 6px;
+}
+.top_dealer_info .bottom_panel ul {margin: 0 9px 0 0;}
+.top_dealer_info .bottom_panel .name_author {
+	letter-spacing: 0;
+	margin-right: 20px;
+}
+.top_dealer_info .bottom_panel .right_nav li {padding-right: 1px;}
+/* END top large block */
+
+
+
+/*mainh1*/
+.author_name_shop {
+	font: 49px "ACaslonProRegular","Times New Roman","Times";
+	margin: 23px 0 23px -3px;
+}
+.author_help {
+	color: #666;
+	display: inline-block;
+	font: 11px "proxima_novalight";
+	margin-left: 37px;
+	text-transform: uppercase;
+}
+@media (max-width: 991px) {
+	.author_name_shop {font-size: 35px;}
+	.author_help {margin-left: 15px;}
+}
+@media (max-width: 767px) {
+	.author_name_shop {
+		margin: 20px 0 4px;
+		text-align: center;
+	}
+	.author_name_shop .content_name_txt {display: block;margin-bottom: -16px;}
+	.author_help {margin: 0 10px;}
+}
+.dealer_about_our {
+	border-bottom: 1px solid #bdbdbd;
+	border-top: 1px solid #bdbdbd;
+	margin: 0 15px;
+	padding: 4px 0 3px;
+	text-align: center;
+}
+.dealer_about_our li {padding-right: 1px;}
+.dealer_about_our a {
+	color: #0e1886;
+	white-space: nowrap;
+}
+.dealer_about_our a:hover {opacity: 0.5;}
+/*END mainh1*/
+
+
+
+/* left nav */
+.literature_nav {color: #5a5a5a;}
+.literature_nav a:hover, .literature_nav .active a {color: #0e1886;}
+.literature_nav .title_section {
+	color: #000;
+	display: block;
+	font: 9px 'proxima_novasemibold', 'Open Sans', sans-serif;
+	letter-spacing: 0.07em;
+	padding-bottom: 7px;
+	text-transform: uppercase;
+}
+.literature_nav .big_title {
+	color: #000;
+	display: block;
+	font: 18px 'proxima_novaregular';
+	margin-bottom: 3px;
+}
+.literature_nav .big_title.active {color: #0e1886;}
+.literature_nav .extra_wrapp_list a {
+	display: inline-block;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.6em;
+	margin-bottom: 9px;
+}
+.literature_nav .exhibiting p {font-size: 14px; line-height: 1.5em;}
+.literature_nav .dealer_contacts_small [aria-expanded="true"] .caret {border-top: none; border-bottom: 4px dashed;}
+.literature_nav .dealer_contacts_small a {
+	color: #0e1886;
+	display: block;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	line-height: 1.45em;
+}
+.literature_nav .dealer_contacts_small a:hover {opacity: 0.5;}
+.literature_nav .dealer_contacts_small .phone {color: #666 !important;}
+.literature_nav .browse_section .big_title[aria-expanded="false"] .fa {display: none;}
+.literature_nav .browse_section {
+	font-size: 15px;
+	line-height: 1.6em;
+}
+
+
+
+
+@media (min-width: 768px) {
+	.literature_nav {padding-right: 57px;}
+	.literature_nav a:hover, .literature_nav .active a {font-family: 'proxima_novaregular';}
+	.box_aside_item {margin-bottom: 43px;}
+	.list_in_nav_left {padding: 0 0 20px 10px;}
+	.mobile_category_dealer {display: block !important;}
+}
+@media (max-width: 767px) {
+	.mobile_category_dealer {float: left;margin: 19px 5px 0 3px;}
+	.mobile_category_dealer .listing_collapse {display: block !important;height: auto !important;}
+	.mobile_category_dealer [data-toggle="dropdown"] {
+		color: #000 !important;
+		display: block;
+		font: 14px 'ACaslonProRegular', 'Times New Roman', 'Times';
+		position: relative;
+		z-index: 3;
+	}
+	.mobile_category_dealer .drop_nav a {
+		display: block;
+		padding: 3px 20px;
+		clear: both;
+		font-weight: 400;
+		line-height: 1.42857143;
+		color: #333;
+		white-space: nowrap;
+	}
+	.mobile_category_dealer .drop_nav a:hover {background-color: #f5f5f5;color: #0e1886;}
+
+	.mobile_title_collapse .fa-angle-down, .mobile_title_collapse .fa-angle-right {float: right;}
+	.mobile_title_collapse.collapsed .fa-angle-down::before {content: "\f105";}
+	.mobile_title_collapse, .mobile_collapse_content {background-color: #0e1886;}
+	.mobile_collapse_content {color: #fff !important;padding: 5px 25px 10px;}
+	.mobile_collapse_content a {color: #fff !important;line-height: 24px; margin: 3px 0;}
+	.mobile_title_collapse {
+		color: #fff !important;
+		display: block;
+		font: 11px proxima_novalight !important;
+		letter-spacing: 0.1em;
+		margin: 7px 0 0 !important;
+		padding: 12px 12px 11px 14px;
+		text-transform: uppercase;
+	}
+}
+/* END left nav */
+
+
+
+/*listing*/
+.wrapp_dealer_listing .wrapp_listing_content {clear: both;}
+.wrapp_dealer_listing .view_sort_filter {
+	float: right;
+	margin: -55px 0 0 0;
+	position: relative;
+	z-index: 3;
+}
+@media (max-width: 991px) {.wrapp_dealer_listing .view_sort_filter {margin-top: -50px;}}
+@media (max-width: 767px) {.wrapp_dealer_listing .view_sort_filter {margin-top: 16px;}}
+/*END listing*/
+
+
+
+/* about us */
+.author_about_us {
+	color: #666;
+	font-size: 15px;
+	letter-spacing: 0.04em;
+	line-height: 21px;
+}
+.author_about_us .title {
+	color: #000;
+	font: 22px "proxima_novaregular";
+	margin: 10px 0 26px;
+}
+.author_about_us .contacts_txt {margin-bottom: 36px;}
+/* .box_author_map .map {
+	height: 364px;
+	width: 100%;
+} */
+@media (min-width: 768px) {.author_about_us {margin-right: 15%;}}
+@media (max-width: 767px) {.box_author_map {margin: 0 -15px;}}
+/* END about us */
+
+
+
+
+
+
+
+/*dealer without image*/
+.dealer_no_img .content_name_txt {
+	display: block;
+	margin-bottom: -0.5em;
+}
+.dealer_no_img .name_author {margin-right: 13px;}
+@media (min-width: 768px) {
+	.dealer_no_img .dealer_about_our {
+		border: none;
+		text-align: left;
+	}
+	.dealer_no_img .author_name_shop {margin-bottom: 0;}
+	.dealer_no_img .author_help {
+		font-size: 14px;
+		margin: 0 37px 0 3px;
+	}
+	.dealer_no_img .literature_nav {padding-top: 44px;}
+	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: 47px 5px 40px 0;}
+}
+@media (min-width: 992px) {
+	.dealer_no_img .dealer_about_our {
+		margin: 36px 0 0;
+		padding: 4px 15px 3px;
+		text-align: right;
+	}
+	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: -9px 5px 40px 0;}
+}
+@media (max-width: 767px) {
+	.dealer_no_img .left_part {margin-top: 0;text-align: left;}
+}
+/*END dealer without image*/
+/* END DEALER PAGE */

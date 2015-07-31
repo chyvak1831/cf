@@ -1,0 +1,74 @@
+.sign_up_step1 .main_h1 {
+	font: 48px "ACaslonProRegular","Times New Roman","Times";
+	letter-spacing: -0.01em;
+	margin: 75px 0 13px;
+}
+.sign_up_step1 .simple_txt {
+	color: #595959;
+	font-size: 17px;
+}
+.sign_up_step1 .create_acc_free {
+	color: #000;
+	font-size: 26px;
+	margin: 44px 0;
+}
+.sign_up_step1 .create_acc_free i {
+	background: url('../images/2x/lock.png') no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	margin: -6px 18px 0 0;
+	padding: 12.5px 9px;
+	vertical-align: middle;
+}
+.sign_up_step1 .help_form_txt {
+	color: #828282;
+	font-size: 11px;
+	margin: auto;
+	max-width: 435px;
+}
+.form_signup_step1 .btn_submit {margin-top: 19px;}
+
+.step1_right_recent {
+	color: #000;
+	margin: 11px 27px 0 auto;
+}
+.step1_right_recent .box_recent_img {border-bottom: 1px solid #b7b7b7;}
+.step1_right_recent .recent_img {
+	display: block;
+	margin: auto;
+	max-width: 325px;
+}
+.step1_right_recent .box_recent_img h3 {
+	font-size: 18px;
+	margin: -16px 0 9px;
+}
+
+.list_recent_members {margin-bottom: 29px;}
+.list_recent_members li {margin: 27px 0 0;}
+.list_recent_members .icon_silhouette {
+	background: url('../images/2x/icon_silhouette.jpg');
+	background-size: 100%;
+	margin-top: 3px;
+	padding: 7px 6px;
+}
+.list_recent_members .txt_member {margin-left: 23px;}
+.list_recent_members .title {font: 18px 'proxima_novaregular';}
+.list_recent_members .txt_interests {
+	font-size: 12px;
+	line-height: 120%;
+}
+.step1_right_recent .bt_prev {
+	display: inline-block;
+	font-size: 13px;
+	letter-spacing: -0.035em;
+	padding: 3px 11px;
+}
+
+@media (min-width: 992px) {
+	.step1_left_box {padding: 0 49px 0 35px;}
+	.step1_right_recent {max-width: 325px;}
+}
+@media (max-width: 991px) {
+	.sign_up_step1 .main_h1 {font-size: 40px; margin: 35px 0 10px;}
+	.step1_right_recent {margin: 10px auto;}
+}

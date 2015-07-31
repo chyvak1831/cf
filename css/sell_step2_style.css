@@ -1,0 +1,62 @@
+/* STEP2 */
+.main_h1_step2 {
+	font: 37px "ACaslonProRegular","Times New Roman","Times";
+	letter-spacing: -0.02em;
+	margin-top: 64px;
+	margin-bottom: 50px;
+}
+.main_h1_step2 .help {
+	color: #929292;
+	font: 300 15px 'Open Sans';
+	letter-spacing: -0.02em;
+	padding-left: 9px;
+	white-space: nowrap;
+}
+.arrow_step {
+	background: url('../images/2x/arrow_step.png');
+	background-size: 100% 100%;
+	display: block;
+	height: 30px;
+	margin-right: 10px;
+	opacity: 0.1;
+	width: 30px;
+}
+.arrow_step:hover {opacity: 0.4;}
+@media screen and (max-width: 767px) {
+	.main_h1_step2 {
+		font-size: 30px;
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
+.box_area_interest {margin-top: 30px;}
+.box_area_interest .control-label {padding-top: 7px !important;}
+.box_area_interest {margin-bottom: -3.5px;}
+
+.form_sell_step2 textarea {
+	background-color: #fbfbfb;
+	color: #888;
+	font-size: 12px;
+	height: 120px;
+}
+.form_sell_step2 .control-label {
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	padding: 0;
+	text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+	.form_sell_step2 .control-label {width: 20%;}
+	.form_sell_step2 .custom_paddingL {
+		padding-left: 30px;
+		width: 80%;
+	}
+	.form_sell_step2 .custom_paddingL.col-sm-offset-2 {margin-left: 20%;}
+}
+.form_sell_step2 .genre_name {font: 16px 'proxima_novaregular';}
+.form_sell_step2 .btn_submit {
+	border-color: #304168;
+	margin-top: 40px;
+}
+/* END STEP2 */

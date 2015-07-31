@@ -1,0 +1,26 @@
+.dealer_form_page .main_h1 {
+	font: 37px "ACaslonProRegular","Times New Roman","Times";
+	margin-top: 65px;
+	margin-bottom: -13px;
+	padding-left: 26px;
+}
+@media (max-width: 767px) {.dealer_form_page .main_h1 { margin: 30px 0 -30px;}}
+.form_dealer .form-group {
+	margin-bottom: 24px;
+}
+.form_dealer .control-label {
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	margin-top: 2px;
+	text-transform: uppercase;
+}
+.form_dealer .form_dealer_title {
+	color: #01189f;
+	font: 17px 'proxima_novaregular';
+	margin: 68px 0 41px;
+	text-transform: uppercase;
+}
+.form_dealer .description_company textarea {height: 150px;}
+.form_dealer .terms_of_sale textarea {height: 91px;}
+.form_dealer .margTopSmall {margin-top: -4px;}

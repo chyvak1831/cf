@@ -1,0 +1,80 @@
+.blog2_main_content {padding: 49px 7px 0 60px;}
+.blog2_main_content a:hover {opacity: 0.5;}
+.blog2_main_content .text_price {
+	color: #03007f;
+	font: 15px/1em 'Libre Baskerville', serif;
+	letter-spacing: 0.02em;
+	padding-left: 33px;
+}
+.blog2_mainh1 {
+	font-size: 32px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.wrapp_quick_links {
+	border: 1px solid #e8e8e8;
+	display: inline-block;
+	margin: 13px 0 17px;
+	padding: 4px 35px 25px 25px;
+}
+.wrapp_quick_links h2 {
+	color: #000;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.wrapp_quick_links .quick_list {margin: 0 0 0 27px;}
+.wrapp_quick_links .quick_list a {
+	color: #7b7b7b;
+	font-size: 13px;
+	letter-spacing: 0.047em;
+	line-height: 21px;
+}
+.wrapp_quick_links .quick_list a::before {
+	content: '\f105';
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	padding-right: 8px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+}
+
+.usual_blog2_article {margin-bottom: 48px;}
+.usual_blog2_article h3 {
+	font: 18px/1.333333333333333em 'proxima_novaregular';
+	letter-spacing: 0.045em;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+.usual_blog2_article .usual_blog2_txt {
+	font-size: 18px;
+	letter-spacing: 0.04em;
+	line-height: 1.333333333333333em;
+}
+.usual_blog2_article .wrapp_blog_imgs .blog2_img {
+	float: left;
+	margin: 0 15px 48px 0;
+}
+
+.usual_blog2_article .others_noteble_titles {
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	line-height: 20px;
+	list-style-position: inside;
+	padding-left: 0;
+}
+
+.blog2_main_content .wrapp_subscribe {margin: 93px 0 50px;}
+
+
+
+/*aside*/
+.blog2_aside {padding: 53px 0 0 37px;}
+.blog2_side_ava {
+	border: 1px solid #ebebeb;
+	display: block;
+	padding: 15px;
+}
+/*END aside*/

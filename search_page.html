@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Search page</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,300,600' rel='stylesheet'>
+	<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/search_style.css">
+	<script src="js/picturefill.min.js"></script>
+</head>
+<body>
+	<header class="main_header sticky_header">
+		<div class="container custom_padding">
+				<a href="#" class="logo logo_scroll pull-left hide">
+					<span>CF</span>
+				</a>
+				<div class="top_box">
+					<a href="#" class="logo pull-left">
+						<span class="hidden-xs"><img class="img-responsive" src="images/mar23-cf-logo.png" alt="Logo"></span>
+						<span class="visible-xs-block">CF</span>
+					</a>
+					<ul class="top_right_block nav navbar-nav navbar-right">
+						<li>
+							<a class="color_blue text-uppercase fw_semibold" href="#">Log in</a>
+						</li>
+						<li>
+							<a class="color_blue text-uppercase fw_semibold" href="#">Sign up</a>
+						</li>
+					</ul>
+					<form action="" class="search_form">
+						<div class="box_icon_in_input">
+							<input type="text" class="form-control">
+							<button type='submit' class="icon fa fa-search"></button>
+						</div>
+					</form>
+				</div>
+
+				<nav class="main_nav row" role="navigation" class="row">
+					<!-- Toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle jsBtNav">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nav_box" id="sidr">
+						<ul class="list-inline list_justify text-uppercase pc_nav">
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Literature</a></li>
+							<li class="hide_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+							<li class="dropdown scroll_add_nav">
+								<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">More<span class="color_black caret"></span></a>
+								<ul role="menu" class="dropdown-menu left_arrow">
+									<li><a href="#">History &amp; culture</a></li>
+									<li><a href="#">Sciences</a></li>
+									<li class="show_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+									<li class="show_link_768_991"><a href="#">Classifieds</a></li>
+								</ul>
+							</li>
+							<li class="hide_link"><a href="#">History &amp; culture</a></li>
+							<li class="hide_link"><a href="#">Sciences</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li class="hide_link_768_991"><a href="#">Classifieds</a></li>
+							<li><a href="#">Market Notes</a></li>
+							<li class="helper"></li>
+						</ul>
+						<ul class="mobile_nav list-unstyled visible-xs-block">
+							<li><a href="#" class="empty_link"></a>&nbsp;</li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Literature</a></li>
+							<li><a href="#">Art &amp; photobooks</a></li>
+							<li><a href="#">History &amp; culture</a></li>
+							<li><a href="#">Sciences</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li><a href="#">Classifieds</a></li>
+							<li><a href="#">Market Notes</a></li>
+							<li><a href="#" class="empty_link"></a>&nbsp;</li>
+							<li><a class="fw_normal text-uppercase" href="#">Sign In</a></li>
+							<li><a class="fw_normal text-uppercase" href="#">Join</a></li>
+						</ul>
+					</div>
+				</nav>
+
+		</div>
+	</header>
+
+	<div class="container custom_padding proxima_novalight">
+
+		<h1 class="src_main_h1">25 results for “<span class="src_words">Einstein</span>”</h1>
+		<ul class="tabs1 list-inline" role="tablist">
+			<li><a href="#srcListings" role="tab" data-toggle="tab">Listings (4)</a></li>
+			<li><a href="#srcCatalogues" role="tab" data-toggle="tab">Catalogues (12)</a></li>
+			<li class="active"><a href="#srcWantListings" role="tab" data-toggle="tab">Want Listings (6)</a></li>
+		</ul>
+
+		<div class="tab-content all_src_content">
+			<!-- search lisings -->
+			<div class="tab-pane" id="srcListings">
+				<div class="box_src_filter">
+					<ul class="view_sort_filter list-inline">
+						<li class="dropdown">
+							<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="jsSelectValue">Select filter</span> <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu jsDropdownToggle">
+								<li><a href="javascript:void">Most Recent</a></li>
+								<li><a href="javascript:void">Most Viewed</a></li>
+								<li><a href="javascript:void">Price: High - Low</a></li>
+								<li><a href="javascript:void">Price: Low - High</a></li>
+								<li><a href="javascript:void">Author: A - Z</a></li>
+								<li><a href="javascript:void">Author: Z - A</a></li>
+								<li><a href="javascript:void">Date: High - Low</a></li>
+								<li><a href="javascript:void">Date: Low - High</a></li>
+							</ul>
+						</li>
+							<li class="list_grid_bt">
+								<i class="jsListBt active bt list_bt">
+									<i class="el"></i>
+									<i class="el"></i>
+									<i class="el"></i>
+								</i>
+								<i class="jsGridBt bt grid_bt">
+									<i class="el"></i>
+									<i class="el"></i>
+								</i>
+							</li>
+					</ul>
+				</div>
+				<div class="col-md-9 col-sm-8">
+					<!-- list_grid -->
+					<div class="jsListGrid row list_view">
+						<article class="col-md-4 col-sm-6 wrapper_product">
+							<div class="box_product_item clearfix">
+								<picture class="product_img">
+									<source srcset="images/book1.jpg, images/2x/book1.jpg 2x">
+									<img src="" alt="" class="img-responsive">
+								</picture>
+								<div class="product_txt">
+									<header>
+										<h1>ONO, YOKO</h1>
+										<p class="category">Grapefruit</p>
+										<p class="where_wroten">Tokyo: Wunternaum Press, 1964.</p>
+										<a href="#" class="savebox color_blue"><i class="fa fa-star-o"></i> Save</a>
+									</header>
+									<p class="describe_txt">The correct First Edition, published in Japan by Yoko's own imprint. Small square octavo. Limited to 500 copies. SIGNED by Yoko and dated Limited to 500 copies. SIGNED by Yoko and dated. SIGNED by Yoko and dated Limited to 500 copies...</p>
+									<footer class="clearfix">
+										<span class="price">$25,000</span>
+										<p class="offered_by">OFFERED BY <a href="#" class="color_blue">EINSTEIN RARE BOOKS</a></p>
+									</footer>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-4 col-sm-6 wrapper_product">
+							<div class="box_product_item clearfix">
+								<picture class="product_img">
+									<source srcset="images/book2.jpg, images/2x/book2.jpg 2x">
+									<img src="" alt="" class="img-responsive">
+								</picture>
+								<div class="product_txt">
+									<header>
+										<h1>ONO, YOKO</h1>
+										<p class="category">Grapefruit</p>
+										<p class="where_wroten">Tokyo: Wunternaum Press, 1964.</p>
+										<a href="#" class="savebox color_blue"><i class="fa fa-star-o"></i> Save</a>
+									</header>
+									<p class="describe_txt">The correct First Edition, published in Japan by Yoko's own imprint. Small square octavo. Limited to 500 copies. SIGNED by Yoko and dated Limited to 500 copies. SIGNED by Yoko and dated. SIGNED by Yoko and dated Limited to 500 copies...</p>
+									<footer class="clearfix">
+										<span class="price">$25,000</span>
+										<p class="offered_by">OFFERED BY <a href="#" class="color_blue">EINSTEIN RARE BOOKS</a></p>
+									</footer>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-4 col-sm-6 wrapper_product">
+							<div class="box_product_item clearfix">
+								<picture class="product_img">
+									<source srcset="images/book1.jpg, images/2x/book1.jpg 2x">
+									<img src="" alt="" class="img-responsive">
+								</picture>
+								<div class="product_txt">
+									<header>
+										<h1>ONO, YOKO</h1>
+										<p class="category">Grapefruit</p>
+										<p class="where_wroten">Tokyo: Wunternaum Press, 1964.</p>
+										<a href="#" class="savebox color_blue"><i class="fa fa-star-o"></i> Save</a>
+									</header>
+									<p class="describe_txt">The correct First Edition, published in Japan by Yoko's own imprint. Small square octavo. Limited to 500 copies. SIGNED by Yoko and dated Limited to 500 copies. SIGNED by Yoko and dated. SIGNED by Yoko and dated Limited to 500 copies...</p>
+									<footer class="clearfix">
+										<span class="price">$25,000</span>
+										<p class="offered_by">OFFERED BY <a href="#" class="color_blue">EINSTEIN RARE BOOKS</a></p>
+									</footer>
+								</div>
+							</div>
+						</article>
+						<article class="col-md-4 col-sm-6 wrapper_product">
+							<div class="box_product_item clearfix">
+								<picture class="product_img">
+									<source srcset="images/book2.jpg, images/2x/book2.jpg 2x">
+									<img src="" alt="" class="img-responsive">
+								</picture>
+								<div class="product_txt">
+									<header>
+										<h1>ONO, YOKO</h1>
+										<p class="category">Grapefruit</p>
+										<p class="where_wroten">Tokyo: Wunternaum Press, 1964.</p>
+										<a href="#" class="savebox color_blue"><i class="fa fa-star-o"></i> Save</a>
+									</header>
+									<p class="describe_txt">The correct First Edition, published in Japan by Yoko's own imprint. Small square octavo. Limited to 500 copies. SIGNED by Yoko and dated Limited to 500 copies. SIGNED by Yoko and dated. SIGNED by Yoko and dated Limited to 500 copies...</p>
+									<footer class="clearfix">
+										<span class="price">$25,000</span>
+										<p class="offered_by">OFFERED BY <a href="#" class="color_blue">EINSTEIN RARE BOOKS</a></p>
+									</footer>
+								</div>
+							</div>
+						</article>
+					</div>
+					<!-- END list_grid -->
+				</div>
+			</div>
+			<!-- END search lisings -->
+
+			<!-- search catalogues -->
+			<div class="tab-pane" id="srcCatalogues">
+				<div class="box_src_filter">
+					<ul class="view_sort_filter list-inline">
+						<li class="dropdown">
+							<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="jsSelectValue">Select filter</span> <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu jsDropdownToggle">
+								<li><a href="javascript:void">Most Matches</a></li>
+								<li><a href="javascript:void">Most Recent</a></li>
+								<li><a href="javascript:void">Most Viewed</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix">
+					<article class="col-md-6">
+						<div class="box_market_item clearfix">
+							<picture class="market_img pull-left">
+								<source srcset="images/marketplace1.jpg, images/2x/marketplace1.jpg 2x">
+								<img src="" alt="" class="img-responsive">
+								<div class="box_catg_tools">
+									<div class="box_bt">
+										<a href="#" class="bt"><i class="fa fa-share-square-o"></i> View Catalogue</a>
+										<button class="bt"><i class="fa fa-file-text-o"></i> Download PDF</button>
+									</div>
+								</div>
+							</picture>
+							<div class="market_txt">
+								<header>
+									<span class="name_catg">CollectorsFolio</span>
+									<span class="number_catg_date">Catalogue #1, Dec. 2013</span>
+								</header>
+								<h1>18 Matches for “Einstein”</h1>
+								<div class="wrapper scroll_wrapper">
+									<ul class="links_pages list-unstyled scroller">
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+									</ul>
+									<div class="scroller_bar_wrapper">
+										<div class="scroller_bar"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-6">
+						<div class="box_market_item clearfix">
+							<picture class="market_img pull-left">
+								<source srcset="images/marketplace1.jpg, images/2x/marketplace1.jpg 2x">
+								<img src="" alt="" class="img-responsive">
+								<div class="box_catg_tools">
+									<div class="box_bt">
+										<a href="#" class="bt"><i class="fa fa-share-square-o"></i> View Catalogue</a>
+										<button class="bt"><i class="fa fa-file-text-o"></i> Download PDF</button>
+									</div>
+								</div>
+							</picture>
+							<div class="market_txt">
+								<header>
+									<span class="name_catg">CollectorsFolio</span>
+									<span class="number_catg_date">Catalogue #1, Dec. 2013</span>
+								</header>
+								<h1>18 Matches for “Einstein”</h1>
+								<div class="wrapper scroll_wrapper">
+									<ul class="links_pages list-unstyled scroller">
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scietein, Plancntist and my favorite</a></li>
+									</ul>
+									<div class="scroller_bar_wrapper">
+										<div class="scroller_bar"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="clearfix">
+					<article class="col-md-6">
+						<div class="box_market_item clearfix">
+							<picture class="market_img pull-left">
+								<source srcset="images/marketplace1.jpg, images/2x/marketplace1.jpg 2x">
+								<img src="" alt="" class="img-responsive">
+								<div class="box_catg_tools">
+									<div class="box_bt">
+										<a href="#" class="bt"><i class="fa fa-share-square-o"></i> View Catalogue</a>
+										<button class="bt"><i class="fa fa-file-text-o"></i> Download PDF</button>
+									</div>
+								</div>
+							</picture>
+							<div class="market_txt">
+								<header>
+									<span class="name_catg">CollectorsFolio</span>
+									<span class="number_catg_date">Catalogue #1, Dec. 2013</span>
+								</header>
+								<h1>18 Matches for “Einstein”</h1>
+								<div class="wrapper scroll_wrapper">
+									<ul class="links_pages list-unstyled scroller">
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+									</ul>
+									<div class="scroller_bar_wrapper">
+										<div class="scroller_bar"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-6">
+						<div class="box_market_item clearfix">
+							<picture class="market_img pull-left">
+								<source srcset="images/marketplace1.jpg, images/2x/marketplace1.jpg 2x">
+								<img src="" alt="" class="img-responsive">
+								<div class="box_catg_tools">
+									<div class="box_bt">
+										<a href="#" class="bt"><i class="fa fa-share-square-o"></i> View Catalogue</a>
+										<button class="bt"><i class="fa fa-file-text-o"></i> Download PDF</button>
+									</div>
+								</div>
+							</picture>
+							<div class="market_txt">
+								<header>
+									<span class="name_catg">CollectorsFolio</span>
+									<span class="number_catg_date">Catalogue #1, Dec. 2013</span>
+								</header>
+								<h1>18 Matches for “Einstein”</h1>
+								<ul class="links_pages list-unstyled">
+								<div class="wrapper scroll_wrapper">
+									<ul class="links_pages list-unstyled scroller">
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+										<li><span class="number_page">p. 26:</span><a href="#">Einstein is a great scientist and my favorite</a></li>
+										<li><span class="number_page">p. 72:</span><a href="#">Einstein, Planck</a></li>
+										<li><span class="number_page">p. 88:</span><a href="#">Einstein’s great discovery</a></li>
+									</ul>
+									<div class="scroller_bar_wrapper">
+										<div class="scroller_bar"></div>
+									</div>
+								</div>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!-- END search catalogues -->
+			</div>
+
+
+			<!-- search want Listings -->
+			<div class="tab-pane active" id="srcWantListings">
+				<ul class="listing_books src_listing list-unstyled col-md-8">
+					<li class="listing_item jsToggleTxt">
+						<span class="content_txt proxima_novalight"><strong class="book_author">HEMINGWAY, ERNEST</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><div class="box_end_txt"><span class="dots">...</span> <a href="#"><i>Modernfirsts</i></a></div>
+					</li>
+					<li class="listing_item jsToggleTxt">
+						<span class="content_txt proxima_novalight"><strong class="book_author">DARWIN, CHARLES</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><div class="box_end_txt"><span class="dots">...</span> <a href="#"><i>Modernfirsts</i></a></div>
+					</li>
+					<li class="listing_item jsToggleTxt">
+						<span class="content_txt proxima_novalight"><strong class="book_author">EARLY CLIMATE CHANGE RESEARCH</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><div class="box_end_txt"><span class="dots">...</span> <a href="#"><i>Modernfirsts</i></a></div>
+					</li>
+					<li class="listing_item jsToggleTxt">
+						<span class="content_txt proxima_novalight"><strong class="book_author">GOLDIN, NAN</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><div class="box_end_txt"><span class="dots">...</span> <a href="#"><i>Modernfirsts</i></a></div>
+					</li>
+					<li class="listing_item jsToggleTxt">
+						<span class="content_txt proxima_novalight"><strong class="book_author">POE, EDGAR ALLAN</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><div class="box_end_txt"><span class="dots">...</span> <a href="#"><i>Modernfirsts</i></a></div>
+					</li>
+					<li class="listing_item jsToggleTxt">
+						<span class="content_txt proxima_novalight"><strong class="book_author">VICTORIAN LITERATURE</strong> — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span><div class="box_end_txt"><span class="dots">...</span> <a href="#"><i>Modernfirsts</i></a></div>
+					</li>
+				</ul>
+			</div>
+			<!-- END search want Listings -->
+
+		</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<!-- left mobile nav -->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!-- END left mobile nav -->
+	<!-- custom scrollbar -->
+	<script src="js/baron.js"></script>
+	<!-- END custom scrollbar -->
+	<script src="js/script.js"></script>
+</body>
+</html>

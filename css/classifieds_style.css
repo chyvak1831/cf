@@ -1,0 +1,54 @@
+/*CLASSIFIEDS*/
+/* header_list_description */
+.header_list_description h1 {
+	border-bottom: 1px solid #d0d0d0;
+	font: 58px 'Lora', serif;
+	padding-bottom: 27px;
+}
+.header_list_description h1 i {
+	color: #8d8989;
+	display: block;
+	font-size: 26px;
+	margin: 0 0 -16px -125px;
+}
+.filter_box {margin-bottom: 23px;}
+.filter_box > li {
+	display: inline-block;
+	margin: 6px 8px;
+}
+.filter_box .dropdown > a {
+	color: #707070;
+	font-size: 12px;
+}
+.filter_box .dropdown > a i {margin: 0 -4px 0 4px;}
+.filter_box .dropdown li a {
+	padding: 6px 18px 3px 15px;
+	font-size: 11px;
+	letter-spacing: -0.4px;
+}
+.header_list_description .place_ad {
+	display: inline-block;
+	margin: 6px 11px 0 0;
+}
+@media (min-width: 768px) {.header_list_description h1 {margin-top: 42px;}}
+/* END header_list_description */
+
+/* images ad */
+.box_ad_img {max-width: 200px;}
+@media (min-width: 992px) and (max-width: 1199px) {.box_ad_img{max-width: 175px;}}
+@media (min-width: 768px) and (max-width: 991px) {.box_ad_img{max-width: 132px;}}
+/* PC */
+.prev_books li {vertical-align: top;}
+.prev_books .box_ad_img {
+	display: block;
+	margin: 0 0 12px 0;
+	vertical-align: top; 
+}
+/* END PC */
+.listing_books .box_ad_img {
+	display: block;
+	margin: 12px auto;
+}
+/* END images ad */
+
+/* END CLASSIFIEDS */

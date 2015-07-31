@@ -1,0 +1,125 @@
+/* LITERATURE PAGE */
+.literature_page {letter-spacing: 0.01em;}
+
+/* box_top_blog */
+.box_top_blog {
+	border-bottom: 1px solid #ccc;
+	padding: 3.3% 0 3.1%;
+}
+.box_top_blog .main_title {
+	font: 37px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	margin: 10px 0;
+}
+.top_blog_txt {text-align: center;}
+.top_blog_txt .help_txt {
+	color: #717171;
+	font-size: 9px;
+	font-weight: 300;
+	letter-spacing: 0;
+	margin: 23px 0 -3px;
+	text-transform: uppercase;
+}
+.top_blog_txt h1 {
+	font: 42px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: -0.04em;
+}
+.top_blog_txt .line_sm {
+	border-top: 1px solid #acacac;
+	display: block;
+	margin: 0 auto 21px;
+	width: 60px;
+}
+.top_blog_txt .content_txt {
+	color: #393939;
+	font-size: 19px;
+	line-height: 1.263157894736842em;
+}
+.top_blog_txt .content_txt .book_author {
+	font-family: 'proxima_novaregular';
+	text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+	.top_blog_txt .help_txt {margin-top: 10px;}
+	.top_blog_txt h1 {
+		font-size: 35px;
+		margin: 12px 0 7px;
+	}
+	.top_blog_txt .line_sm {margin-bottom: 14px;}
+}
+@media screen and (max-width: 991px) {
+	.top_blog_txt .help_txt {margin-top: 15px;}
+	.top_blog_txt h1 {
+		font-size: 28px;
+		margin: 7px 0;
+	}
+	.top_blog_txt .line_sm {margin-bottom: 10px;}
+	.top_blog_txt .content_txt {font-size: 17px;}
+}
+@media screen and (max-width: 767px) {
+	.box_top_blog {padding: 0;}
+	.top_blog_txt {text-align: left;}
+	.top_blog_txt h1 {
+		color: #a7a7a7;
+		display: inline-block;
+		font: 15px 'proxima_novaregular';
+	}
+	.top_blog_txt h1 br {display: none;}
+}
+/* END box_top_blog */
+
+
+/*left navigation*/
+.literature_nav ul {margin: 0;}
+.literature_nav h1 {
+	font: 49px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	margin: 25px 0 20px;
+}
+.literature_nav .title_spec_let {
+	font: 15px 'proxima_novaregular';
+	margin: 27px 0 16px;
+}
+.literature_nav .sub_catg_see {color: #5a5a5a; font: 13px "proxima_novasemibold","Open Sans",sans-serif !important;}
+.literature_nav .sub_catg_see[aria-expanded="false"] .see_less {display: none;}
+.literature_nav .sub_catg_see[aria-expanded="true"] .see_more {display: none;}
+.literature_nav li a:hover {color: #0e1886;}
+.literature_nav li.active a {cursor: default;}
+@media screen and (min-width: 768px) {
+	.literature_nav li a {
+		background: none !important;
+		color: #5a5a5a;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 24px;
+		padding: 0;
+	}
+	.literature_nav li .active a, .literature_nav li a:hover {
+		color: #0e1886;
+		font-family: 'proxima_novaregular';
+	}
+}
+@media screen and (max-width: 1199px) {.literature_nav h1 {margin: 12px 0;}}
+@media screen and (max-width: 991px) {.literature_nav h1 {font-size: 42px;}}
+@media screen and (max-width: 767px) {
+	.literature_nav h1 {font-size: 26px;margin: 12px 0 0;}
+	.literature_nav .title_spec_let {margin: 14px 0 3px 19px;}
+	.literature_nav .sub_catg_see, .literature_nav .sub_catg a {padding: 3px 20px;}
+	.literature_nav .sub_catg a { display: block;}
+	.literature_nav .sub_catg a:hover {background-color: #f5f5f5;}
+}
+/*END left navigation*/
+
+
+.subcateg_mainh1 {
+	display: inline-block;
+	font: 29px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	margin: 42px 0 0 15px;
+}
+.literature_page .wrapp_dealer_listing .view_sort_filter {
+	float: right;
+	margin: -25px 0 0;
+	position: relative;
+	z-index: 3;
+}
+@media screen and (max-width: 1199px) {.subcateg_mainh1 {margin-top: 29px;}}
+@media screen and (max-width: 1199px) {.subcateg_mainh1 {margin-top: 23px;}}
+@media screen and (max-width: 767px) {.subcateg_mainh1 {font-size: 26px;}}

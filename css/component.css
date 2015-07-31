@@ -1,0 +1,20 @@
+.og-close {
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 40px;
+}
+.og-close::before,
+.og-close::after {
+	background: #888;
+	content: '';
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+	width: 100%;
+}
+.og-close::after {transform: rotate(-45deg);}
+.og-close:hover::before, .og-close:hover::after {background: #333;}

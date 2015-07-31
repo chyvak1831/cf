@@ -1,0 +1,66 @@
+.main_wrapp_profile {padding-top: 40px;}
+.main_wrapp_profile a:hover {opacity: 0.5;}
+.main_wrapp_profile .profile_box {margin-bottom: 25px;}
+.main_wrapp_profile .profile_box .box_edit_profile {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.07em;
+}
+.main_wrapp_profile .profile_box .box_edit_profile .fa {margin-right: 7px;}
+
+.profile_set_nav a {
+	color: #0e1886;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: -0.025em;
+	line-height: 22px;
+}
+.profile_set_nav a .fa {
+  color: #bebebe;
+  font-size: 1em;
+  margin: 0 9px 0 3px;
+}
+
+/*profile left side*/
+.wrapp_profile_aside .profile_avatar {
+	height: 237px;
+	margin-bottom: 30px;
+	width: auto;
+}
+.wrapp_profile_aside .profile_avatar img {max-height: 100%;}
+.wrapp_profile_aside .profile_name {font-size: 14px;}
+.wrapp_profile_aside .profile_since {font-size: 13px;}
+.wrapp_profile_aside .profile_link {
+	background-color: #f5f5f5;
+	color: #4444b4;
+	display: block;
+	font: 10px Courier;
+	margin: 28px 0 22px;
+	padding: 4px 2px;
+	text-align: center;
+	word-break: break-all;
+}
+.wrapp_profile_aside .profile_link:hover {opacity: 0.5;}
+.wrapp_profile_aside .edit_profile_txt.editable {font-size: 12px;}
+/*END profile left side*/
+
+
+
+@media (min-width: 1199px) {.profile_main_content {padding-left: 62px;}}
+.profile_main_content .my_collection .box_edit_profile {min-height: 81px;}
+.profile_main_content .want_listing .box_edit_profile {min-height: 70px;}
+.profile_main_content .profile_small_title {
+	font-size: 16px;
+	letter-spacing: 0;
+	margin: 27px 0 19px;
+}
+.profile_main_content .profile_list li {
+	border: none;
+	margin-bottom: 9px;
+	padding: 0;
+}
+.profile_main_content .profile_list .title {
+	font-size: 13px;
+	line-height: 14px;
+}
+.wrapp_profile_catg .profile_small_title {margin-bottom: 46px;}
