@@ -231,6 +231,118 @@ $(document).ready(function(){
 		if ($( ".social_list" ).length) {
 			$('.social_list [data-toggle="tooltip"]').tooltip({placement:'auto left'});
 		};
-	// social_list
+	// END social_list
+
+
+	// catalog modal content height
+		function heightModalCatalog() {
+			var heightModalScroll = $(window).height() - $('.jsModalFullHeight .modal-header').outerHeight() - $('.jsModalFullHeight .modal-footer').outerHeight();
+			$('.jsModalFullHeight .scroller').css('height', heightModalScroll - 130);
+		}
+		heightModalCatalog();
+		$(window).resize(function() {
+			heightModalCatalog();
+		});
+		$('.jsModalFullHeight').on('shown.bs.modal', function (e) {
+			heightModalCatalog();
+		})
+	// END catalog modal content height
+
+
+	// header dropdowns
+	$(document).ready(function(){
+		// top dropdowns
+		$('.jsMegaDropBt').on('click', function (e) {
+			e.preventDefault();
+			var parentBt = $(this).parent();
+			$('.jsMegaDrop').not(parentBt).removeClass('open');
+			$(parentBt).toggleClass('open');
+			
+		});
+
+		function heightMegaDrop() {
+			var heightHeader = $('.main_header').height();
+			var heightForScroll = $(window).height() - heightHeader;
+			$('.scroll_notification .scroller').css('max-height', heightForScroll - 70);
+			$('.box_user_drop .scroller').css('max-height', heightForScroll - 20);
+		}
+		heightMegaDrop();
+		$(window).resize(function() {
+			heightMegaDrop()
+		});
+
+
+		// editable
+		$('.jsEditCollection').editable({
+			placement: 'bottom',
+			emptytext: 'Add a description of your collection here',
+			mode: 'inline'
+		});
+		$('.jsEditWantListings').editable({
+			placement: 'top',
+			emptytext: 'Create your first Want Listing',
+			mode: 'inline'
+		});
+		$('.jsEditableTags').editable({
+			emptytext: '',
+			emptytext: 'What topics and authors are you most interested in?',
+			select2: {
+				tags: ['Astrophysics', 'Particle Physics', 'Space', 'Great Discoveries', '20th Century Scientists', 'Classical Science'],
+				tokenSeparators: [",", " "]
+			},
+			mode: 'inline'
+		});
+		$('.jsEditCollection, .jsEditWantListings, .jsEditableTags').on('hidden', function(e, reason) {
+			if($(this).hasClass('editable-empty')) {
+				$(this).closest('.jsEditParent').addClass('empty_editable');
+			}
+			else{
+				$(this).closest('.jsEditParent').removeClass('empty_editable');
+			};
+		});
+
+		$('.jsEditCloneBt').on('click', function (e) {
+			e.preventDefault();
+			e.stopPropagation();
+			var editThis = $(this).attr('href');
+			$(this).closest('.jsEditParent').find('.' + editThis).editable('toggle');
+		})
+
+
+
+		// dropzone user dropdown
+		Dropzone.autoDiscover = false;
+		var previewNode = document.querySelector(".jsDropTemplate");
+		previewNode.id = "";
+		var previewTemplate = previewNode.parentNode.innerHTML;
+		previewNode.parentNode.removeChild(previewNode);
+		function dropInit () {
+			if ($( ".jsUserDropAva" ).length) {
+				$(".jsUserDropAva").dropzone({
+					url: "upload.php",
+					autoProcessQueue: false,
+					previewTemplate: previewTemplate,
+					acceptedFiles: 'image/*',
+					maxFiles:1,
+					thumbnailWidth: 320,
+					thumbnailHeight: 320,
+					init: function() {
+						this.on("maxfilesexceeded", function(file) {
+							this.removeAllFiles();
+							this.addFile(file);
+						});
+					}
+				});
+			}
+		}
+		dropInit();
+
+		$('.jsDelBt').on('click', function (e) {
+			e.preventDefault();
+			$(this).closest('.wrapper_product').remove();
+		})
+
+	});
+	// END header dropdowns
 
 });
