@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Message center</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:400,300,600' rel='stylesheet'>
+	<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://vitalets.github.io/x-editable/assets/select2/select2.css">
+	<link rel="stylesheet" href="http://vitalets.github.io/x-editable/assets/x-editable/bootstrap3-editable/css/bootstrap-editable.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/msg_center_style.css">
+</head>
+<body class="msg_center_page">
+	<header class="main_header sticky_header">
+		<div class="container custom_padding">
+			<a href="#" class="logo logo_scroll pull-left hide"><span>CF</span></a>
+			<div class="top_box">
+				<a href="#" class="logo pull-left">
+					<span class="hidden-xs"><img class="img-responsive" src="images/mar23-cf-logo.png" alt="Logo"></span>
+					<span class="visible-xs-block">CF</span>
+				</a>
+				<ul class="top_right_block nav navbar-nav navbar-right">
+					<li class="dropdown jsMegaDrop wrapp_notification active">
+						<span class="box_icon jsMegaDropBt dropdown-toggle">
+							<i class="notification_icon glyphicon glyphicon-flag"></i>
+							<span class="counter">12</span>
+						</span>
+						<div class="box_notification dropdown-menu">
+							<h2 class="top_title">
+								<span class="notif_title">My Notifications</span>
+								<a href="#" class="settings_link pull-right">Settings</a>
+							</h2>
+							<div class="scroll_notification wrapper scroll_wrapper">
+								<div class="scroller">
+									<article class="item_notific clearfix alert fade in">
+										<picture class="pull-left">
+											<source srcset="images/ava01.jpg, images/2x/ava01.jpg 2x">
+											<img src="" alt="" class="img-responsive">
+										</picture>
+										<div class="pull-right">
+											<ul class="list_tool pull-right list-unstyled">
+												<li class="time">4h</li>
+												<li class="hover_block">
+													<button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+												</li>
+											</ul>
+											<picture class="wrapp_book">
+												<source srcset="images/book01.jpg, images/2x/book01.jpg 2x">
+												<img src="" alt="" class="img-responsive">
+											</picture>
+										</div>
+										<div class="txt_box">
+											<p class="user_invite_name"><a href="#">Einstein Rare Books</a> invited you to view a new listing</p>
+											<h1><i class="fa fa-angle-right"></i><strong> Leonhard, Euler.</strong><em> Introductio in Analysin Infinitorum.</em></h1>
+											<p class="content_txt">FIRST EDITION of Euler's foundational work on mathematical analysis."In his 'Introduction to Mathematical Analysis</p>
+										</div>
+									</article>
+									<article class="item_notific clearfix alert fade in">
+										<picture class="pull-left">
+											<source srcset="images/ava03.jpg, images/2x/ava03.jpg 2x">
+											<img src="" alt="" class="img-responsive">
+										</picture>
+										<div class="pull-right">
+											<ul class="list_tool pull-right list-unstyled">
+												<li class="time">6h</li>
+												<li class="hover_block collapse">
+													<button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+												</li>
+											</ul>
+											<picture class="wrapp_book">
+												<source srcset="images/book03.jpg, images/2x/book03.jpg 2x">
+												<img src="" alt="" class="img-responsive">
+											</picture>
+										</div>
+										<div class="txt_box">
+											<p class="user_invite_name"><a href="#">Einstein Rare Books</a> invited you to view a new listing</p>
+											<h1><i class="fa fa-angle-right"></i><strong> Salinger, J.D.</strong><em> The Catcher in the Rye.</em></h1>
+											<p class="content_txt">FIRST EDITION of The Catcher in the Rye, in correct first issue dust jacket (with Salinger's portrait on rear panel andportrait on rear panel and</p>
+										</div>
+									</article>
+									<article class="item_notific clearfix alert fade in">
+										<picture class="pull-left">
+											<source srcset="images/ava01.jpg, images/2x/ava01.jpg 2x">
+											<img src="" alt="" class="img-responsive">
+										</picture>
+										<div class="pull-right">
+											<ul class="list_tool pull-right list-unstyled">
+												<li class="time">4h</li>
+												<li class="hover_block collapse">
+													<button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+												</li>
+											</ul>
+											<picture class="wrapp_book">
+												<source srcset="images/book01.jpg, images/2x/book01.jpg 2x">
+												<img src="" alt="" class="img-responsive">
+											</picture>
+										</div>
+										<div class="txt_box">
+											<p class="user_invite_name"><a href="#">Einstein Rare Books</a> invited you to view a new listing</p>
+											<h1><i class="fa fa-angle-right"></i><strong> Leonhard, Euler.</strong><em> Introductio in Analysin Infinitorum.</em></h1>
+											<p class="content_txt">FIRST EDITION of Euler's foundational work on mathematical analysis."In his 'Introduction to Mathematical Analysis</p>
+										</div>
+									</article>
+									<article class="item_notific clearfix alert fade in">
+										<picture class="pull-left">
+											<source srcset="images/ava03.jpg, images/2x/ava03.jpg 2x">
+											<img src="" alt="" class="img-responsive">
+										</picture>
+										<div class="pull-right">
+											<ul class="list_tool pull-right list-unstyled">
+												<li class="time">6h</li>
+												<li class="hover_block collapse">
+													<button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+												</li>
+											</ul>
+											<picture class="wrapp_book">
+												<source srcset="images/book03.jpg, images/2x/book03.jpg 2x">
+												<img src="" alt="" class="img-responsive">
+											</picture>
+										</div>
+										<div class="txt_box">
+											<p class="user_invite_name"><a href="#">Einstein Rare Books</a> invited you to view a new listing</p>
+											<h1><i class="fa fa-angle-right"></i><strong> Salinger, J.D.</strong><em> The Catcher in the Rye.</em></h1>
+											<p class="content_txt">FIRST EDITION of The Catcher in the Rye, in correct first issue dust jacket (with Salinger's portrait on rear panel andportrait on rear panel and</p>
+										</div>
+									</article>
+									<article class="item_notific clearfix alert fade in">
+										<picture class="pull-left">
+											<source srcset="images/ava01.jpg, images/2x/ava01.jpg 2x">
+											<img src="" alt="" class="img-responsive">
+										</picture>
+										<div class="pull-right">
+											<ul class="list_tool pull-right list-unstyled">
+												<li class="time">4h</li>
+												<li class="hover_block collapse">
+													<button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+												</li>
+											</ul>
+											<picture class="wrapp_book">
+												<source srcset="images/book01.jpg, images/2x/book01.jpg 2x">
+												<img src="" alt="" class="img-responsive">
+											</picture>
+										</div>
+										<div class="txt_box">
+											<p class="user_invite_name"><a href="#">Einstein Rare Books</a> invited you to view a new listing</p>
+											<h1><i class="fa fa-angle-right"></i><strong> Leonhard, Euler.</strong><em> Introductio in Analysin Infinitorum.</em></h1>
+											<p class="content_txt">FIRST EDITION of Euler's foundational work on mathematical analysis."In his 'Introduction to Mathematical Analysis</p>
+										</div>
+									</article>
+									<article class="item_notific clearfix alert fade in">
+										<picture class="pull-left">
+											<source srcset="images/ava03.jpg, images/2x/ava03.jpg 2x">
+											<img src="" alt="" class="img-responsive">
+										</picture>
+										<div class="pull-right">
+											<ul class="list_tool pull-right list-unstyled">
+												<li class="time">6h</li>
+												<li class="hover_block collapse">
+													<button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+												</li>
+											</ul>
+											<picture class="wrapp_book">
+												<source srcset="images/book03.jpg, images/2x/book03.jpg 2x">
+												<img src="" alt="" class="img-responsive">
+											</picture>
+										</div>
+										<div class="txt_box">
+											<p class="user_invite_name"><a href="#">Einstein Rare Books</a> invited you to view a new listing</p>
+											<h1><i class="fa fa-angle-right"></i><strong> Salinger, J.D.</strong><em> The Catcher in the Rye.</em></h1>
+											<p class="content_txt">FIRST EDITION of The Catcher in the Rye, in correct first issue dust jacket (with Salinger's portrait on rear panel andportrait on rear panel and</p>
+										</div>
+									</article>
+								</div><!-- scroller -->
+								<div class="scroller_bar_wrapper"><div class="scroller_bar"></div></div>
+							</div><!-- scroll_notification -->
+							<a href="#" class="load_more_notific">Load More Notifications</a>
+						</div><!-- box_notification -->
+					</li>
+					<li class="wrapp_mail active">
+						<span class="box_icon">
+							<i class="mail_icon glyphicon glyphicon-envelope"></i>
+							<span class="counter">12</span>
+						</span>
+					</li>
+					<li class="dropdown user_dropdown jsMegaDrop">
+						<a class="color_blue text-uppercase dropdown-toggle fw_semibold jsMegaDropBt" href="#">Modernfirsts<i class="color_black caret"></i></a>
+						<div class="box_user_drop dropdown-menu">
+							<div class="wrapper scroll_wrapper">
+								<div class="scroller">
+									<div class="col-sm-3 wrapp_snapshot">
+										<div class="profile_avatar box_flex_centered jsUserDropAva">
+											<div class="jsDropTemplate">
+												<picture>
+													<img src="" alt="" class="img-responsive" data-dz-thumbnail>
+												</picture>
+												<a href="#" class="del_bt" data-dz-remove>
+													<span class="delete_txt">Delete</span>
+												</a>
+											</div>
+											<div class="dz-message" data-dz-message>
+												<span class="sign">?</span>
+												<p class="select_txt">Select a Profile Picture</p>
+												<p class="help_txt">(Use a photo of anything you’d like)</p>
+											</div>
+										</div>
+										<p>
+											<span class="profile_name">PaperbackWriter</span>
+											<span class="profile_since">Member since 4/5/203</span>
+										</p>
+										<div class="profile_box keywords empty_editable jsEditParent">
+											<h3 class="profile_small_title">Keywords <a href="jsEditableTags" class="jsEditCloneBt">(edit)</a></h3>
+											<div class="box_edit_profile"><p data-type="select2" class="editable-empty jsEditableTags"></p></div>
+										</div>
+									</div><!-- wrapp_snapshot -->
+									<div class="col-sm-5 wrapp_edit_info">
+										<div class="profile_box my_collection empty_editable jsEditParent">
+											<h3 class="profile_small_title">My collection <a href="jsEditCollection" class="jsEditCloneBt">(edit)</a></h3>
+											<div class="box_edit_profile"><p data-type="textarea" class="editable-empty jsEditCollection"></p></div>
+										</div>
+										<div class="profile_box">
+											<h3 class="profile_small_title">Looking to acquire<a href="#" class="view_all">(6 total, view all)</a></h3>
+											<ul class="box_edit_profile profile_list list-unstyled">
+												<li><p class="title"><i class="fa fa-angle-right"></i>First Edition of Huck Finn by Mark Twain (Samuel Clements)</p></li>
+												<li><p class="title"><i class="fa fa-angle-right"></i>I own a fairly extensive collection of books on coolsite collectorsfolio</p></li>
+												<li><p class="title"><i class="fa fa-angle-right"></i>Trevanian Shibumi, signed, fine</p></li>
+												<li><p class="title"><i class="fa fa-angle-right"></i>I own a fairly extensive collection of books on.</p></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-4 wrapp_user_nav">
+										<div class="profile_box">
+											<ul class="user_drop_nav list-unstyled">
+												<li><a href="#"><i class="fa fa-user"></i>View Full Profile</a></li>
+												<li><a href="#"><i class="fa fa-globe"></i>Create a Want Lisitng</a></li>
+												<li><a href="#"><i class="fa fa-tags"></i>Something to Sell?</a></li>
+												<li><a href="#" class="logout pull-right">Log Out</a><a href="#"><i class="fa fa-cog"></i>My Settings</a></li>
+											</ul>
+										</div>
+										<div class="profile_box">
+											<h3 class="profile_small_title"><a href="#" class="view_all pull-right">view all</a>Recent favorites</h3>
+											<ul class="saved_list_img list-inline">
+												<li class="box_flex_centered">
+													<picture>
+														<source srcset="images/saved02.jpg, images/2x/saved02.jpg 2x" media="(min-width:768px)">
+														<img src="" alt="" class="img-responsive">
+													</picture>
+												</li>
+												<li class="box_flex_centered">
+													<picture>
+														<source srcset="images/saved03.jpg, images/2x/saved03.jpg 2x" media="(min-width:768px)">
+														<img src="" alt="" class="img-responsive">
+													</picture>
+												</li>
+											</ul>
+											<div class="text-center hide">
+												<i class="placehold_icon fa fa-star-o"></i>
+												<p class="placehold_txt">“Save” books for later and watch them appear in this space.</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- scroller -->
+								<div class="scroller_bar_wrapper"><div class="scroller_bar"></div></div>
+							</div><!-- scroll_wrapper -->
+						</div><!-- box_user_drop -->
+					</li>
+				</ul>
+				<form action="" class="search_form">
+					<div class="box_icon_in_input">
+						<input type="text" class="form-control">
+						<button type='submit' class="icon fa fa-search"></button>
+					</div>
+				</form>
+			</div>
+
+			<nav class="main_nav row" role="navigation" class="row">
+				<!-- Toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle jsBtNav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="nav_box" id="sidr" style="display: none">
+					<ul class="list-inline list_justify text-uppercase pc_nav">
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Literature</a></li>
+						<li class="hide_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+						<li class="dropdown scroll_add_nav">
+							<a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">More<i class="color_black caret"></i></a>
+							<ul role="menu" class="dropdown-menu left_arrow">
+								<li><a href="#">History &amp; culture</a></li>
+								<li><a href="#">Sciences</a></li>
+								<li class="show_link_768_991"><a href="#">Art &amp; photobooks</a></li>
+								<li class="show_link_768_991"><a href="#">Classifieds</a></li>
+							</ul>
+						</li>
+						<li class="hide_link"><a href="#">History &amp; culture</a></li>
+						<li class="hide_link"><a href="#">Sciences</a></li>
+						<li><a href="#">Catalogues</a></li>
+						<li class="hide_link_768_991"><a href="#">Classifieds</a></li>
+						<li><a href="#">Market Notes</a></li>
+						<li class="helper"></li>
+					</ul>
+					<ul class="mobile_nav list-unstyled visible-xs-block">
+						<li class="wellcome color_blue">
+							<span class="fw_normal">Welcome</span>
+							<span class="d_block fw_semibold">Modernfirsts</span>
+						</li>
+						<li><a href="#" class="empty_link"></a>&nbsp;</li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Literature</a></li>
+						<li><a href="#">Art &amp; photobooks</a></li>
+						<li><a href="#">History &amp; culture</a></li>
+						<li><a href="#">Sciences</a></li>
+						<li><a href="#">Catalogues</a></li>
+						<li><a href="#">Classifieds</a></li>
+						<li><a href="#">Market Notes</a></li>
+						<li><a href="#" class="empty_link"></a>&nbsp;</li>
+						<li class="set_profile">
+							<a class="color_blue fw_normal" href="#">
+								View My Profile
+								<span class="wrapp_notification active">
+									<span class="box_icon">
+										<i class="notification_icon glyphicon glyphicon-flag"></i>
+										<span class="counter">12</span>
+									</span>
+								</span>
+								<span class="wrapp_mail active">
+									<span class="box_icon">
+										<i class="mail_icon glyphicon glyphicon-envelope"></i>
+										<span class="counter">12</span>
+									</span>
+								</span>
+							</a>
+							<a class="color_blue fw_normal" href="#">My Settings</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div><!-- container custom_padding -->
+	</header>
+
+
+	<div class="container custom_padding proxima_novalight">
+		<h1 class="main_h1">Message Center</h1>
+		<div class="row">
+			<div class="col-md-5 col-sm-6 msg_wrapp">
+				<div class="wrapp_new_msg"><a href="#" class="bt_new_msg"><i class="fa fa-pencil-square-o"></i>Compose new</a></div>
+				<ul class="msg_nav_tabs list-inline">
+					<li class="active"><a href="#msgInbox" data-toggle="tab">Inbox</a></li>
+					<li><a href="#msgSent" data-toggle="tab">Sent Mail</a></li>
+				</ul>
+				<div class="msg_top clearfix">
+					<span class="msg_txt">My messages</span>
+					<span class="src_msg_txt"><i class="fa fa-search"></i>Search mail</span>
+				</div>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="msgInbox">
+						<ul class="list-unstyled">
+							<li class="active">
+								<article class="msg_item clearfix" data-toggle="tab" data-target="#smg01">
+									<picture class="pull-left">
+										<source srcset="images/ava01.jpg, images/2x/ava01.jpg 2x">
+										<img src="" alt="" class="img-responsive">
+									</picture>
+									<span class="time">4h</span>
+									<div class="txt_box">
+										<p class="msg_author"><a href="#">Einstein Rare Books</a></p>
+										<p class="msg_theme">RE: Oscar Wilde's Poems, Signed by Wilde, 1/220 copies in the superb original binding</p>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="msg_item clearfix" data-toggle="tab" data-target="#smg02">
+									<picture class="pull-left">
+										<source srcset="images/ava03.jpg, images/2x/ava03.jpg 2x">
+										<img src="" alt="" class="img-responsive">
+									</picture>
+									<span class="time">7/23/15</span>
+									<div class="txt_box">
+										<p class="msg_author"><a href="#">Einstein Rare Books</a></p>
+										<p class="msg_theme">That book you told me about</p>
+									</div>
+								</article>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="msgSent">Sent Mail</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-7 col-sm-6 tab-content msg_content">
+				<div class="tab-pane active" id="smg01">
+					<h2 class="msg_theme">RE: Oscar Wilde's Poems, Signed by Wilde, 1/220 copies in the superb original binding</h2>
+					<div class="msg_top clearfix">
+						<span class="msg_author"><a href="#">Einstein Rare Books</a> to me</span>
+						<div class="pull-right">
+							<span class="date">5:32PM on July 23, 2015</span>
+							<a class="reply_link" href="#corresponModal" data-toggle="modal"><i class="fa fa-share-square-o"></i>Reply</a>
+						</div>
+					</div>
+					<div class="wrapp_content_msg">
+						<div class="content_txt">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<a href="#" class="bt_reply_lg"><i class="fa fa-share-square-o"></i>Reply</a>
+						<div class="msg_tools clearfix">
+							<span class="txt_attach">Attachments</span>
+							<div class="pull-right list_tools">
+								<a href="#"><i class="fa fa-share-square"></i>View Thread</a>
+								<a href="#"><i class="fa fa-trash"></i>Delete This Message</a>
+							</div>
+						</div>
+						<div class="wrapp_attach_content">
+							<picture>
+								<source srcset="images/attach.jpg, images/2x/attach.jpg 2x">
+								<img src="" alt="" class="img-responsive">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<article role="dialog" tabindex="-1" id="corresponModal" class="modal_with_scroll correspon_modal modal fade jsModalFullHeight">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-header">
+				<button data-dismiss="modal" class="close" type="button"><span>×</span></button>
+				<h1 class="modal_main_h1"><i class="fa fa-envelope-o"></i>Between me and <span class="author_name">Einstein Rare Books</span></h1>
+			</div>
+			<div class="modal-content">
+				<div class="wrapper scroll_wrapper baron">
+					<div class="scroller">
+					</div>
+					<div class="scroller_bar_wrapper">
+						<div class="scroller_bar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="#"><i class="fa fa-share-square-o"></i>Reply</a>
+			</div>
+		</div>
+	</article>
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<script src="js/select2.js"></script>
+	<script src="js/bootstrap-editable.js"></script>
+
+	<!-- left mobile nav -->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!-- END left mobile nav -->
+
+	<!-- custom scroll -->
+	<script src="js/baron.js"></script>
+	<!-- END custom scroll -->
+
+	<!-- dropzone -->
+	<script src="js/dropzone.min.js"></script>
+	<!-- END dropzone -->
+
+	<script src="js/script.js"></script>
+</body>
+</html>

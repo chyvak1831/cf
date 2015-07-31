@@ -1,0 +1,134 @@
+.catalogues_page a:hover {opacity: 0.5;}
+.catalogues_page .wrapp_catalog_search {
+	margin: 77px auto 60px;
+	max-width: 936px;
+}
+.catalogues_page .box_src {position: relative;}
+.catalogues_page .src_field {
+	font-size: 22px;
+	padding: 10px 145px 10px 20px;
+}
+.catalogues_page .src_field::-webkit-input-placeholder {
+	color: #7b7b7b;
+	font: italic 1em/1.4em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	padding-top: 3px;
+}
+.catalogues_page .src_field::-moz-placeholder {
+	color: #7b7b7b;
+	font: italic 1em/1.5em 'ACaslonProRegular', 'Times New Roman', 'Times';
+}
+.catalogues_page .src_field:-ms-input-placeholder {
+	color: #7b7b7b;
+	font: italic 1em/1.4em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	padding-top: 3px;
+}
+.catalogues_page .src_field::placeholder {
+	color: #7b7b7b;
+	font: italic 1em/1.4em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	padding-top: 3px;
+}
+.catalogues_page .box_src .src_bt {
+	background-image: linear-gradient(to top, rgba(195,195,195,0.25) 0%, rgba(228,228,228,0.25) 50%, rgba(197,197,197,0.25) 100%);
+	background-color: #fff;
+	border-left: 1px solid rgba(161,161,161,0.25);
+	color: #585858;
+	font: 17px/1.6em 'proxima_novaregular';
+	padding: 13px 36px 9px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	text-transform: uppercase;
+}
+.catalogues_page .box_src .src_bt:hover {opacity: 0.5;}
+.catalogues_page .all_catalogues_txt {
+	color: #a0a0a0;
+	font: 18px/1.2em 'proxima_novalightitalic', 'Open Sans', sans-serif;
+	letter-spacing: 0.04em;
+	margin: 0 0 58px 29px;
+}
+.catalogues_page .all_catalogues_txt .fa {
+	color: #cdcdcd;
+	font-size: 11px;
+	margin-right: 7px;
+	vertical-align: middle;
+}
+@media (max-width: 992px) {.catalogues_page .wrapp_catalog_search {margin: 40px auto;}}
+@media (max-width: 767px) {.catalogues_page .all_catalogues_txt {margin-bottom: 20px;}}
+@media (max-width: 549px) {
+	.catalogues_page .src_field {
+		font-size: 19px;
+		padding: 10px 92px 10px 20px;
+	}
+	.catalogues_page .box_src .src_bt {
+		font-size: 12px;
+		padding: 16px 21px 14px;
+	}
+}
+
+
+
+.catalogues_page .box_catalogues {padding: 1px 43px 69px;}
+.catalogues_page .collectorsfolio_txt {
+	font-family: 'proxima_novasemibold', 'Open Sans', sans-serif;
+	margin: 13px 0 0;
+	letter-spacing: 0.03em;
+}
+.catalogues_page .box_catalogues h1 {
+	font: 15px/1.3em 'proxima_novalightitalic', 'Open Sans', sans-serif;
+	margin: 2px 0 5px;
+	letter-spacing: 0.04em;
+}
+.catalogues_page .date {
+	color: #888;
+	font: 12px 'proxima_novalight', 'Open Sans', sans-serif;
+	letter-spacing: 0.04em;
+	margin-bottom: 24px;
+}
+.catalogues_page .catg_links li {
+	font: 13px 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.02em;
+	margin: 0 0 8px;
+}
+.catalogues_page .catg_links a {color: #011175;}
+.catalogues_page .catg_links a .fa {
+	color: #a0a0a0;
+	font-size: 0.9230769230769231em;
+	margin-right: 16px;
+	text-align: center;
+	width: 1.083333333333333em;
+}
+@media (max-width: 1199px) {.catalogues_page .box_catalogues {padding: 1px 15px 34px;}}
+@media (max-width: 992px) {.catalogues_page .catg_links a span {display: inline-block;}}
+@media (min-width: 550px) {.catalogues_page .box_catalogues .product_txt {margin-left: 192px;}}
+@media (max-width: 549px) {
+	.catalogues_page .wrapp_catalog_search {margin: 26px auto 40px;}
+	.catalogues_page .src_field::-moz-placeholder {line-height: 1.8em;}
+	.catalogues_page .box_catalogues {padding-bottom: 44px;}
+	.catalogues_page .product_txt {
+		margin: auto;
+		text-align: center;
+		max-width: 370px;
+	}
+	.catalogues_page .catalogues_image {
+		display: block;
+		float: none !important;
+		margin: 0 auto 25px;
+		max-width: 159px;
+	}
+	.catalogues_page .catg_links li {
+		display: inline-block;
+		font-size: 16px;
+		letter-spacing: 0;
+		margin: 4px 10px;
+	}
+	.catalogues_page .catg_links a .fa {
+		font-size: 14px;
+		margin-right: 9px;
+	}
+	.catalogues_page .collectorsfolio_txt {font-size: 16px;}
+	.catalogues_page .box_catalogues h1 {
+		font-size: 16px;
+		margin: 3px 0 7px;
+		letter-spacing: 0.07em;
+	}
+}

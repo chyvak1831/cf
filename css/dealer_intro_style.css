@@ -1,0 +1,183 @@
+.dealer_intro a:hover {opacity: 0.5;}
+
+.dealer_intro .titles_dealer_intro {padding-top: 49px;}
+.dealer_intro .titles_dealer_intro .arrow_step {margin: 6px 0 0;}
+.dealer_intro .main_h1 {font: 40px/1.2em "ACaslonProRegular","Times New Roman","Times";}
+.dealer_intro .second_title {
+	color: #595959;
+	font-size: 24px;
+	margin: 32px 0 21px 3px;
+}
+.dealer_intro .second_title a {
+	color: #001676;
+	font-size: 10px;
+	line-height: 22px;
+	margin: 3px 4px 0 0;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+@media (max-width: 991px) {
+	.dealer_intro .main_h1 {font-size: 37px;}
+	.dealer_intro .titles_dealer_intro {padding-top: 40px;}
+}
+@media (max-width: 767px) {
+	.dealer_intro .main_h1 {font-size: 33px;}
+	.dealer_intro .titles_dealer_intro {padding-top: 25px;}
+}
+@media (max-width: 550px) {
+	.dealer_intro .main_h1 {font-size: 28px;}
+	.dealer_intro .titles_dealer_intro {padding-top: 20px;}
+}
+
+
+.dealer_intro .recentry_listed li {
+	font: 13px/1.384615384615385em 'proxima_novaregular';
+	letter-spacing: 0.005em;
+	margin: 22px 8px;
+	vertical-align: top;
+	width: 185px;
+}
+.dealer_intro .recentry_listed li picture {
+	display: block;
+	height: 226px;
+}
+.dealer_intro .recentry_listed .jsListedPopover {cursor: pointer;}
+.dealer_intro .recentry_listed li picture img {margin: auto;}
+.dealer_intro .recentry_listed .popover {
+	border: 1px solid rgba(183, 183, 183, 0.5);
+	box-shadow: -0.4px 0.9px 8.5px 0.5px rgba(0, 0, 0, 0.35);
+	font-family: 'proxima_novalight', 'Open Sans', sans-serif;
+	margin-top: 80px;
+	min-width: 348px;
+}
+.dealer_intro .recentry_listed .popover .arrow {
+	border-top-width: 20px;
+	border-bottom-width: 20px;
+	top: 0 !important;
+	margin-top: 50px;
+}
+.dealer_intro .recentry_listed .popover.right .arrow {
+	border-right-color: rgba(183, 183, 183, 0.5);
+	border-right-width: 40px;
+	left: -40px;
+}
+.dealer_intro .recentry_listed .popover.right .arrow::after {
+	border-top-width: 19px;
+	border-bottom-width: 19px;
+	border-right-width: 38px;
+	bottom: -19px;
+	left: 3px;
+}
+.dealer_intro .recentry_listed .popover.left .arrow {
+	border-left-color: rgba(183, 183, 183, 0.5);
+	border-left-width: 40px;
+	right: -40px;
+}
+.dealer_intro .recentry_listed .popover.left .arrow::after {
+	border-top-width: 19px;
+	border-bottom-width: 19px;
+	border-left-width: 38px;
+	bottom: -19px;
+	right: 3px;
+}
+.dealer_intro .recentry_listed .popover .popover_close {
+	border: none;
+	cursor: pointer;
+	font-size: 38px;
+	font-style: normal;
+	margin: -6px -4px 0;
+	position: absolute;
+	right: 12px;
+	top: 0;
+}
+.dealer_intro .recentry_listed .popover .popover_close:hover {opacity: 0.5;}
+.dealer_intro .recentry_listed .popover .popover_close::before {content: '×';}
+.dealer_intro .recentry_listed .popover-content {padding: 7px 26px 27px;}
+.dealer_intro .recentry_listed .popover .author_name {
+	font: 26px/1.3em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: -0.018em;
+	margin-bottom: 2px;
+}
+.dealer_intro .recentry_listed .popover .book_name {
+	font-size: 22px;
+	letter-spacing: 0.04em;
+	margin: 0 0 21px;
+}
+.dealer_intro .recentry_listed .popover .city_date {
+	font-size: 9px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.dealer_intro .recentry_listed .popover .content_txt {
+	font-size: 12px;
+	line-height: 1.333333333333333em;
+	margin: 19px 0 29px;
+}
+.dealer_intro .recentry_listed .popover .content_txt p {margin-bottom: 16px;}
+.dealer_intro .recentry_listed .popover .price {
+	font-size: 19px;
+	float: left;
+	letter-spacing: 0.01em;
+	margin: 1px 0 0 2px;
+}
+.dealer_intro .recentry_listed .popover .full_link {
+	border: 1px solid #0e1886;
+	color: #0e1886;
+	font: 9px 'proxima_novaregular';
+	float: right;
+	letter-spacing: 0.08em;
+	padding: 9px 4px 6px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 192px;
+}
+@media (max-width: 991px) {
+	.dealer_intro .recentry_listed .popover {min-width: 0;}
+	.dealer_intro .recentry_listed .popover-content {padding: 7px 15px 27px;}
+}
+@media (max-width: 767px) {
+	.dealer_intro .recentry_listed li {
+		position: relative;
+		width: 220px;
+	}
+	.dealer_intro .recentry_listed .popover {
+		margin: 0;
+		right: 0 !important;
+		left: 0 !important;
+		top: 0 !important;
+		width: auto;
+	}
+	.dealer_intro .recentry_listed .popover .arrow {display: none;}
+	.dealer_intro .recentry_listed .popover-content {padding-top: 14px;}
+	.dealer_intro .recentry_listed .popover .author_name {font-size: 20px;}
+	.dealer_intro .recentry_listed .popover .book_name {font-size: 17px;margin-bottom: 17px;}
+	.dealer_intro .recentry_listed .popover .content_txt {margin: 14px 0 20px;}
+}
+
+
+.dealer_intro .bt_more_books {
+	border: 1.000419px solid #0e1886;
+	color: #0e1886;
+	display: block;
+	font: 18px/1em 'proxima_novaregular';
+	letter-spacing: 0.1em;
+	margin: 35px 0;
+	padding: 21px 18px 18px;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 408px;
+}
+
+
+.dealer_intro .more_options_nav li {margin: 3px 22px 4px 0;}
+.dealer_intro .more_options_nav .title {
+	color: #999;
+	font-family: 'proxima_novaregular';
+	letter-spacing: 0.155em;
+	text-transform: uppercase;
+}
+.dealer_intro .more_options_nav li a {
+	color: #0e1886;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+}

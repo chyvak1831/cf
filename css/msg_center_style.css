@@ -1,0 +1,185 @@
+.msg_center_page a:hover {opacity: 0.5;}
+.msg_center_page .main_h1 {
+	font: 20px/1.3em 'proxima_novalight';
+	letter-spacing: 0.01em;
+	margin: 35px 0 22px;
+}
+.msg_wrapp {
+	border-right: 1px solid #a1a1a1;
+	padding-right: 0;
+}
+.msg_wrapp .wrapp_new_msg {margin: 0 0 24px 2px;}
+.msg_wrapp .wrapp_new_msg .bt_new_msg {
+	color: #0e1886;
+	font: 12px 'proxima_novasemibold';
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.msg_wrapp .wrapp_new_msg .bt_new_msg .fa {margin-right: 6px;}
+.msg_wrapp .msg_nav_tabs {margin: 0;}
+.msg_wrapp .msg_nav_tabs li {
+	padding: 0;
+	margin-right: -4px;
+}
+.msg_wrapp .msg_nav_tabs a {
+	background-color: rgba(14, 14, 134, 0.08);
+	color: #0e1886;
+	display: block;
+	font: 16px 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.03em;
+	padding: 11px 0 10px;
+	text-align: center;
+	width: 145px;
+}
+.msg_wrapp .msg_nav_tabs .active a {
+	background-color: #0e1886;
+	color: #fff;
+}
+.msg_top {
+	background-image: linear-gradient(180deg, rgba(193, 193, 193, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+	border-bottom: 1px solid #a1a1a1;;
+	border-top: 1px solid #a1a1a1;;
+	height: 42px;
+}
+.msg_top .msg_txt {
+	display: inline-block;
+	font: 11px 'proxima_novasemibold';
+	letter-spacing: 0.06em;
+	padding: 15px 10px 12px;
+	text-transform: uppercase;
+}
+.msg_top .src_msg_txt {
+	color: #0e1886;
+	float: right;
+	font: 11px 'proxima_novasemibold';
+	letter-spacing: 0.06em;
+	margin: 14px 18px 0 0;
+	text-transform: uppercase;
+}
+.msg_top .src_msg_txt .fa {
+	font-size: 9px;
+	margin-right: 4px;
+}
+
+/*message item*/
+.msg_item {
+	border-bottom: 1px solid #a1a1a1;
+	padding: 21px 10px;
+	position: relative;
+}
+.msg_item .time {
+	color: #b6b6b6;
+	font: 11.5px 'proxima_novaregular';
+	position: absolute;
+	right: 14px;
+	top: 6px;
+}
+.msg_item .txt_box {margin: 0 25px 0 84px;}
+.msg_item .msg_author {
+	color: #0e1886;
+	font: 13px 'proxima_novasemibold';
+	margin: 2px 0 11px;
+}
+.msg_item .msg_theme {
+	font: 14px/1.214285714285714em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: 0.006em;
+	margin-bottom: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	height: 2.428571428571429em;
+	overflow: hidden;
+}
+/*END message item*/
+
+
+/*message content*/
+.msg_content {
+	border-left: 1px solid #a1a1a1;
+	margin-left: -1px;
+	padding-left: 0;
+}
+.msg_content .msg_theme {
+	font: 20px/1.35em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: 0.007em;
+	margin: 7px 0 23px 22px;
+}
+.msg_content .msg_top .msg_author {
+	color: #8e8f90;
+	display: inline-block;
+	font: 13px 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin: 12px 0 0 24px;
+}
+.msg_content .msg_top .msg_author a {
+	color: #0e1886;
+	font-family: 'proxima_novasemibold';
+}
+.msg_content .msg_top .reply_link {
+	color: #0e1886;
+	display: inline-block;
+	font: 12px proxima_novasemibold;
+	margin: 0 10px 0 81px;
+	text-transform: uppercase;
+}
+.msg_content .msg_top .reply_link .fa {margin-right: 6px;}
+.msg_content .msg_top .date {
+	color: #8e8f90;
+	display: inline-block;
+	font: 13px 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin-top: 12px;
+}
+.msg_content .wrapp_content_msg {
+	box-shadow: 12px 0 12px -7px rgba(0, 0, 0, 0.11) inset;
+	padding: 25px 0 10px 24px;
+}
+.msg_content .content_txt {
+	font: 14px/1.285714285714286em 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.01em;
+}
+.msg_content .bt_reply_lg {
+	background-color: #efeff6;
+	color: #0e1886;
+	display: block;
+	font: 12px 'proxima_novasemibold';
+	letter-spacing: 0.02em;
+	margin: 31px 0;
+	padding: 7px 10px 6px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.msg_content .bt_reply_lg .fa {margin-right: 5px;}
+.msg_content .msg_tools {border-bottom: 1px solid rgba(161, 161, 161, 0.6);}
+.msg_content .msg_tools .txt_attach {
+	font: 10px 'proxima_novaregular', 'Open Sans', sans-serif;
+	opacity: 0.7;
+	text-transform: uppercase;
+}
+.msg_content .msg_tools .list_tools {
+	color: #0e1886;
+	font: 11px 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin-top: 3px;
+}
+.msg_content .msg_tools .list_tools a {
+	margin: 0 2px 0 17px;
+	letter-spacing: 0.05em;
+}
+.msg_content .msg_tools .list_tools .fa {margin-right: 4px;}
+.wrapp_attach_content {padding: 30px 0 0;}
+/*END message content*/
+
+
+
+/*modal*/
+.correspon_modal .modal_main_h1 {
+	font: 22px/1.3em 'proxima_novalight', 'Open Sans', sans-serif;
+}
+.correspon_modal .modal_main_h1 .fa {
+	font-size: 24px;
+	margin-right: 6px;
+}
+.correspon_modal .modal_main_h1 .author_name {
+	color: #0b009d;
+	font-family: 'proxima_novaregular', 'Open Sans', sans-serif;
+}
+.correspon_modal .modal-footer .fa {margin-right: 10px;}
+/*END modal*/
