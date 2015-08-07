@@ -249,67 +249,66 @@ $(document).ready(function(){
 	// END catalog modal content height
 
 
-	// header dropdowns
-	$(document).ready(function(){
-		// top dropdowns
-		$('.jsMegaDropBt').on('click', function (e) {
-			e.preventDefault();
-			var parentBt = $(this).parent();
-			$('.jsMegaDrop').not(parentBt).removeClass('open');
-			$(parentBt).toggleClass('open');
-			
-		});
+	// top dropdowns
+	$('.jsMegaDropBt').on('click', function (e) {
+		e.preventDefault();
+		var parentBt = $(this).parent();
+		$('.jsMegaDrop').not(parentBt).removeClass('open');
+		$(parentBt).toggleClass('open');
+		
+	});
 
-		function heightMegaDrop() {
-			var heightHeader = $('.main_header').height();
-			var heightForScroll = $(window).height() - heightHeader;
-			$('.scroll_notification .scroller').css('max-height', heightForScroll - 70);
-			$('.box_user_drop .scroller').css('max-height', heightForScroll - 20);
+	function heightMegaDrop() {
+		var heightHeader = $('.main_header').height();
+		var heightForScroll = $(window).height() - heightHeader;
+		$('.scroll_notification .scroller').css('max-height', heightForScroll - 70);
+		$('.box_user_drop .scroller').css('max-height', heightForScroll - 20);
+	}
+	heightMegaDrop();
+	$(window).resize(function() {
+		heightMegaDrop()
+	});
+
+
+	// editable
+	$('.jsEditCollection').editable({
+		placement: 'bottom',
+		emptytext: 'Add a description of your collection here',
+		mode: 'inline'
+	});
+	$('.jsEditWantListings').editable({
+		placement: 'top',
+		emptytext: 'Create your first Want Listing',
+		mode: 'inline'
+	});
+	$('.jsEditableTags').editable({
+		emptytext: '',
+		emptytext: 'What topics and authors are you most interested in?',
+		select2: {
+			tags: ['Astrophysics', 'Particle Physics', 'Space', 'Great Discoveries', '20th Century Scientists', 'Classical Science'],
+			tokenSeparators: [",", " "]
+		},
+		mode: 'inline'
+	});
+	$('.jsEditCollection, .jsEditWantListings, .jsEditableTags').on('hidden', function(e, reason) {
+		if($(this).hasClass('editable-empty')) {
+			$(this).closest('.jsEditParent').addClass('empty_editable');
 		}
-		heightMegaDrop();
-		$(window).resize(function() {
-			heightMegaDrop()
-		});
+		else{
+			$(this).closest('.jsEditParent').removeClass('empty_editable');
+		};
+	});
 
-
-		// editable
-		$('.jsEditCollection').editable({
-			placement: 'bottom',
-			emptytext: 'Add a description of your collection here',
-			mode: 'inline'
-		});
-		$('.jsEditWantListings').editable({
-			placement: 'top',
-			emptytext: 'Create your first Want Listing',
-			mode: 'inline'
-		});
-		$('.jsEditableTags').editable({
-			emptytext: '',
-			emptytext: 'What topics and authors are you most interested in?',
-			select2: {
-				tags: ['Astrophysics', 'Particle Physics', 'Space', 'Great Discoveries', '20th Century Scientists', 'Classical Science'],
-				tokenSeparators: [",", " "]
-			},
-			mode: 'inline'
-		});
-		$('.jsEditCollection, .jsEditWantListings, .jsEditableTags').on('hidden', function(e, reason) {
-			if($(this).hasClass('editable-empty')) {
-				$(this).closest('.jsEditParent').addClass('empty_editable');
-			}
-			else{
-				$(this).closest('.jsEditParent').removeClass('empty_editable');
-			};
-		});
-
-		$('.jsEditCloneBt').on('click', function (e) {
-			e.preventDefault();
-			e.stopPropagation();
-			var editThis = $(this).attr('href');
-			$(this).closest('.jsEditParent').find('.' + editThis).editable('toggle');
-		})
+	$('.jsEditCloneBt').on('click', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		var editThis = $(this).attr('href');
+		$(this).closest('.jsEditParent').find('.' + editThis).editable('toggle');
+	})
 
 
 
+	if ($( ".jsDropTemplate" ).length) {
 		// dropzone user dropdown
 		Dropzone.autoDiscover = false;
 		var previewNode = document.querySelector(".jsDropTemplate");
@@ -336,13 +335,12 @@ $(document).ready(function(){
 			}
 		}
 		dropInit();
+	}
 
-		$('.jsDelBt').on('click', function (e) {
-			e.preventDefault();
-			$(this).closest('.wrapper_product').remove();
-		})
+	$('.jsDelBt').on('click', function (e) {
+		e.preventDefault();
+		$(this).closest('.wrapper_product').remove();
+	})
 
-	});
-	// END header dropdowns
 
 });

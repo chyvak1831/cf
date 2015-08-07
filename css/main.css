@@ -508,7 +508,7 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	padding: 0 0 2px;
 	text-transform: uppercase;
 }
-.profile_small_title .view_all, .profile_small_title .jsEditCloneBt {
+.profile_small_title .view_all, .profile_small_title a, .profile_small_title .jsEditCloneBt {
 	color: #0e1886;
 	letter-spacing: 0.025em;
 	margin-left: 4px;
@@ -541,7 +541,7 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	transform: translate(0, 0);
 }
 .editable-empty:hover {text-decoration: none;}
-.keywords .editable {color: #0e1886;}
+.keywords .editable, .keywords .box_edit_profile a {color: #0e1886;}
 .keywords .profile_small_title {font-size: 10px;}
 .profile_list .title {
 	letter-spacing: 0.04em;
@@ -1423,12 +1423,18 @@ button.close {
 	box-shadow: 0 -13px 8px -4px rgba(195, 195, 195, 0.3) inset;
 	padding: 40px 5px 30px 40px;
 }
+@media (max-width: 767px) {.modal_with_scroll .modal-content {padding: 10px;}}
 .modal_with_scroll .modal-header {
 	border-bottom: 1px solid #c3c3c3;
 	box-shadow: 0 13px 8px -4px rgba(195, 195, 195, 0.2);
 	padding: 3px 40px 13px;
 	position: relative;
 	z-index: 3;
+}
+.modal_with_scroll .modal-header .modal_main_h1 {font: 22px/1.3em 'proxima_novalight', 'Open Sans', sans-serif;}
+.modal_with_scroll .modal-header .modal_main_h1 .fa {
+	font-size: 24px;
+	margin-right: 6px;
 }
 .modal_with_scroll .modal-header .close {
 	font-size: 38px;
@@ -1495,20 +1501,23 @@ button.close {
 }
 /*END catalog preview modal*/
 /*dealer modal*/
+.dealer_modal .modal-content {padding-top: 10px;}
 .dealer_modal .modal_main_h1 {
-	font: 42px/1em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	align-items: baseline;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	letter-spacing: 0.018em;
-	margin: 33px 0 9px;
+	margin: 33px 9px 9px 0;
 }
-.dealer_modal .modal_main_h1 .content_name_txt {margin-right: 58px;}
-.dealer_modal .modal_main_h1 .author_help {
+.dealer_modal .modal_main_h1 .content_name_txt {font: 42px/1em 'ACaslonProRegular', 'Times New Roman', 'Times';}
+.dealer_modal .author_help {
 	color: #666;
 	display: inline-block;
 	font: 14px "proxima_novalight";
-	margin-right: 21px;
 	text-transform: uppercase;
 }
-.dealer_modal .modal_main_h1 .author_help:last-child {margin-right: 0;}
+.dealer_modal .author_help:last-child {margin-left: 20px;}
 .dealer_modal .header_txt {
 	font: 16px/1.375em 'proxima_novalight', 'Open Sans', sans-serif;
 	display: -webkit-box;
@@ -1516,10 +1525,9 @@ button.close {
 	-webkit-box-orient: vertical;
 	height: 4.125em;
 	letter-spacing: 0.01em;
+	margin: 0;
 	overflow: hidden;
-	margin: 0 215px 0 0;
 }
-.dealer_modal .header_nav {text-align: right;}
 .dealer_modal .link_more {
 	color: #0026a0;
 	font: 16px 'proxima_novalight', 'Open Sans', sans-serif;
@@ -1531,14 +1539,59 @@ button.close {
 }
 .dealer_modal .header_nav a .fa {margin-right: 6px;}
 @media (max-width: 767px) {
-	.dealer_modal .modal_main_h1 {font-size: 28px;}
+	.dealer_modal .modal_main_h1 .content_name_txt {font-size: 28px;}
+	.dealer_modal .header_nav {text-align: center;}
 }
-@media (max-width: 600px) {
-	.dealer_modal .modal-header {text-align: center;}
-	.dealer_modal .modal_main_h1 .content_name_txt {display: block;margin: 0;}
-	.dealer_modal .modal_main_h1 .author_help {margin: 0 10px;}
-	.dealer_modal .header_txt, .dealer_modal .link_more {display: none;}
-	.dealer_modal .header_nav {float: none !important;text-align: center;}
-	.dealer_modal .header_nav li {display: inline-block;margin: 0 4px 4px;}
-}
+@media (max-width: 600px) {.dealer_modal .header_txt, .dealer_modal .link_more {display: none;}}
 /*END dealer modal*/
+
+
+
+/*catalogues market*/
+.market_img {
+	display: block;
+	position: relative;
+	max-width: 155px;
+}
+.market_img .box_catg_tools {
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: none;
+	height: 100%;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.market_img:hover .box_catg_tools {display: flex;}
+.market_img .box_catg_tools .bt {
+	background-color: rgba(255, 255, 255, 0.85);
+	display: block;
+	font-size: 11px;
+	line-height: 1.1em;
+	margin: 16px 0;
+	padding: 6px 12px;
+	text-align: left;
+	white-space: nowrap;
+	width: 100%;
+}
+.market_img .box_catg_tools .bt:hover {
+	background-color: #fff;
+	color: #666;
+	opacity: 1;
+}
+.market_img .box_catg_tools .bt i {margin-right: 3px;}
+/*END catalogues market*/
+
+
+/*modal delete sure*/
+.modal_del_msg .modal-dialog {background-color: #fff;}
+.modal_del_msg .modal-header {border-bottom: none;}
+.modal_del_msg .modal-header .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.modal_del_msg .btn {border-radius: 0;}
+/*END modal delete sure*/
