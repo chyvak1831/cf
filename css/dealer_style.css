@@ -218,9 +218,17 @@
 	margin-bottom: -0.5em;
 }
 .dealer_no_img .name_author {margin-right: 13px;}
+
+.info_author {
+	align-items: baseline;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 @media (min-width: 768px) {
 	.dealer_no_img .dealer_about_our {
 		border: none;
+		margin: 0;
 		text-align: left;
 	}
 	.dealer_no_img .author_name_shop {margin-bottom: 0;}
@@ -232,14 +240,15 @@
 	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: 47px 5px 40px 0;}
 }
 @media (min-width: 992px) {
-	.dealer_no_img .dealer_about_our {
-		margin: 36px 0 0;
+	/* .dealer_no_img .dealer_about_our {
+		margin: 46px 0 0;
 		padding: 4px 15px 3px;
 		text-align: right;
-	}
-	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: -9px 5px 40px 0;}
+	} */
+	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: 0 5px 40px 0;}
 }
 @media (max-width: 767px) {
+	.info_author {justify-content: center;}
 	.dealer_no_img .left_part {margin-top: 0;text-align: left;}
 }
 /*END dealer without image*/

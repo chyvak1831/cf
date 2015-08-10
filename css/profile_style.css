@@ -42,6 +42,7 @@
 }
 .wrapp_profile_aside .profile_link:hover {opacity: 0.5;}
 .wrapp_profile_aside .edit_profile_txt.editable {font-size: 12px;}
+.wrapp_profile_aside .noava_other_user {cursor: default;font-size: 100px;}
 /*END profile left side*/
 
 
@@ -64,6 +65,45 @@
 	line-height: 14px;
 }
 .wrapp_profile_catg .profile_small_title {margin-bottom: 46px;}
+
+
+.want_listing .scroller {max-height: 120px;}
+.want_list li {
+	padding: 0 10px 10px;
+	position: relative;
+}
+.want_list li .collapse_bt {
+	height: 20px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.want_list li .collapse_bt:hover {background-color: #fff;}
+.want_list .title {
+	display: block;
+	min-height: 20px;
+	letter-spacing: 0.04em;
+	margin-bottom: 0;
+	padding-left: 15px;
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.want_list .title.collapsing, .want_list .title.in {white-space: normal;}
+.want_list .title .fa {
+	position: absolute;
+	top: 1px;
+	left: 0;
+}
+.want_list .title.in:hover {opacity: 1;}
+.want_list .title.in .fa::before {content: '\f107';}
+.want_list li .edit_want, .want_list li .delete_want {
+	color: #0e1886;
+	margin-left: 15px;
+}
 
 
 /* create listing modal */

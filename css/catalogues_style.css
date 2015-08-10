@@ -68,6 +68,7 @@
 
 
 .catalogues_page .box_catalogues {padding: 1px 43px 69px;}
+.catalogues_page .catalog_img_link {display: block;}
 .catalogues_page .collectorsfolio_txt {
 	font-family: 'proxima_novasemibold', 'Open Sans', sans-serif;
 	margin: 13px 0 0;

@@ -24,13 +24,13 @@
 .top_dealer_page .genres_nav li:hover a {opacity: 0.5;}
 .top_dealer_page .leading_dealers {
 	color: #666;
-	font: 11px/2em 'proxima_novaregular', 'Open Sans', sans-serif;;
+	font: 11px/2em 'proxima_novaregular', 'Open Sans', sans-serif;
 	margin-top: 32px;
 	text-transform: uppercase;
 }
 .top_dealer_page .leading_dealers .shop_link {
 	color: #001676;
-	font: 10px/2.2em 'proxima_novalight', 'Open Sans', sans-serif;;
+	font: 10px/2.2em 'proxima_novalight', 'Open Sans', sans-serif;
 	text-decoration: underline;
 }
 .top_dealer_page .leading_dealers .shop_link:hover {opacity: 0.5;}
@@ -40,113 +40,63 @@
 
 /* lead_dealer_list */
 .lead_dealer_list {
-	margin: 0 -7px;
-	text-align: center;
-	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -10px;
 }
 .lead_dealer_list .wrapp_lead_dealer {
-	height: 354px;
-	display: inline-block;
-	margin: 0 4px 35px;
-	padding: 0;
-	transition: height 350ms ease 0s;
-	vertical-align: top;
-}
-.wrapp_lead_dealer.og-expanded .lead_dealer::before, .wrapp_lead_dealer.og-expanded .lead_dealer::after {
-	border: solid transparent;
-	border-bottom-color: #ddd;
-	border-width: 15px;
-	content: " ";
-	height: 0;
-	margin: -20px 0 0 -15px;
-	position: absolute;
-	left: 50%;
-	top: auto;
-	bottom: -13px;
-	width: 0;
-}
-.wrapp_lead_dealer.og-expanded .lead_dealer::after {
-	border-bottom-color: #fff;
-	border-width: 14px;
-	margin: -18px 0 0 -14px;
-	z-index: 3;
+	overflow: hidden;
+	padding: 10px;
+	width: 25%;
 }
 .lead_dealer {
-	border: 1px solid #ccc;
 	cursor: pointer;
-	display: block;
 	margin: auto;
-	padding: 14px 12px;
 	position: relative;
-	text-align: left;
-	max-width: 255px;
+	max-width: 250px;
 }
 .lead_dealer .box_img {
 	display: block;
 	position: relative;
 }
 .lead_dealer .wrapp_overlay {
+	background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 66%);
+	align-content: flex-end;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	font: 13px/1.3em 'proxima_novaregular', 'Open Sans', sans-serif;
+	padding: 15px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	right: 0;
 	top: 0;
+	transition: all .35s ease-out;
+	width: 100%;
+	z-index: 3;
 }
-.lead_dealer .wrapp_overlay .some_info {
-	background-color: black;
-	color: white;
-	font-size: 8px;
-	line-height: 2em;
-	opacity: 0.7;
-	margin-top: 17px;
-	padding: 1px 15px 0;
-	text-transform: uppercase;
-}
-.lead_dealer .wrapp_overlay .wrapp_company_name {
-	background-image: linear-gradient(to top, black 0%, black 7%, rgba(0, 0, 0, 0.86) 29%, rgba(0, 0, 0, 0.86) 43%, transparent 93%, transparent 100%);
-	color: white;
-	font-variant: small-caps;
-	letter-spacing: 0.07em;
-	height: 93px;
-	opacity: 0.8;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	text-align: center;
-}
+.lead_dealer:hover .wrapp_overlay {background-color: rgba(0, 0, 0, 0.6);}
 .lead_dealer .wrapp_overlay .company_name {
-	font-size: 14px;
-	line-height: 1.357142857142857em;
-	margin: 45px 0 0;
+	font-size: 16px;
+	margin: 0;
+	text-transform: uppercase;
+	width: 100%;
 }
 .lead_dealer .wrapp_overlay .company_city {
 	display: block;
-	font-size: 10px;
-}
-.lead_dealer .wrapp_about_dealer {
-	font-size: 13px;
-	line-height: 1.692307692307692em;
-}
-.lead_dealer .wrapp_about_dealer .spec_in_title {
-	color: #0e1886;
-	font: 9px/1.2em 'proxima_novaregular', 'Open Sans', sans-serif;;
-	margin: 18px 0 7px;
+	font: 10px/1.5em 'proxima_novalight', 'Open Sans', sans-serif;
+	margin: 1px 0 0;
 	text-transform: uppercase;
 }
-.lead_dealer .wrapp_about_dealer .genre_list {
-	overflow: hidden;
-	max-height: 66px;
-}
-.lead_dealer .wrapp_about_dealer .owner, .lead_dealer .wrapp_about_dealer .date_foumded {
-	overflow: hidden;
-	max-height: 22px;
-}
-.lead_dealer .wrapp_about_dealer .owner, .lead_dealer .wrapp_about_dealer .date_foumded {
-	display: block;
-	font-family: 'proxima_novaregular', 'Open Sans', sans-serif;
-}
-.lead_dealer .wrapp_about_dealer .owner {margin: 14px 0 5px;}
-@media (max-width: 1199px) {.lead_dealer {max-width: 226px;}}
-@media (min-width: 768px) and (max-width: 991px) {.lead_dealer {max-width: 232px;}}
 /* END lead_dealer_list */
+@media (max-width: 1200px) {.lead_dealer_list .wrapp_lead_dealer {padding: 7px;}}
+@media (max-width: 992px) {
+	.lead_dealer_list .wrapp_lead_dealer {
+		padding: 5px;
+		width: 33.3333333333333333%;
+	}
+	.lead_dealer .wrapp_overlay {padding: 7px;}
+	.lead_dealer .wrapp_overlay .company_name {font-size: 15px;}
+}
+@media (max-width: 550px) {.lead_dealer_list .wrapp_lead_dealer {width: 50%;}}

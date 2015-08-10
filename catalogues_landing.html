@@ -11,9 +11,9 @@
 	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/catalogues_style.css">
+	<link rel="stylesheet" href="css/catalogues_landing_style.css">
 </head>
-<body class="catalogues_page">
+<body class="catalogues_landing_page">
 	<header class="main_header sticky_header">
 		<div class="container custom_padding">
 			<a href="#" class="logo logo_scroll pull-left hide"><span>CF</span></a>
@@ -346,101 +346,142 @@
 		</div><!-- container custom_padding -->
 	</header>
 
-	<div class="container custom_padding">
-		<div class="wrapp_catalog_search">
-			<form>
-				<div class="box_src">
-					<input type="text" class="form-control lg src_field" placeholder="Search inside 112 catalogues . . .">
-					<button type="submit" class="src_bt">Search</button>
+	<div class="container custom_padding proxima_novalight">
+		<section class="box_top_dealer">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Catalogue</a></li>
+				<li class="active">Dealer</li>
+			</ol>
+		</section>
+
+		<div class="main_wrapp row">
+			<div class="col-sm-5 sidebar">
+				<div class="visible-xs">
+					<h1 class="main_h1">Science, Literature, Mathematics</h1>
+					<p class="dealer_name">Einstein Rare Book Company</p>
+					<span class="date_publish">Published July 27, 2015</span>
+					<ul class="catalog_dealer_nav list-inline hidden-xs">
+						<li><a href="#"><i class="fa fa-desktop"></i>View e-Catalogue</a></li>
+						<li><a href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a></li>
+						<li><a href="#"><i class="fa fa-home"></i>Dealer Profile</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+					</ul>
 				</div>
-			</form>
-		</div>
-		<p class="all_catalogues_txt hidden-xs"><i class="fa fa-arrow-down"></i>Displaying All Catalogues</p>
-		<div class="wrapp_catalogues row">
-			<article class="box_catalogues col-md-6 clearfix">
-				<a href="#" class="catalog_img_link">
-					<picture class="catalogues_image pull-left">
-						<source srcset="images/catalogues01.jpg">
-						<img src="" alt="" class="img-responsive">
-					</picture>
-				</a>
-				<div class="product_txt">
-					<header>
-						<p class="collectorsfolio_txt">CollectorsFolio</p>
-						<h1>Catalogue Title Long: CollectorsFolio Catalogue Number One</h1>
-						<p class="date">July 23, 2015</p>
-					</header>
-					<ul class="catg_links list-unstyled">
-						<li><a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a></li>
-						<li><a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a></li>
-						<li class="hidden-xs"><a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a></li>
-					</footer>
+				<div class="flex">
+					<div class="wrapp_img_catalog">
+						<div class="wrapp_over_links">
+							<a class="link_preview_catalog visible-xs" href="#catalogPreview" data-toggle="modal"><i class="fa fa-picture-o"></i>Preview e-Catalogue</a>
+							<a class="link_full_catalog" href="https://www.scribd.com/fullscreen/37102768?access_key=key-io4yl06u4sduo9zyt65&allow_share=false&escape=false&show_recommendations=false&view_mode=scroll"><span class="visible-xs"><i class="fa fa-desktop"></i>View e-Catalogue</span></a>
+						</div>
+						<picture>
+							<source srcset="images/catalog_landing.jpg, images/2x/catalog_landing.jpg 2x">
+							<img src="" alt="" class="img-responsive">
+						</picture>
+					</div>
 				</div>
-			</article>
-			<article class="box_catalogues col-md-6 clearfix">
-				<a href="#" class="catalog_img_link">
-					<picture class="catalogues_image pull-left">
-						<source srcset="images/catalogues02.jpg">
-						<img src="" alt="" class="img-responsive">
-					</picture>
-				</a>
-				<div class="product_txt">
-					<header>
-						<p class="collectorsfolio_txt">CollectorsFolio</p>
-						<h1>Catalogue Catalogue Number One, Extra </h1>
-						<p class="date">July 23, 2015</p>
-					</header>
-					<footer class="catg_links list-unstyled">
-						<li><a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a></li>
-						<li><a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a></li>
-						<li class="hidden-xs"><a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a></li>
-					</footer>
+				<a href="https://www.scribd.com/fullscreen/37102768?access_key=key-io4yl06u4sduo9zyt65&allow_share=false&escape=false&show_recommendations=false&view_mode=scroll" class="view_ecatalog hidden-xs"><i class="fa fa-desktop"></i>View e-Catalogue</a>
+				<ul class="social_list text-center list-inline">
+					<li><a data-original-title="Facebook post" data-toggle="tooltip" class="fb" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a data-original-title="Google post" data-toggle="tooltip" class="glpl" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a data-original-title="Tweet" data-toggle="tooltip" class="tw" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a data-original-title="Linkedin" data-toggle="tooltip" class="ldin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a data-original-title="Mail" data-toggle="tooltip" href="#"><i class="fa fa-envelope"></i></a></li>
+					<li><a data-original-title="Print" data-toggle="tooltip" href="#"><i class="fa fa-print"></i></a></li>
+				</ul>
+				<p class="keywords_catalog_landing">Keywords: Science, Mathematics, Literautre</p>
+				<div class="all_catalog_this_author hidden-xs">
+					<p class="title">All Catalogues from Einstein Rare Book Company</p>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#">Science, Mathematics, Literature, art &amp; Illustration vol. 2</a>
+							<p class="date">July, 2015</p>
+						</li>
+						<li>
+							<a href="#">Twenty Fine Books in History of Economics</a>
+							<p class="date">July, 2015</p>
+						</li>
+						<li>
+							<a href="#">European and South American Fiction</a>
+							<p class="date">July, 2015</p>
+						</li>
+						<li>
+							<a href="#">Strangers Guides: Mapping Early Urban America</a>
+							<p class="date">July, 2015</p>
+						</li>
+					</ul>
 				</div>
-			</article>
-			<article class="box_catalogues col-md-6 clearfix">
-				<a href="#" class="catalog_img_link">
-					<picture class="catalogues_image pull-left">
-						<source srcset="images/catalogues03.jpg">
-						<img src="" alt="" class="img-responsive">
-					</picture>
-				</a>
-				<div class="product_txt">
-					<header>
-						<p class="collectorsfolio_txt">CollectorsFolio</p>
-						<h1>Catalogue Catalogue Number One, Extra </h1>
-						<p class="date">July 23, 2015</p>
-					</header>
-					<footer class="catg_links list-unstyled">
-						<li><a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a></li>
-						<li><a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a></li>
-						<li class="hidden-xs"><a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a></li>
-					</footer>
+			</div><!-- col-md-5 -->
+
+			<div class="col-sm-7">
+				<div class="hidden-xs">
+					<h1 class="main_h1">Science, Literature, Mathematics</h1>
+					<p class="dealer_name">Einstein Rare Book Company</p>
+					<span class="date_publish">Published July 27, 2015</span>
+					<ul class="catalog_dealer_nav list-inline">
+						<li><a href="#"><i class="fa fa-desktop"></i>View e-Catalogue</a></li>
+						<li><a href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a></li>
+						<li><a href="#"><i class="fa fa-home"></i>Dealer Profile</a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+					</ul>
 				</div>
-			</article>
-			<article class="box_catalogues col-md-6 clearfix">
-				<a href="#" class="catalog_img_link">
-					<picture class="catalogues_image pull-left">
-						<source srcset="images/catalogues04.jpg">
-						<img src="" alt="" class="img-responsive">
-					</picture>
-				</a>
-				<div class="product_txt">
-					<header>
-						<p class="collectorsfolio_txt">CollectorsFolio</p>
-						<h1>Catalogue Title Long: CollectorsFolio Catalogue Number One</h1>
-						<p class="date">July 23, 2015</p>
-					</header>
-					<footer class="catg_links list-unstyled">
-						<li><a href="#" data-toggle="modal" data-target="#catalogPreview"><i class="fa fa-external-link"></i><span>Preview Highlights</span></a></li>
-						<li><a href="#"><i class="fa fa-desktop"></i><span>View e-Catalogue</span></a></li>
-						<li class="hidden-xs"><a href="#"><i class="fa fa-file-text-o"></i><span>Download PDF</span></a></li>
-					</footer>
+				<p class="range_fields">A private collection of rare and important first editions in a range of fields including: Quantum Mechanics, Atomic Theory, Space/Time/Relativity/Cosmology, Thermodynamics/Statistical Methods, Electricity, Magnetism, Electronics, Mathematics/Computation/Information Theory</p>
+				<div class="all_catalog_this_author visible-xs">
+					<p class="title">All Catalogues from Einstein Rare Book Company</p>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#">Science, Mathematics, Literature, art &amp; Illustration vol. 2</a>
+							<p class="date">July, 2015</p>
+						</li>
+						<li>
+							<a href="#">Twenty Fine Books in History of Economics</a>
+							<p class="date">July, 2015</p>
+						</li>
+						<li>
+							<a href="#">European and South American Fiction</a>
+							<p class="date">July, 2015</p>
+						</li>
+						<li>
+							<a href="#">Strangers Guides: Mapping Early Urban America</a>
+							<p class="date">July, 2015</p>
+						</li>
+					</ul>
 				</div>
-			</article>
+				<div class="catalog_highlights">
+					<h3>Catalogue Highlights</h3>
+					<ul class="list_highlights list-unstyled">
+						<li>A Bruised Reed Shall He Not Break" (p) by Christina-Georgina-Rossetti</li>
+						<li>A Death in the Desert" (s) by Willa-Cather</li>
+						<li>A man was drawing near to me" (p) by Thomas-Hardy</li>
+						<li>A Noted Traveler" (p) by James-Whitcomb-Riley</li>
+						<li>A Poor Stick" (s) by Arthur-Morrison  consectetur adipiscing elit, sed do eiusmod didunt ut</li>
+						<li>A Rough Shed" (s) by Henry-Lawson</li>
+						<li>According To Gunter" (s) by Falconbridge</li>
+						<li>According to the Mighty Working" (p) by Thomas-Hardy</li>
+						<li>Ad Amicos" (p) by Oliver-Wendell-Holmes</li>
+						<li>After" Jenkins (s) by Mark-Twain</li>
+						<li>A Bruised Reed Shall He Not Break" (p) by Christina-Georgina-Rossetti</li>
+						<li>A Death in the Desert" (s) by Willa-Cather</li>
+						<li>A man was drawing near to me" (p) by Thomas-Hardy</li>
+						<li>A Noted Traveler" (p) by James-Whitcomb-Riley</li>
+					</ul>
+				</div>
+				<ul class="catalog_dealer_nav list-inline">
+					<li><a href="#"><i class="fa fa-desktop"></i>View e-Catalogue</a></li>
+					<li><a href="#"><i class="fa fa-file-pdf-o"></i>Download PDF</a></li>
+					<li><a href="#"><i class="fa fa-home"></i>Dealer Profile</a></li>
+					<li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+				</ul>
+				<div class="catalog_content_txt">
+					<h2>Published by Einstein Rare Book Company</h2>
+					<p>16pt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum... </p>
+				</div>
+			</div>
 		</div><!-- row -->
 	</div><!-- container custom_padding main_wrapp_profile -->
 
 
+	
 	<!-- Modal -->
 	<article class="modal_with_scroll catalog_preview modal fade jsModalFullHeight" id="catalogPreview" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-lg">
@@ -494,6 +535,7 @@
 			</div>
 		</div>
 	</article>
+
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>

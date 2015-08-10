@@ -43,43 +43,6 @@
 
 /*marketplace*/
 .box_market_item {margin-bottom: 49px;}
-.box_market_item .market_img {
-	position: relative;
-	max-width: 155px;
-}
-.box_market_item .market_img .box_catg_tools {
-	background-color: rgba(255, 255, 255, 0.5);
-	display: none;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-.box_market_item .market_img .box_catg_tools .box_bt {
-	padding: 0 20px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-}
-.box_market_item .market_img .box_catg_tools .bt {
-	background-color: rgba(255, 255, 255, 0.85);
-	display: block;
-	font-size: 11px;
-	line-height: 1.1em;
-	margin: 16px 0;
-	padding: 6px 12px;
-	text-align: left;
-	white-space: nowrap;
-	width: 100%;
-}
-.box_market_item .market_img .box_catg_tools .bt:hover {
-	background-color: #fff;
-	color: #666;
-}
-.box_market_item .market_img .box_catg_tools .bt i {margin-right: 3px;}
-.box_market_item .market_img:hover .box_catg_tools {display: block;}
 .box_market_item .market_txt {
 	font: 12px 'proxima_novaregular';
 	margin-left: 190px;

@@ -1,0 +1,143 @@
+.catalogues_landing_page a:hover {opacity: 0.5;}
+.catalogues_landing_page .main_wrapp {padding-top: 45px;}
+@media (max-width: 1199px) {.catalogues_landing_page .main_wrapp {padding-top: 20px;}}
+/*left sidebar*/
+@media (min-width: 1200px) {.catalogues_landing_page .sidebar {padding-right: 43px;}}
+.wrapp_img_catalog picture {display: block;}
+.flex {
+	display: flex;
+	justify-content: center;
+}
+.wrapp_img_catalog {
+	max-width: 100%;
+	position: relative;
+}
+.wrapp_over_links {
+	align-content: center;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.link_preview_catalog, .link_full_catalog {width: 100%;}
+.view_ecatalog {
+	background-color: rgba(225, 225, 225, 0.5);
+	color: #000d85;
+	display: block;
+	font: 13px/1.2em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	letter-spacing: 0.1em;
+	margin: 22px 0 16px;
+	padding: 14px 7px;
+	text-align: center;
+}
+.catalogues_landing_page .sidebar .social_list {margin-top: 36px;}
+.view_ecatalog .fa {margin-right: 8px;}
+.keywords_catalog_landing {
+	color: #7a7a7a;
+	font-size: 13px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.all_catalog_this_author {
+	font-size: 14px;
+	margin-top: 35px;
+}
+.all_catalog_this_author a {color: inherit;}
+.all_catalog_this_author .title {
+	border-bottom: 1px solid #bfbfbf;;
+	font: 13px/1.538461538461538em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+	padding-bottom: 12px;
+}
+.all_catalog_this_author .date {
+	color: #8e8e8e;
+	font-size: 12px;
+}
+@media (min-width: 768px) {.link_full_catalog:hover {background-color: rgba(255,255,255,0.5);}}
+@media (max-width: 767px) {
+	.link_preview_catalog, .link_full_catalog {
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #fff;
+		letter-spacing: 0.05em;
+		margin: 5px 0;
+		padding: 7px;
+		text-align: center;
+	}
+	.link_preview_catalog .fa, .link_full_catalog .fa {margin-right: 7px;}
+}
+/*END left sidebar*/
+
+/*main_content*/
+.catalogues_landing_page .main_h1 {
+	font: italic 32px/1.3em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: -0.005em;
+	margin-top: 45px;
+}
+.catalogues_landing_page .dealer_name {
+	font: 14px/1.3em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	letter-spacing: 0.03em;
+	margin: 14px 0 3px;
+}
+.catalogues_landing_page .date_publish {
+	color: #7a7a7a;
+	display: block;
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	margin-bottom: 15px;
+}
+.catalog_dealer_nav {
+	border-bottom: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
+	margin: 30px 0;
+	padding: 10px 0;
+}
+.catalog_dealer_nav a {
+	color: #000387;
+	display: block;
+	font: 12px 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.03em;
+	margin-right: 10px;
+	padding: 5px 0;
+}
+.catalog_dealer_nav .fa {
+	color: #989898;
+	margin-right: 5px;
+}
+.range_fields {
+	font-size: 17px;
+	line-height: 1.529411764705882em;
+}
+.catalog_highlights {padding: 17px 0 1px;}
+.catalog_highlights h3 {
+	border-bottom: 1px solid #bfbfbf;
+	font: 13px/1.3em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	padding-bottom: 10px;
+}
+.catalog_highlights .list_highlights {margin: 28px 0 16px;}
+.catalog_highlights .list_highlights li {
+	font-size: 14px;
+	margin-bottom: 11px;
+}
+.catalog_content_txt {
+	color: #737373;
+	font-size: 16px;
+	line-height: 1.4375em;
+	padding: 1px 0;
+	max-width: 525px;
+}
+.catalog_content_txt h2 {
+	color: #000;
+	font-size: 19px;
+	margin-bottom: 27px;
+}
+/*END main_content*/
+
+@media (max-width: 1199px) {.catalogues_landing_page .main_h1 {font-size: 30px; margin-top: 25px;}}
+@media (max-width: 992px) {.catalogues_landing_page .main_h1 {font-size: 28px;}}
+@media (max-width: 767px) {
+	.catalogues_landing_page .main_h1 {font-size: 26px; margin-top: 5px;}
+	.catalog_content_txt {max-width: 100%;}
+}
