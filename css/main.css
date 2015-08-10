@@ -1423,6 +1423,7 @@ button.close {
 	box-shadow: 0 -13px 8px -4px rgba(195, 195, 195, 0.3) inset;
 	padding: 40px 5px 30px 40px;
 }
+@media (max-width: 767px) {.modal_with_scroll .modal-content {padding: 10px;}}
 .modal_with_scroll .modal-header {
 	border-bottom: 1px solid #c3c3c3;
 	box-shadow: 0 13px 8px -4px rgba(195, 195, 195, 0.2);
