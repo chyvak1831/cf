@@ -133,6 +133,41 @@
 	font-size: 19px;
 	margin-bottom: 27px;
 }
+.catalogues_landing_page .more_from_listing {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.catalogues_landing_page .more_from_listing_title {
+	font-size: 14px;
+	margin: 58px 0 23px;
+}
+.catalogues_landing_page .more_from_listing .wrapper_product {width: 20%;}
+.catalogues_landing_page .more_from_listing .box_product_item:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+.catalogues_landing_page .more_from_listing .box_product_item h1 {
+	font: 13px 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin: 12px 0 5px;
+	text-transform: none;
+}
+.catalogues_landing_page .more_from_listing .box_product_item .product_txt {height: auto;}
+.catalogues_landing_page .more_from_listing .wrapper_product header, .catalogues_landing_page .more_from_listing .wrapper_product footer {display: none;}
+.catalogues_landing_page .more_from_listing .describe_txt {
+	font: 14px/1.5em 'proxima_novalight', 'Open Sans', sans-serif;
+	max-height: 3em;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+}
+@media (max-width: 767px) {
+	.catalogues_landing_page .more_from_listing {justify-content: center;}
+	.catalogues_landing_page .more_from_listing .wrapper_product {
+		position: relative;
+		width: 33.3333333333333%;
+	}
+}
+@media (max-width: 650px) {.catalogues_landing_page .more_from_listing .wrapper_product {width: 50%;}}
 /*END main_content*/
 
 @media (max-width: 1199px) {.catalogues_landing_page .main_h1 {font-size: 30px; margin-top: 25px;}}

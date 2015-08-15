@@ -1504,13 +1504,7 @@ button.close {
 	margin-bottom: 22px;
 }
 @media (max-width: 767px) {
-	.catalog_preview .modal-header .header_txt {
-		display: -webkit-box;
-		-webkit-line-clamp: 3;
-		-webkit-box-orient: vertical;
-		height: 4.125em;
-		overflow: hidden;
-	}
+	.catalog_preview .modal-header .header_txt {display: none;}
 	.catalog_preview .modal-content .scroller, .dealer_modal .modal-content .scroller {padding-right: 20px;}
 	.catalog_preview .modal-content p {margin-bottom: 15px;}
 }
