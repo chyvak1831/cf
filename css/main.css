@@ -2,6 +2,7 @@
 html, body {
 	color: #000;
 	font-family: 'Open Sans', sans-serif;
+	height: 100%;
 	position: relative;
 }
 .proxima_novalight {font-family: 'proxima_novalight', 'Open Sans', sans-serif;}
@@ -1431,7 +1432,7 @@ button.close {
 	position: relative;
 	z-index: 3;
 }
-.modal_with_scroll .modal-header .modal_main_h1 {font: 22px/1.3em 'proxima_novalight', 'Open Sans', sans-serif;}
+.modal_with_scroll .modal-header .modal_main_h1 {font: 22px/1em 'proxima_novalight', 'Open Sans', sans-serif;}
 .modal_with_scroll .modal-header .modal_main_h1 .fa {
 	font-size: 24px;
 	margin-right: 6px;
@@ -1454,10 +1455,15 @@ button.close {
 	margin: 0 34px;
 	white-space: nowrap;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.modal_with_scroll .modal-header {padding: 3px 20px 13px;}
+	.modal_with_scroll .modal-header .modal_main_h1 {
+		line-height: 1em;
+		margin: 16px 0 0;
+	}
 	.modal_with_scroll .modal-content {padding: 20px;}
 }
+@media (max-width: 767px) {.modal_with_scroll .modal-header {padding: 3px 20px 13px;}}
 /*END catalog preview and dealer modal*/
 /*catalog preview modal*/
 .catalog_preview .prev, .catalog_preview .next {
