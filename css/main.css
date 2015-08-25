@@ -186,7 +186,11 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	width: 5px;
 	z-index: 3;
 }
-.scroll_wrapper.baron .scroller_bar_wrapper {display: block;}
+.scroll_wrapper.baron .scroller_bar_wrapper {
+	display: block;
+	right: 5px;
+	top: 13px;
+}
 .scroll_wrapper:hover .scroller_bar_wrapper {opacity: 0.4;}
 .scroller_bar {
 	background-color: #000;
@@ -253,37 +257,54 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 
 
 .loading {display: none;}
-.modal-backdrop-preloader, .modal-backdrop-preloader.fade.in {opacity: 0.4;}
+.loading .txt_src {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 3px 0px 5px rgba(255,255,255,0.7);
+	width: 100%;
+}
+.modal-backdrop-preloader .close_load {
+	color: #fff;
+	cursor: pointer;
+	font-size: 40px;
+	font-style: normal;
+	opacity: 0.6;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.modal-backdrop-preloader .close_load:hover {opacity: 0.7;}
 .modal-backdrop-preloader {
-	background-color: #000000;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
 	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
 	left: 0;
 	position: fixed;
 	right: 0;
 	top: 0;
 	z-index: 9999;
 }
-.content.preloader {
-	left: 50%;
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-}
-.preloader .circle, .preloader .circle1 {
+.preloader::before, .preloader::after {
 	border-color: rgba(102, 102, 102, 0.9) rgba(0, 0, 0, 0);
 	border-radius: 50px;
 	border-style: solid;
 	border-width: 5px;
+	content: '';
+	display: block;
 	margin: 0 auto;
 	opacity: 0.9;
 }
-.preloader .circle {
+.preloader::before {
 	animation: 1s linear 0s normal none infinite running spinPulse;
 	box-shadow: 0 0 35px #666;
 	height: 50px;
 	width: 50px;
 }
-.preloader .circle1 {
+.preloader::after {
 	animation: 1s linear 0s normal none infinite running spinoffPulse;
 	box-shadow: 0 0 15px #999;
 	height: 30px;
@@ -940,6 +961,59 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 
 
 
+/*main_footer*/
+.main_footer {
+	background-color: #eee;
+	color: #666;
+	font-size: 13px;
+	margin-top: 32px;
+	padding: 43px 0 73px 0;
+}
+.main_footer .site_name {
+	color: #000;
+	font: 12px 'Libre Baskerville', serif;
+	letter-spacing: 0.01em;
+	margin: 0 0 3px;
+	text-transform: uppercase;
+}
+.main_footer .footer_address {
+	letter-spacing: 0.03em;
+	line-height: 1.53em;
+}
+.main_footer .street, .main_footer .city_zip {display: block;}
+.main_footer .box_phone {margin: 21px 0 2px;}
+.main_footer .box_phone, .main_footer .box_email {letter-spacing: 0.02em;}
+.main_footer .sign_txt {margin: 4px 0 10px;}
+.main_footer .box_subscribe {
+	margin-bottom: 22px;
+	max-width: 392px;
+}
+.main_footer .box_subscribe .btn_send {
+	background-image: linear-gradient(to bottom, #0085cb 0%,#0078b6 100%);
+	text-align: center;
+	z-index: 2;
+}
+.main_footer .box_subscribe .btn_send:hover {opacity: 0.5;}
+.main_footer .box_subscribe .btn_send .fa {
+	color: #fff;
+	opacity: 0.89;
+	font-size: 17.5px;
+}
+.main_footer .footer_nav_list li {margin-bottom: 7px;}
+.main_footer .footer_nav_list li::after {
+	content: '|';
+	display: inline-block;
+	font-size: 11px;
+	margin: 0 -9px 0 5px;
+	vertical-align: text-top;
+}
+.main_footer .footer_nav_list li:last-child::after {display: none;}
+.main_footer .wrapp_sign_nav {letter-spacing: -0.01em;}
+@media (min-width: 1199px) {.main_footer .wrapp_sign_nav {padding-left: 0;}}
+@media (max-width: 767px) {.main_footer {padding-bottom: 40px;}}
+/*END main_footer*/
+
+
 
 /* books listing */
 .listing_books .listing_item {
@@ -1422,9 +1496,11 @@ button.close {
 	border: none;
 	border-radius: 0;
 	box-shadow: 0 -13px 8px -4px rgba(195, 195, 195, 0.3) inset;
-	padding: 40px 5px 30px 40px;
+	padding: 0;
 }
-@media (max-width: 767px) {.modal_with_scroll .modal-content {padding: 10px;}}
+.modal_with_scroll .modal-content .scroller {padding: 40px;}
+@media (max-width: 991px) {.modal_with_scroll .modal-content .scroller {padding: 30px;}}
+@media (max-width: 767px) {.modal_with_scroll .modal-content .scroller {padding: 20px;}}
 .modal_with_scroll .modal-header {
 	border-bottom: 1px solid #c3c3c3;
 	box-shadow: 0 13px 8px -4px rgba(195, 195, 195, 0.2);
@@ -1453,17 +1529,14 @@ button.close {
 	font: 18px/1.611111111111111 'proxima_novaregular', 'Open Sans', sans-serif;
 	letter-spacing: 0.05em;
 	margin: 0 34px;
+	text-transform: uppercase;
 	white-space: nowrap;
 }
 @media (max-width: 991px) {
-	.modal_with_scroll .modal-header {padding: 3px 20px 13px;}
-	.modal_with_scroll .modal-header .modal_main_h1 {
-		line-height: 1em;
-		margin: 16px 0 0;
-	}
-	.modal_with_scroll .modal-content {padding: 20px;}
+	.modal_with_scroll .modal-dialog {margin: 10px; width: auto;}
+	.modal_with_scroll .modal-header {padding: 8px 40px 8px 15px;}
+	.modal_with_scroll .modal-header .modal_main_h1 {font-size: 18.5px;margin: 10px 0;}
 }
-@media (max-width: 767px) {.modal_with_scroll .modal-header {padding: 3px 20px 13px;}}
 /*END catalog preview and dealer modal*/
 /*catalog preview modal*/
 .catalog_preview .prev, .catalog_preview .next {
@@ -1479,7 +1552,7 @@ button.close {
 .catalog_preview .modal-header h1 {
 	font: 22px/1.4em 'proxima_novasemibold', 'Open Sans', sans-serif;
 	letter-spacing: 0.04em;
-	margin: 20px 30px 0 0;
+	margin: 20px 0 0;
 }
 .catalog_preview .modal-header .name {
 	color: #0e1886;
@@ -1498,25 +1571,38 @@ button.close {
 .catalog_preview .modal-header .header_txt {
 	font: 16px/1.375em 'proxima_novalight', 'Open Sans', sans-serif;
 	letter-spacing: 0.01em;
+	display: -webkit-box;
+	height: 5.5em;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
-.catalog_preview .modal-content .scroller, .dealer_modal .modal-content .scroller {
-	min-height: 245px;
-	padding-right: 40px;
-}
+.catalog_preview .modal-content .scroller, .dealer_modal .modal-content .scroller {min-height: 245px;}
 .catalog_preview .modal-content p {
 	font: 17px/1.4em 'proxima_novalight', 'Open Sans', sans-serif;
 	letter-spacing: 0.025em;
 	opacity: 0.9;
 	margin-bottom: 22px;
 }
+@media (max-width: 991px) {
+	.catalog_preview .modal-header h1 {margin-top: 13px;}
+	.catalog_preview .modal-content p {margin-bottom: 17px;}
+	.catalog_preview .modal-header .header_txt {
+		height: 4.125em;
+		-webkit-line-clamp: 3;
+	}
+}
 @media (max-width: 767px) {
+	.catalog_preview .modal-header h1 {
+		font-size: 18.5px;
+		margin: 10px 0 0;
+	}
 	.catalog_preview .modal-header .header_txt {display: none;}
-	.catalog_preview .modal-content .scroller, .dealer_modal .modal-content .scroller {padding-right: 20px;}
-	.catalog_preview .modal-content p {margin-bottom: 15px;}
+	.catalog_preview .modal-content .scroller, .dealer_modal .modal-content .scroller {min-height: 140px;}
+	.catalog_preview .modal-content p {margin-bottom: 13px;}
 }
 /*END catalog preview modal*/
 /*dealer modal*/
-.dealer_modal .modal-content {padding-top: 10px;}
 .dealer_modal .modal_main_h1 {
 	align-items: baseline;
 	display: flex;
@@ -1526,6 +1612,7 @@ button.close {
 	margin: 33px 9px 9px 0;
 }
 .dealer_modal .modal_main_h1 .content_name_txt {font: 42px/1em 'ACaslonProRegular', 'Times New Roman', 'Times';}
+.dealer_modal .wrapp_author_city {margin-bottom: 0;}
 .dealer_modal .author_help {
 	color: #666;
 	display: inline-block;
@@ -1547,15 +1634,19 @@ button.close {
 	color: #0026a0;
 	font: 16px 'proxima_novalight', 'Open Sans', sans-serif;
 }
+.dealer_modal .header_nav {margin: -30px 0 17px;}
 .dealer_modal .header_nav a {
 	color: #0a0181;
 	font: 14px/1.571428571428571em 'proxima_novalight', 'Open Sans', sans-serif;
 	letter-spacing: 0.01em;
 }
 .dealer_modal .header_nav a .fa {margin-right: 6px;}
+@media (max-width: 991px) {.dealer_modal .header_nav {margin-top: -20px;}}
 @media (max-width: 767px) {
-	.dealer_modal .modal_main_h1 .content_name_txt {font-size: 28px;}
-	.dealer_modal .header_nav {text-align: center;}
+	.dealer_modal.modal_with_scroll .modal_main_h1 {margin-bottom: 0;}
+	.dealer_modal .modal_main_h1 .content_name_txt {font-size: 25px;}
+	.dealer_modal .wrapp_header_txt {display: none;}
+	.dealer_modal .header_nav {margin-top: -10px;text-align: center;}
 }
 @media (max-width: 600px) {.dealer_modal .header_txt, .dealer_modal .link_more {display: none;}}
 /*END dealer modal*/

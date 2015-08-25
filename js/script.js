@@ -67,6 +67,12 @@ $(document).ready(function(){
 			};
 		}
 		customScroll();
+		$('.modal').on('shown.bs.modal', function () {
+			customScroll();
+		});
+		$('[data-toggle="tab"]').on('shown.bs.tab', function () {
+			customScroll();
+		})
 	// END customscrollbar
 
 
@@ -236,14 +242,18 @@ $(document).ready(function(){
 
 	// catalog modal content height
 		function heightModalCatalog() {
-			var heightModalScroll = $(window).height() - $('.jsModalFullHeight .modal-header').outerHeight() - $('.jsModalFullHeight .modal-footer').outerHeight();
-			$('.jsModalFullHeight .scroller').css('height', heightModalScroll - 130);
+			var heightModalScroll = $(window).height() - $('.jsModalFullHeight.in .modal-header').outerHeight() - $('.jsModalFullHeight.in .modal-footer').outerHeight();
+			if (window.matchMedia('(min-width: 992px)').matches) {
+				$('.jsModalFullHeight.in .scroller').css('height', heightModalScroll - 60);
+			}
+			if (window.matchMedia('(max-width: 991px)').matches) {
+				$('.jsModalFullHeight.in .scroller').css('height', heightModalScroll - 20);
+			}
 		}
-		heightModalCatalog();
 		$(window).resize(function() {
 			heightModalCatalog();
 		});
-		$('.jsModalFullHeight').on('shown.bs.modal', function (e) {
+		$('.jsModalFullHeight').on('shown.bs.modal', function () {
 			heightModalCatalog();
 		})
 	// END catalog modal content height
