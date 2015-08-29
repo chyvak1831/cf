@@ -9,7 +9,6 @@
 	color: #000;
 	font-family: 'proxima_novaregular';
 }
-.all_src_content {padding: 0 7px;}
 .tabs1 {
 	border-bottom: 1px solid #acacac;
 	margin: 0 0 9px;
@@ -34,54 +33,132 @@
 	.tabs1 > li {padding: 0;}
 	.tabs1 li a {
 		font-size: 12px;
-		padding: 8px 8px 6px;
+		padding: 8px 6px 6px;
 	}
 }
 
-.box_src_filter {margin: 0 0 19px 15px;}
+.box_src_filter {
+	margin: 0 0 19px;
+	text-align: right;
+}
 .src_listing {margin-left: -7px;}
 
+
+
 /*marketplace*/
-.box_market_item {margin-bottom: 49px;}
+.box_market_item {margin: 30px 0 51px 18px;}
 .box_market_item .market_txt {
 	font: 12px 'proxima_novaregular';
-	margin-left: 190px;
+	margin-left: 269px;
 }
 .box_market_item .name_catg {
 	display: block;
-	font-size: 14px;
-	letter-spacing: 0.04em;
-	margin: 10px 0 1px;
+	font: 22px/1.222222222222222em 'ACaslonProItalic', 'Times New Roman', 'Times';
+	letter-spacing: 0.023em;
+	margin: 4px 0 11px -4px;
 }
-.box_market_item .number_catg_date {
-	display: block;
-	font-family: 'proxima_novalightitalic';
-	letter-spacing: 0.04em;
+.box_market_item .name_delaer_date {
+	font: 14px 'proxima_novasemibold';
+	letter-spacing: 0.023em;
 }
+.box_market_item .name_delaer_date .date {
+	color: #7a7a7a;
+	font: 13px 'proxima_novalight', 'Open Sans', sans-serif;
+	margin-left: 12px;
+}
+
+.src_page .list_nav_product {
+	border-bottom: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
+	margin: 18px 0 25px;
+	padding: 5px 0;
+}
+.src_page .list_nav_product li:first-child {padding-right: 1px;}
+.src_page .list_nav_product li {margin: 3px 12px 3px 0;}
+.src_page .list_nav_product li:last-child {margin-right: 0;}
+.src_page .list_nav_product a {
+	color: #000387;
+	font: 12px/1.3em 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.03em;
+}
+.src_page .list_nav_product a:hover {opacity: 0.5;}
+.src_page .list_nav_product a .fa {
+	color: #b9b9b9;
+	margin-right: 5px;
+}
+@media (max-width: 767px) {
+	.box_market_item {margin: 20px 0 41px 0;}
+	.src_page .list_nav_product a .fa {font-size: 15px;}
+}
+
 .box_market_item h1 {
 	border-bottom: 1px solid #cdcdcd;
 	font-size: 16px;
 	margin: 32px 0 9px;
 	padding-bottom: 7px;
 }
-.box_market_item .links_pages {max-height: 84px;}
-.links_pages li {padding: 4px 10px 3px 0;}
-.box_market_item .links_pages .number_page {
-	color: #515151;
-	margin-right: 6px;
+.box_market_item .links_pages {
+	display: table;
+	margin: 16px 0 0 11px;
 }
-.box_market_item .links_pages a {color: #02328a;}
-.box_market_item .links_pages a:hover {text-decoration: underline;}
-@media (max-width: 767px) {.box_market_item h1 {margin-top: 18px;}}
-@media (max-width: 550px) {
-	.box_market_item {margin-bottom: 80px;}
-	.box_market_item .market_img {
+.wrapp_links_pages .scroller {
+	max-height: 110px;
+	padding: 0 17px 0 27px;
+}
+.wrapp_links_pages {
+	background-color: rgba(172, 172, 172, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.29);
+	letter-spacing: 0.023em;
+	padding: 16px 27px 16px 0;
+}
+.wrapp_links_pages .main_title {font: 14px 'proxima_novaregular';}
+.wrapp_links_pages .main_title .fa {
+	position: relative;
+	top: -2px;
+}
+.wrapp_links_pages .main_title span {font-family: 'proxima_novalight';}
+.links_pages li {display: table-row;}
+.src_page .box_market_item .links_pages .number_page {
+	color: #000;
+	display: table-cell;
+	font-family: 'proxima_novaregular';
+	padding: 0 21px 7px 0;
+	white-space: nowrap;
+}
+.src_page .box_market_item .links_pages a {
+	color: #262993;
+	display: table-cell;
+	letter-spacing: 0.017em;
+	padding-bottom: 7px;
+}
+.src_page .box_market_item .links_pages a:hover {text-decoration: underline;}
+@media (max-width: 991px) {
+	.wrapp_links_pages .scroller {padding-left: 15px;}
+	.src_page .box_market_item .market_txt {margin-left: 250px;}
+}
+@media (max-width: 767px) {
+	.src_page .box_market_item .market_txt {margin-left: 240px;}
+	.src_page .box_market_item h1 {margin-top: 18px;}
+	.src_page .box_market_item .links_pages {margin-left: 5px;}
+}
+@media (max-width: 700px) {
+	.src_page .market_img {max-width: 160px;}
+	.src_page .box_market_item .market_txt {margin-left: 175px;}
+	.src_page .list_nav_product li {margin-right: 3px;}
+	.src_page .list_nav_product a .fa {font-size: 11px;}
+}
+@media (max-width: 600px) {
+	.src_page .box_market_item {margin-bottom: 80px;}
+	.src_page .box_market_item .market_img {
 		float: none !important;
 		display: block;
-		margin: auto;
+		margin: 0 auto 15px;
 	}
-	.box_market_item .market_txt {margin: 0;}
-	.box_market_item .name_catg, .box_market_item .number_catg_date {text-align: center;}
+	.src_page .box_market_item .market_txt {margin: 0;}
+	.src_page .list_nav_product {display: flex;justify-content: space-between;}
+	.src_page .box_market_item .name_catg, .src_page .box_market_item .name_delaer_date {text-align: center;}
 }
+@media (max-width: 425px) {.src_page .list_nav_product a {font-size: 10px;}}
+@media (max-width: 370px) {.src_page .list_nav_product a .fa {display: none;}}
 /*END marketplace*/
 /* END SEARCH PAGE */

@@ -1,0 +1,71 @@
+.about_page .main_container {
+	border: 1px solid #d1d1d1;
+	box-shadow: 0 2px 29px rgba(0, 0, 0, 0.19);
+	margin: 58px auto;
+	max-width: 850px;
+	padding: 3.35% 5.6% 4.55%;
+}
+.about_page p, .about_page .like_list_cf li p {
+	font: 18px/1.555555555555556em 'proxima_novalight', 'Open Sans', sans-serif;;
+	margin-bottom: 1.6em;
+	text-align: justify;
+}
+.about_page .main_h1 {font: 600 32px 'ACaslonProRegular', 'Times New Roman', 'Times';}
+.about_page .help_txt {
+	color: #838383;
+	font: 400 18px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: 0.009em;
+	margin-bottom: 6.5%;
+	text-align: left;
+}
+.about_page .like_use_cf {
+	font: 600 21px 'ACaslonProRegular', 'Times New Roman', 'Times';
+	padding: 9px 0 19px;
+}
+.about_page .like_list_cf {padding-left: 0;}
+.about_page .like_list_cf li {
+	font: 18px proxima_novasemibold;
+	list-style-position: inside;
+}
+.about_page .wrapp_sign {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 14.5%;
+}
+.about_page .wrapp_sign picture {
+	display: block;
+	margin-bottom: -9px;
+}
+.about_page .wrapp_sign .name, .about_page .wrapp_sign .position {
+	font: 15px/1.2em 'proxima_novaregular', 'Open Sans', sans-serif;
+	display: block;
+	letter-spacing: 0.007em;
+	margin-left: 52px;
+}
+.about_page .wrapp_chairman_info {
+	border-top: 1px solid #d1d1d1;
+	display: flex;
+	margin-top: 5.9%;
+	padding: 5.5% 0 15px;
+}
+.about_page .wrapp_chairman_info .photo_chairman {
+	flex-shrink: 0;
+	margin-left: 3.6%;
+}
+.about_page .wrapp_chairman_info .txt_content {
+	align-self: center;
+	font: 15px/1.466666666666667em 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.01em;
+	margin: 0;
+	opacity: 0.6;
+	padding: 0 5%;
+	text-align: left;
+}
+@media (max-width: 767px) {.about_page .main_container {margin-top: 40px;}}
+@media (max-width: 400px) {
+	.about_page .wrapp_chairman_info {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.about_page .wrapp_chairman_info .photo_chairman {margin: 0 0 10px;}
+}

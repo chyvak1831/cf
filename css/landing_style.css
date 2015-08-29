@@ -1,6 +1,3 @@
-a {transition: all .2s ease-in-out;}
-a:hover {opacity: 0.5;}
-
 .landing_item .images_wrapp {margin-top: 36px;}
 .landing_item .images_wrapp picture {
 	margin: auto;
@@ -166,3 +163,45 @@ a:hover {opacity: 0.5;}
 	max-width: 155px;
 }
 /*END product_list*/
+
+
+/*modals*/
+.offer_requst_modal .header_content {
+	display: flex;
+	justify-content: space-between;
+}
+.offer_requst_modal .modal_main_h1 {
+	font: 26px/1em 'ACaslonProRegular', 'Times New Roman', 'Times';
+	letter-spacing: 0.01em;
+	margin: 0 0 19px;
+}
+.offer_requst_modal .modal-content {
+	border-radius: 0;
+	padding: 28px 30px 14px;
+}
+.offer_requst_modal .close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+.offer_requst_modal .form_to {
+	color: #040d6e;
+	font: 14px 'proxima_novaregular', 'Open Sans', sans-serif;
+}
+.offer_requst_modal .btn_submit {
+	background-color: #040d6e;
+	border-color: #040d6e;
+}
+.offer_requst_modal .btn_submit:hover {opacity: 0.5;}
+.offer_modal .add_comments {height: 185px;}
+.offer_modal .help_info {
+	opacity: 0.9;
+	font-size: 12px;
+	margin-bottom: 3.5%;
+	max-width: 58%;
+	text-align: right;
+}
+@media (min-width: 600px) {.requst_modal .modal-dialog {width: 544px;}}
+/*@media (min-width: 600px) {.requst_modal .modal-dialog {width: 544px;}}*/
+@media (max-width: 600px) {.offer_requst_modal .modal-content {padding: 15px 15px 10px;}}
+/*END modals*/

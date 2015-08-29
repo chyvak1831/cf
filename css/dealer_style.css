@@ -179,6 +179,7 @@
 	position: relative;
 	z-index: 3;
 }
+.wrapp_dealer_listing .box_product_item .offered_name span {display: none;}
 @media (max-width: 991px) {.wrapp_dealer_listing .view_sort_filter {margin-top: -50px;}}
 @media (max-width: 767px) {.wrapp_dealer_listing .view_sort_filter {margin-top: 16px;}}
 /*END listing*/
@@ -218,6 +219,7 @@
 	margin-bottom: -0.5em;
 }
 .dealer_no_img .name_author {margin-right: 13px;}
+.dealer_no_img .box_product_item .offered_name span {display: none;}
 
 .info_author {
 	align-items: baseline;

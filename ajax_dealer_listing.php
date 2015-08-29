@@ -39,7 +39,7 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 				<div class="product_txt">
 					<a href="productLink.com">
 						<header>
-							<h1 class="text-uppercase jsTitle">'.$row["name"].'</h1>
+							<h1 class="jsTitle">'.$row["name"].'</h1>
 							<p class="category collapse jsSomeTxt">Grapefruit</p>
 							<p class="where_wroten collapse jsWhereWrote">Tokyo: Wunternaum Press, 1964.</p>
 							<span class="savebox jsSave jsSaveBt color_blue">
@@ -51,11 +51,12 @@ if(isset($_POST) && isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SER
 						</header>
 						<div class="describe_txt jsContentTxt">'.$row["message"].'</div>
 					</a>
-					<footer class="clearfix">
+					<footer>
 						<span class="price jsPrice">$25,000</span>
-						<ul class="full_quick_links color_blue list-inline">
-							<li><a href="#bookModal" class="jsQueickViewBt">Quick View</a></li>
-						</ul>
+						<div class="wrapp_offered_quick">
+							<p class="offered_name"><span>offered by</span> <a href="#">Einstein Rare Book Company</a></p>
+							<a href="#bookModal" class="queck_view jsQueickViewBt"><i class="fa fa-external-link"></i>Quick View</a>
+						</div>
 					</footer>
 				</div>
 			</div>
