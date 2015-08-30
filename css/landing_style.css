@@ -51,7 +51,7 @@
 	line-height: 1.529411764705882em;
 	margin-bottom: 40px;
 }
-.landing_item .price {
+.landing_item .main_content .price {
 	font-size: 24px;
 	letter-spacing: 0.017em;
 }
@@ -117,91 +117,3 @@
 	font-size: 11px;
 }
 /*END main content*/
-
-
-
-/*product_list*/
-.landing_item .product_list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0;
-	text-align: center;
-}
-.landing_item .product_list .wrapper_product {
-	cursor: pointer;
-	font: 13px/1.384615384615385em 'proxima_novaregular';
-	letter-spacing: 0.005em;
-	padding: 22px 8px;
-	width: 20%;
-}
-.landing_item .product_list a, .landing_item .product_list picture {display: inline-block;}
-.landing_item .product_list .wrapper_product header, .landing_item .product_list .wrapper_product footer {display: none;}
-.dealer_intro .recentry_listed .wrapper_product:hover {opacity: 0.5;}
-.landing_item .product_list .box_product_item {margin-bottom: 0;}
-.landing_item .product_list .box_product_item .product_txt {height: auto;}
-@media (max-width: 767px) {
-	.landing_item .product_list {justify-content: center;}
-	.landing_item .product_list .wrapper_product {
-		position: relative;
-		width: 33.3333333333333%;
-	}
-}
-@media (max-width: 650px) {.landing_item .product_list .wrapper_product {width: 50%;}}
-
-.landing_item .product_list h4 {
-	font: 11px 'proxima_novaregular', 'Open Sans', sans-serif;
-	margin: 22px 0 6px;
-}
-.landing_item .product_list .describe_txt {
-	-webkit-line-clamp: 3;
-	color: #a2a1a1;
-	font-size: 11px;
-	line-height: 1.35em;
-	margin: auto;
-	max-height: 4.05em;
-	max-width: 155px;
-}
-/*END product_list*/
-
-
-/*modals*/
-.offer_requst_modal .header_content {
-	display: flex;
-	justify-content: space-between;
-}
-.offer_requst_modal .modal_main_h1 {
-	font: 26px/1em 'ACaslonProRegular', 'Times New Roman', 'Times';
-	letter-spacing: 0.01em;
-	margin: 0 0 19px;
-}
-.offer_requst_modal .modal-content {
-	border-radius: 0;
-	padding: 28px 30px 14px;
-}
-.offer_requst_modal .close {
-	position: absolute;
-	right: 15px;
-	top: 10px;
-}
-.offer_requst_modal .form_to {
-	color: #040d6e;
-	font: 14px 'proxima_novaregular', 'Open Sans', sans-serif;
-}
-.offer_requst_modal .btn_submit {
-	background-color: #040d6e;
-	border-color: #040d6e;
-}
-.offer_requst_modal .btn_submit:hover {opacity: 0.5;}
-.offer_modal .add_comments {height: 185px;}
-.offer_modal .help_info {
-	opacity: 0.9;
-	font-size: 12px;
-	margin-bottom: 3.5%;
-	max-width: 58%;
-	text-align: right;
-}
-@media (min-width: 600px) {.requst_modal .modal-dialog {width: 544px;}}
-/*@media (min-width: 600px) {.requst_modal .modal-dialog {width: 544px;}}*/
-@media (max-width: 600px) {.offer_requst_modal .modal-content {padding: 15px 15px 10px;}}
-/*END modals*/
