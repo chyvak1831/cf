@@ -1803,6 +1803,11 @@ button.close {
 	max-width: 58%;
 	text-align: right;
 }
+.offer_requst_modal .share_txt {
+	font-size: 13px;
+	letter-spacing: 0.02em;
+	margin: 4px 0 21px;
+}
 @media (min-width: 600px) {.requst_modal .modal-dialog {width: 544px;}}
 /*@media (min-width: 600px) {.requst_modal .modal-dialog {width: 544px;}}*/
 @media (max-width: 600px) {.offer_requst_modal .modal-content {padding: 15px 15px 10px;}}
