@@ -1257,6 +1257,7 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 .savebox {cursor: pointer;}
 .savebox:hover {opacity: 0.5;}
 .box_product_item .jsWrappSaveIcons {display: none;}
+.jsSave {display: none !important;}
 .jsSavedIcon, .saved .jsSaveIcon {display: none;}
 .saved .jsSavedIcon {display: inline-block;}
 @media (max-width: 1199px) {.box_product_item .savebox {right: -6px;}}
@@ -1298,7 +1299,7 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	}
 	.list_view .box_product_item .describe_txt {display: -webkit-box;}
 	.list_view .box_product_item .offered_name span {display: inline-block;}
-	.list_view .box_product_item .offered_name, .list_view .box_product_item .queck_view {
+	.list_view .box_product_item .offered_name, .list_view .box_product_item:hover .queck_view {
 		display: block;
 		margin: 0;
 		width: auto;

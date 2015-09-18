@@ -17,42 +17,51 @@
 	top: 0;
 	width: 100%;
 }
-.top_dealer_info .bottom_info .bottom_info_inner {width: 100%;}
+.top_dealer_info .bottom_info .bottom_info_inner {
+	padding: 0 26px;
+	width: 100%;
+}
 .top_dealer_info .bottom_panel {
 	align-items: center;
 	display: flex;
-	font-size: 12px;
+	font-size: 14px;
 	justify-content: space-between;
-	padding: 7px 27px 15px 19px;
+	letter-spacing: 0.033em;
+	padding: 7px 0 15px;
 }
 .top_dealer_info .bottom_panel ul {margin: 0;}
-.top_dealer_info .bottom_panel .right_nav li {padding-right: 2px;}
+.top_dealer_info .bottom_panel .left_nav li {margin-right: 10px;}
+.top_dealer_info .bottom_panel .right_nav {text-align: right;}
+.top_dealer_info .bottom_panel .right_nav li {padding-right: 0;}
+.top_dealer_info .bottom_panel .right_nav li:last-child a {margin-right: 3px;}
+.top_dealer_info .bottom_panel .right_nav a {margin-right: 9px;}
+.top_dealer_info .bottom_panel .right_nav a .fa {margin-right: 5px;}
+@media (max-width: 991px) {.top_dealer_info .bottom_info .bottom_info_inner {padding: 0 10px;}}
 /* END top large block */
 
 
 
 /*mainh1*/
 .author_name_shop {
-	font: 49px/1em "ACaslonProRegular","Times New Roman","Times";
-	margin: 0 0 0 26px;
-}
-.author_help {
-	display: inline-block;
-	font: 11px "proxima_novalight";
-	margin-left: 4px;
-    letter-spacing: 0.04em;
+	font: 42px 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin: 0 0 5px;
 }
 @media (max-width: 991px) {
 	.author_name_shop {font-size: 35px;}
-	.author_help {margin-left: 15px;}
 }
 @media (max-width: 767px) {
 	.author_name_shop {
 		margin: 20px 0 4px;
 		text-align: center;
 	}
-	.author_name_shop .content_name_txt {display: block;margin-bottom: -16px;}
-	.author_help {margin: 0 10px;}
+	.author_name_shop .content_name_txt {
+		display: block;
+		margin-bottom: -16px;
+	}
+	.author_help {
+		font-size: 13px;
+		margin: 0 10px;
+	}
 }
 .dealer_about_our {
 	border-bottom: 1px solid #bdbdbd;
