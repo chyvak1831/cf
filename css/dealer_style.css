@@ -59,8 +59,9 @@
 		margin-bottom: -16px;
 	}
 	.author_help {
+		display: inline-block;
 		font-size: 13px;
-		margin: 0 10px;
+		margin: 10px;
 	}
 }
 .dealer_about_our {
@@ -210,10 +211,6 @@
 
 
 /*dealer without image*/
-.dealer_no_img .content_name_txt {
-	display: block;
-	margin-bottom: -0.5em;
-}
 .dealer_no_img .name_author {margin-right: 13px;}
 .dealer_no_img .box_product_item .offered_name span {display: none;}
 
@@ -223,10 +220,10 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+.dealer_no_img .dealer_about_our {margin: 0;}
 @media (min-width: 768px) {
 	.dealer_no_img .dealer_about_our {
 		border: none;
-		margin: 0;
 		text-align: left;
 	}
 	.dealer_no_img .author_name_shop {margin-bottom: 0;}
@@ -234,20 +231,16 @@
 		font-size: 14px;
 		margin: 0 37px 0 3px;
 	}
-	.dealer_no_img .literature_nav {padding-top: 44px;}
+	.dealer_no_img .literature_nav {padding-top: 70px;}
 	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: 47px 5px 40px 0;}
 }
 @media (min-width: 992px) {
-	/* .dealer_no_img .dealer_about_our {
-		margin: 46px 0 0;
-		padding: 4px 15px 3px;
-		text-align: right;
-	} */
-	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: 0 5px 40px 0;}
+	.dealer_no_img .wrapp_dealer_listing .view_sort_filter {margin: 25px 5px 40px 0;}
 }
 @media (max-width: 767px) {
 	.info_author {justify-content: center;}
 	.dealer_no_img .left_part {margin-top: 0;text-align: left;}
+	.dealer_no_img .dealer_about_our {width: 100%;}
 }
 /*END dealer without image*/
 /* END DEALER PAGE */
