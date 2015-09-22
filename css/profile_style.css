@@ -235,6 +235,23 @@
 	overflow: hidden;
 	/*ellipsis*/
 }
+.fellow_modal .modal-footer {
+	background-image: linear-gradient(to top, #c1c1c1 0%, white 100%);
+	box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.11);
+	padding: 10px;
+	text-align: center;
+}
+.fellow_modal .modal-footer a {
+	color: #040d6e;
+	font: 13px 'proxima_novasemibold', 'Open Sans', sans-serif;
+	text-transform: none;
+	letter-spacing: 0;
+	white-space: normal;
+}
+.fellow_modal .modal-footer a .fa {
+	font-weight: 700;
+	margin-right: 8px;
+}
 @media (min-width: 992px) {.fellow_modal .modal-dialog {width: 800px;}}
 @media (max-width: 767px) {.fellow_modal .fellow_list li {padding: 14px;}}
 @media (max-width: 650px) {
