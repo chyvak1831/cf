@@ -116,4 +116,21 @@
 	color: #03008d;
 	font-size: 11px;
 }
+@media screen and (max-width: 767px) {
+	.landing_item .main_h1 {margin: -3px 10px 12px 0;}
+	.landing_item .author_name {margin-right: 10px;}
+	.landing_item .images_wrapp .thumbs_list {text-align: center;}
+	.landing_item .wrapp_buy_btn {margin-bottom: 24px;}
+	.landing_item .list_nav_product {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -5px 51px;
+	}
+	.landing_item .list_nav_product li {
+		margin: 3px 5px 3px 0;
+		white-space: nowrap;
+	}
+	.landing_item .product_list_content .see_more_txt {margin: 27px 0 16px 4px;}
+}
 /*END main content*/

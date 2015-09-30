@@ -1020,7 +1020,17 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 .main_footer .footer_nav_list li:last-child::after {display: none;}
 .main_footer .wrapp_sign_nav {letter-spacing: -0.01em;}
 @media (min-width: 1199px) {.main_footer .wrapp_sign_nav {padding-left: 0;}}
-@media (max-width: 767px) {.main_footer {padding-bottom: 40px;}}
+@media (max-width: 767px) {
+	.main_footer {
+		padding: 36px 0 0;
+		text-align: center;
+	}
+	.main_footer .site_name {
+		font-size: 17px;
+		margin-bottom: 13px;
+	}
+	.main_footer .box_subscribe {margin-left: auto;margin-right: auto;}
+}
 /*END main_footer*/
 
 
