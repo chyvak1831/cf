@@ -358,6 +358,72 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 
 
 
+/* main_slider */
+.bx-wrapper {margin-bottom: 47px;}
+.bx-wrapper .bx-viewport {
+	background: none;
+	border: none;
+	box-shadow: none;
+	left: 0;
+}
+.bx-wrapper .bx-controls-direction a {
+	background: none;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 37px;
+	margin-top: -47px;
+	text-indent: 0;
+	z-index: 9;
+}
+.bx-wrapper .bx-prev {left: 21px;}
+.bx-wrapper .bx-next {right: 2px;}
+.bxslider li {left: 0;}
+.bx-wrapper .bx-caption {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.68);
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	height: 118px;
+	letter-spacing: 0.03em;
+	padding: 5px 22px;
+	text-align: center;
+}
+.bx-wrapper .bx-caption .title {
+	font: 24px 'proxima_novaregular', 'Open Sans', sans-serif;
+	letter-spacing: 0.07em;
+	margin: 0;
+	width: 100%;
+}
+.bx-wrapper .bx-caption .company_name {
+	font: 13px/1.75em 'proxima_novalight';
+	letter-spacing: 0.095em;
+	padding: 7px 0 3px;
+	width: 100%;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	bottom: 6px;
+	right: 10px;
+	width: auto;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background-color: #676869;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {background-color: #c6c7c7;}
+@media (min-width: 768px) and (max-width: 991px) {
+	.bx-wrapper .bx-caption .title {font-size: 19px;}
+	.bx-wrapper .bx-caption {height: 100px;}
+	.bx-wrapper .bx-caption .company_name {padding: 3px 0 0;}
+}
+@media (max-width: 530px) {.bx-wrapper .bx-caption .title {font-size: 18px;}}
+@media (max-width: 400px) {
+	.bx-wrapper .bx-caption, .bx-pager {display: none;}
+	.bx-wrapper .bx-controls-direction a {margin-top: -26px;}
+}
+/* END main_slider */
+
+
+
 /*social list*/
 .social_list a {
 	display: block;
@@ -701,38 +767,50 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 /*drop notification&userdrop*/
 .top_box .box_notification, .top_box .box_user_drop {
 	background-color: white;
-	border: 1px solid #898989;
+	border: 1px solid #ccc;
 	box-shadow: 8.5px 9.8px 20.2px 3.8px rgba(0, 0, 0, 0.17);
 	margin: 7px 0 0 !important;
 	padding: 0;
 }
-.top_box .box_notification {width: 546px;}
+.top_box .box_notification {width: 547px;}
 .top_box .box_user_drop {
 	padding: 5px 5px 15px;
 	width: 800px;
 }
 .top_box .box_notification::before, .top_box .box_user_drop::before, .top_box .box_notification::after, .top_box .box_user_drop::after {display: none;}
-.top_box .scroll_notification .scroller_bar_wrapper {bottom: 3px;}
+.top_box .scroll_notification .scroller_bar_wrapper {
+	background-color: #f0f0f0;
+	border-radius: 2px;
+	box-shadow: 0 0 0 2px #fff;
+	bottom: 0;
+	opacity: 1;
+	right: 1px;
+	top: 0;
+	width: 4px;
+}
+.top_box .scroll_notification .scroller_bar {background-color: #b6b6b6;}
 .box_user_drop .wrapp_snapshot, .box_user_drop .wrapp_edit_info, .box_user_drop .wrapp_user_nav {padding-top: 14px;}
 .box_user_drop .wrapp_edit_info {padding-right: 50px;}
 .box_user_drop .wrapp_user_nav {margin-left: -7px; padding-left: 0;}
 @media (max-width: 991px) {.top_box .box_user_drop {width: 738px;}}
 .box_notification .top_title {
 	border-bottom: 1px solid #a1a1a1;
-	letter-spacing: 0.026em;
-	padding: 2px 9px 2px 19px;
+	letter-spacing: 0.06em;
 }
 .box_notification .top_title, .box_notification .load_more_notific {
-	background-image: linear-gradient(-180deg, #fff 0%, #eaeaea 100%);
-	display: block;
+	align-items: center;
+	background-image: linear-gradient(-180deg, rgba(255,255,255,0.36) 0%, rgba(193,193,193,0.36) 100%);
+	display: flex;
+	font: 11px 'proxima_novasemibold';
+	height: 38px;
 	margin: 0;
-	vertical-align: middle;
+	padding: 0 20px;
 }
-.box_notification .notif_title {
-	font: 11px 'proxima_novaregular';
-	display: inline-block;
-	vertical-align: middle;
-	text-transform: uppercase;
+.box_notification .notif_title {padding-top: 2px;}
+.box_notification .top_title i {
+	color: #a8a8a8;
+	font-size: 17px;
+	margin-right: 10px;
 }
 .box_notification .settings_link {
 	color: #0f26b0;
@@ -740,68 +818,84 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	margin: 13px 0 0;
 }
 .box_notification .load_more_notific {
-	border-top: 1px solid #a1a1a1;
-	color: #585ea5;
-	font: 14px 'proxima_novaregular';
-	letter-spacing: 0.07em;
-	padding: 10px 0 9px;
-	text-align: center;
+	border-top: 1px solid #ccc;
+	color: #0e1886;
+	font-size: 12px;
+	height: 36px;
+	justify-content: center;
+	letter-spacing: 0.02em;
 }
 .box_notification .item_notific {
-	border-top: 1px solid #a1a1a1;
+	border-top: 1px solid #ccc;
 	border-radius: 0;
+	display: flex;
 	margin-bottom: 0;
-	padding: 18px 14px 15px 18px;
+	padding: 20px 18px 7px 21px;
+	position: relative;
 }
 .box_notification .item_notific:first-child {border: none;}
-.box_notification .item_notific:hover {background-color: #e9f2fb;}
+.box_notification .item_notific.active {background-color: #e9f2fb;}
 .box_notification .item_notific .hover_block {display: none;}
 .box_notification .item_notific:hover .hover_block {display: block;}
+.box_notification .ava {
+	flex: 0 0 45px;
+	margin-bottom: 18px;
+}
+.box_notification .book_img {flex: 0 0 93px;}
 .box_notification .item_notific .wrapp_book {
 	display: block;
 	margin-right: 30px;
 }
-.box_notification .item_notific .list_tool {
+.box_notification .item_notific .time {
 	color: #b6b6b6;
 	font-size: 10.5px;
-	margin-top: -11px;
+	position: absolute;
+	top: 8px;
+	right: 15px;
 }
-.box_notification .item_notific .list_tool .close {
+.box_notification .item_notific .close {
 	color: #9ca2a8;
-	float: none;
 	font-size: 16px;
 	font-weight: 700;
-	margin: 17px 0 6px;
 	opacity: 1;
-	right: 0;
+	position: absolute;
+	right: 13px;
+	top: 30px;
 }
-.box_notification .item_notific .txt_box {margin: 0 69px;}
-.box_notification .item_notific .user_invite_name {
+.box_notification .item_notific .close:hover {opacity: 0.5;}
+.box_notification .book_img {margin-top: 4px;}
+.box_notification .item_notific .txt_box {
+	flex: 1 1;
+	margin: 0 17px 0 22px;
+}
+.box_notification .item_notific .info {
 	color: #666;
-	font: 12px 'proxima_novalight', 'Open Sans', sans-serif;
-	letter-spacing: 0.035em;
-	margin: -2px 0 0;
+	display: flex;
+	font: 11px/0.9em 'proxima_novaregular';
+	margin-bottom: 12px;
 }
-.box_notification .item_notific .user_invite_name a {
+.box_notification .item_notific .info li {margin-right: 10px;}
+.box_notification .item_notific .info .name {
 	color: #0f26b0;
-	font-family: 'proxima_novaregular';
-	letter-spacing: 0.04em;
+	font-family: 'proxima_novasemibold';
 }
-.box_notification .item_notific h1 {
-	color: #010101;
-	font: 14px/17px 'ACaslonProRegular', 'Times New Roman', 'Times';
-	letter-spacing: -0.007em;
-	margin: 14px 0 1px 6px;
-}
-.box_notification .item_notific h1 .fa {margin-right: 2px;}
 .box_notification .item_notific .content_txt {
 	color: #858585;
-	letter-spacing: -0.03em;
-	line-height: 17px;
-	margin: 0 0 0 4px;
+	font-size: 11px;
+	letter-spacing: -0.24px;
+	line-height: 15px;
+	margin: 0 0 5px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	max-height: 51px;
+	overflow: hidden;
+}
+.box_notification .item_notific .content_txt span {
+	color: #000;
+	font: 12px 'proxima_novasemibold';
 }
 .box_user_drop .profile_box {margin-bottom: 20px;}
-/*.box_user_drop .my_collection .box_edit_profile {height: 8.727272727272727em;}*/
 .box_user_drop .my_collection .editable {
 	display: -webkit-box;
 	-webkit-line-clamp: 11;
@@ -828,6 +922,15 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 .editable-input {margin-bottom: 7px;}
 .dz-started .dz-message {display: none;}
 .jsDropTemplate.dz-image-preview {display: block !important;}
+.fellow_drop .item_notific .content_txt {
+	color: #000;
+	-webkit-line-clamp: 2;
+	max-height: 30px;
+}
+.fellow_drop .load_more_notific span {
+	font-family: 'proxima_novaregular', 'Open Sans', sans-serif;
+	margin: 0 0 2px 4px;
+}
 /*END drop notification&userdrop*/
 
 /*navbar*/
