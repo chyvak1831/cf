@@ -177,42 +177,38 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 
 /* custom scrollbar */
 .wrapper {
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
 .scroller {overflow-y: scroll;}
 .scroller::-webkit-scrollbar {width: 0;}
 .scroller_bar_wrapper {
-	background-color: #999;
-	border-radius: 5px;
+	background-color: #e3e3e3;
+	border-radius: 3px;
 	display: none;
-	opacity: 0.3;
 	overflow: hidden;
 	pointer-events: none;
 	position: absolute;
-	bottom: 13px;
-	right: 0;
-	top: 3px;
-	width: 5px;
+	bottom: 7px;
+	right: 7px;
+	top: 7px;
+	width: 6px;
 	z-index: 3;
 }
-.scroll_wrapper.baron .scroller_bar_wrapper {
-	display: block;
-	right: 5px;
-	top: 13px;
-}
-.scroll_wrapper:hover .scroller_bar_wrapper {opacity: 0.4;}
 .scroller_bar {
-	background-color: #000;
-	border-radius: 5px;
-	opacity: 0.8;
+	background-color: #a1a1a1;
+	border-radius: 3px;
 	pointer-events: auto;
 	position: absolute;    
-	right: 0;
+	left: 0;
+	top: 0;
 	transition: opacity .2s linear;
 	width: 100%;
 	z-index: 1;
 }
+.baron .scroller {padding-right: 20px !important;}
+.scroll_wrapper.baron .scroller_bar_wrapper {display: block;}
 /* END custom scrollbar */
 
 /*dropdown*/
@@ -778,17 +774,6 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	width: 800px;
 }
 .top_box .box_notification::before, .top_box .box_user_drop::before, .top_box .box_notification::after, .top_box .box_user_drop::after {display: none;}
-.top_box .scroll_notification .scroller_bar_wrapper {
-	background-color: #f0f0f0;
-	border-radius: 2px;
-	box-shadow: 0 0 0 2px #fff;
-	bottom: 0;
-	opacity: 1;
-	right: 1px;
-	top: 0;
-	width: 4px;
-}
-.top_box .scroll_notification .scroller_bar {background-color: #b6b6b6;}
 .box_user_drop .wrapp_snapshot, .box_user_drop .wrapp_edit_info, .box_user_drop .wrapp_user_nav {padding-top: 14px;}
 .box_user_drop .wrapp_edit_info {padding-right: 50px;}
 .box_user_drop .wrapp_user_nav {margin-left: -7px; padding-left: 0;}
@@ -866,25 +851,28 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 .box_notification .book_img {margin-top: 4px;}
 .box_notification .item_notific .txt_box {
 	flex: 1 1;
+	font-size: 11px;
+	letter-spacing: 0.008em;
 	margin: 0 17px 0 22px;
 }
 .box_notification .item_notific .info {
 	color: #666;
 	display: flex;
-	font: 11px/0.9em 'proxima_novaregular';
+	font-family: 'proxima_novaregular';
+	line-height: 0.9em;
 	margin-bottom: 12px;
 }
-.box_notification .item_notific .info li {margin-right: 10px;}
+.box_notification .item_notific .info li {margin-right: 11px;}
 .box_notification .item_notific .info .name {
 	color: #0f26b0;
 	font-family: 'proxima_novasemibold';
 }
 .box_notification .item_notific .content_txt {
 	color: #858585;
-	font-size: 11px;
-	letter-spacing: -0.24px;
-	line-height: 15px;
-	margin: 0 0 5px;
+	font-family: 'proxima_novalight', 'Open Sans', sans-serif;
+	letter-spacing: 0.014em;
+	line-height: 1.363636363636364em;
+	margin: 0 0 6px;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
@@ -1580,11 +1568,6 @@ button.close {
 }
 .modal_book .inner_book_describe {max-height: 206px;}
 .modal_book .book_describe p {margin-bottom: 16px;}
-.modal_book .scroller_bar_wrapper {
-	bottom: 21px;
-	right: 5px;
-	top: 19px;
-}
 .modal_book .footer_book {
 	font: 15px 'proxima_novaregular', 'Open Sans', sans-serif;
 	padding: 12px 0;
@@ -1681,7 +1664,7 @@ button.close {
 @media (max-width: 767px) {.modal_with_scroll .modal-content .scroller {padding: 20px;}}
 .modal_with_scroll .modal-header {
 	border-bottom: 1px solid #c3c3c3;
-	box-shadow: 0 13px 8px -4px rgba(195, 195, 195, 0.2);
+	box-shadow: 0 3px 4.1px 0.4px rgba(0, 0, 0, 0.18);
 	padding: 3px 40px 13px;
 	position: relative;
 	z-index: 3;
@@ -2053,3 +2036,47 @@ button.close {
 @media (max-width: 425px) {.box_market_item .list_nav_product a {font-size: 10px;}}
 @media (max-width: 370px) {.box_market_item .list_nav_product a .fa {display: none;}}
 /*END marketplace*/
+
+
+
+/*home-literature - right products*/
+.literature_page .home_litra_carousel .bx-wrapper {margin-bottom: 23px;}
+.img_caption, .img_caption picture {
+	display: block;
+	position: relative;
+	max-width: 350px;
+}
+.img_caption {margin: auto;}
+@media (min-width: 768px) {
+	.img_caption.first_item {margin-bottom: 7px;}
+	.home_litra_carousel {padding-right: 8px;}
+}
+@media (max-width: 767px) {
+	.img_caption {margin-bottom: 23px;}
+	.home_litra_carousel {
+		margin: auto;
+		max-width: 710px;
+	}
+}
+.img_caption .caption {
+	align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    font: 18px 'proxima_novaregular', 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+    height: 66.5px;
+    letter-spacing: 0.057em;
+    padding: 8px 22px 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.img_caption .caption .title {margin: 0;}
+.img_caption .caption .title .company_name {
+	display: block;
+	font: 12px 'proxima_novalight', 'Open Sans', sans-serif;;
+	margin: 3px 0 2px;
+}
+/*END home-literature - right products*/

@@ -1,7 +1,6 @@
 .homepage .main_content {margin-top: 47px;}
-.homepage .wrapp_carousel {padding-right: 8px;}
-.homepage .wrapp_carousel .bx-wrapper {margin-bottom: 31px;}
 .homepage .custom_paddings {
+	padding-top: 8px;
 	margin-left: -4px;
 	margin-right: -4px;
 }
@@ -18,6 +17,7 @@
 	margin-bottom: 15px;
 	padding: 13px 26px;
 	line-height: 1.6em;
+	text-align: center;
 }
 .wrapp_wellcome h1 {
 	font: 33px/1.3em 'ACaslonProRegular', 'Times New Roman', 'Times';

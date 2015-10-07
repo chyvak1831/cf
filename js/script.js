@@ -54,9 +54,9 @@ $(document).ready(function(){
 
 
 	// customscrollbar
-		function customScroll () {
+		(function customScroll () {
 			if ($( ".scroll_wrapper" ).length) {
-				window.onload = function customScroll() {
+				window.onload = function () {
 					window.dima = baron({
 						root: '.scroll_wrapper',
 						scroller: '.scroller',
@@ -65,14 +65,7 @@ $(document).ready(function(){
 					});
 				};
 			};
-		}
-		customScroll();
-		$('.modal').on('shown.bs.modal', function () {
-			customScroll();
-		});
-		$('[data-toggle="tab"]').on('shown.bs.tab', function () {
-			customScroll();
-		})
+		})();
 	// END customscrollbar
 
 
@@ -109,7 +102,6 @@ $(document).ready(function(){
 				$(this).closest('.jsModalContent').addClass('jsDealOpened');
 				updateDataModal ();
 				$('.jsModalQueickView').modal('show');
-				customScroll();
 			})
 			$('.jsModalQueickView').on('hide.bs.modal', function () {$('.jsDealOpened').removeClass('jsDealOpened');});
 		}
@@ -255,6 +247,7 @@ $(document).ready(function(){
 		});
 		$('.jsModalFullHeight').on('shown.bs.modal', function () {
 			heightModalCatalog();
+			window.dima.update();
 		})
 	// END catalog modal content height
 
@@ -262,10 +255,17 @@ $(document).ready(function(){
 	// top dropdowns
 	$('.jsMegaDropBt').on('click', function (e) {
 		e.preventDefault();
-		var parentBt = $(this).parent();
+		var parentBt = $(this).parent('.jsMegaDrop');
 		$('.jsMegaDrop').not(parentBt).removeClass('open');
 		$(parentBt).toggleClass('open');
-		
+	});
+	$('body').on('click', function (e) {
+		if (!$('.jsMegaDrop').is(e.target) 
+		&& $('.jsMegaDrop').has(e.target).length === 0 
+		&& $('.open').has(e.target).length === 0
+		) {
+			$('.jsMegaDrop').removeClass('open');
+		}
 	});
 
 	function heightMegaDrop() {
