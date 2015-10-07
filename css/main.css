@@ -851,7 +851,7 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 .box_notification .book_img {margin-top: 4px;}
 .box_notification .item_notific .txt_box {
 	flex: 1 1;
-	font-size: 11px;
+	font-size: 13px;
 	letter-spacing: 0.008em;
 	margin: 0 17px 0 22px;
 }
@@ -919,6 +919,7 @@ ul.list-inline.custom_checkbox .checkbox {padding: 7px 22px 0 0;}
 	font-family: 'proxima_novaregular', 'Open Sans', sans-serif;
 	margin: 0 0 2px 4px;
 }
+.box_notification.dropdown-menu .item_notific .txt_box {font-size: 12px;}
 /*END drop notification&userdrop*/
 
 /*navbar*/
