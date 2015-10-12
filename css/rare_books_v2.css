@@ -1,9 +1,10 @@
 /* LITERATURE PAGE */
 .literature_page {letter-spacing: 0.01em;}
+.litra_v2 .box_top_blog {padding-bottom: 0;}
 /* box_top_blog */
 .box_top_blog {
 	border-bottom: 1px solid #ccc;
-	padding: 4.3% 0 0;
+	padding: 4.3% 0 3.1%;
 }
 .box_top_blog .main_title {
 	font: 37px 'ACaslonProRegular', 'Times New Roman', 'Times';
@@ -56,6 +57,7 @@
 }
 @media screen and (max-width: 767px) {
 	.box_top_blog {padding: 0;}
+	.box_top_blog .main_title {margin: 13px 0 3px;}
 	.top_blog_txt {text-align: left;}
 	.top_blog_txt h1 {
 		color: #a7a7a7;
@@ -99,7 +101,7 @@
 @media screen and (max-width: 1199px) {.literature_nav h1 {margin: 12px 0;}}
 @media screen and (max-width: 991px) {.literature_nav h1 {font-size: 42px;}}
 @media screen and (max-width: 767px) {
-	.literature_nav h1 {font-size: 26px;margin: 12px 0 0;}
+	.literature_nav h1 {font-size: 17px;margin: 16px 0 0;}
 	.literature_nav .title_spec_let {margin: 14px 0 3px 19px;}
 	.literature_nav .sub_catg_see, .literature_nav .sub_catg a {padding: 3px 20px;}
 	.literature_nav .sub_catg a { display: block;}
@@ -113,12 +115,17 @@
 	font: 29px 'ACaslonProRegular', 'Times New Roman', 'Times';
 	margin: 42px 0 0 15px;
 }
+.wrapp_dealer_listing {margin-top: 35px;}
 .literature_page .wrapp_dealer_listing .view_sort_filter {
 	float: right;
-	margin: -25px 0 0;
+	margin: -60px 0 0;
 	position: relative;
 	z-index: 3;
 }
 @media screen and (max-width: 1199px) {.subcateg_mainh1 {margin-top: 29px;}}
 @media screen and (max-width: 1199px) {.subcateg_mainh1 {margin-top: 23px;}}
-@media screen and (max-width: 767px) {.subcateg_mainh1 {font-size: 26px;}}
+@media screen and (max-width: 767px) {
+	.subcateg_mainh1 {font-size: 26px;}
+	.literature_page .wrapp_dealer_listing .view_sort_filter {margin-top: -57px;}
+	.literature_page .wrapp_dealer_listing .view_sort_filter .dropdown-toggle {font: 16px 'times new roman';}
+}

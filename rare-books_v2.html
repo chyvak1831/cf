@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/literature_style.css">
+	<link rel="stylesheet" href="css/rare_books_v2.css">
 	<script src="js/picturefill.min.js"></script>
 </head>
-<body>
+<body class="litra_v2">
 	<div class="modal-backdrop-preloader loading">
 		<div class="animation container-preloader">
 			<div class="content preloader">
@@ -109,37 +109,45 @@
 					<h1 class="main_title visible-xs-inline-block">Literature</h1>
 					<ul class="bxslider">
 						<li>
-							<picture>
-								<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
-								<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
-							</picture>
+							<a href="#">
+								<picture>
+									<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
+									<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
+								</picture>
+							</a>
 							<div class="bx-caption">
 								<p class="title">MOBY DICK, AQUATIC EDITION<span class="company_name">EINSTEIN RARE BOOK COMPANY</span></p>
 							</div>
 						</li>
 						<li>
-							<picture>
-								<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
-								<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
-							</picture>
+							<a href="#">
+								<picture>
+									<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
+									<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
+								</picture>
+							</a>
 							<div class="bx-caption">
 								<p class="title">MOBY DICK, AQUATIC EDITION<span class="company_name">EINSTEIN RARE BOOK COMPANY</span></p>
 							</div>
 						</li>
 						<li>
-							<picture>
-								<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
-								<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
-							</picture>
+							<a href="#">
+								<picture>
+									<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
+									<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
+								</picture>
+							</a>
 							<div class="bx-caption">
 								<p class="title">MOBY DICK, AQUATIC EDITION<span class="company_name">EINSTEIN RARE BOOK COMPANY</span></p>
 							</div>
 						</li>
 						<li>
-							<picture>
-								<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
-								<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
-							</picture>
+							<a href="#">
+								<picture>
+									<source srcset="images/carousel_litra_v2.jpg, images/2x/carousel_litra_v2.jpg 2x">
+									<img src="" alt="" class="img-responsive" title="MOBY DICK, AQUATIC EDITION EINSTEIN RARE BOOK COMPANY">
+								</picture>
+							</a>
 							<div class="bx-caption">
 								<p class="title">MOBY DICK, AQUATIC EDITION<span class="company_name">EINSTEIN RARE BOOK COMPANY</span></p>
 							</div>
@@ -147,20 +155,24 @@
 					</ul>
 				</div>
 				<div class="col-sm-4 paddingL0">
-					<a href="#" class="img_caption first_item">
-						<picture>
-							<source srcset="images/litra_v2_02.jpg, images/2x/litra_v2_02.jpg 2x"></source>
-							<img src="" alt="" class="img-responsive">
-						</picture>
+					<div class="img_caption first_item">
+						<a href="#">
+							<picture>
+								<source srcset="images/litra_v2_02.jpg, images/2x/litra_v2_02.jpg 2x"></source>
+								<img src="" alt="" class="img-responsive">
+							</picture>
+						</a>
 						<div class="caption"><p class="title">Kelmscott Press<span class="company_name">EINSTEIN RARE BOOK COMPANY</span></p></div>
-					</a>
-					<a href="#" class="img_caption">
-						<picture>
-							<source srcset="images/litra_v2_03.jpg, images/2x/litra_v2_03.jpg 2x"></source>
-							<img src="" alt="" class="img-responsive">
-						</picture>
+					</div>
+					<div class="img_caption">
+						<a href="#">
+							<picture>
+								<source srcset="images/litra_v2_03.jpg, images/2x/litra_v2_03.jpg 2x"></source>
+								<img src="" alt="" class="img-responsive">
+							</picture>
+						</a>
 						<div class="caption"><p class="title">Waiting for Godot<span class="company_name">EINSTEIN RARE BOOK COMPANY</span></p></div>
-					</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -194,7 +206,13 @@
 							</span>
 						</li>
 					</ul>
-					<h4 class="title_spec_let text-uppercase hidden-xs">Specialists</h4>
+					<a href="#" class="simple_image hidden-xs">
+						<picture>
+							<source media="(min-width: 768px)" srcset="images/simple_img.jpg, images/2x/simple_img.jpg 2x">
+							<img src="" alt="" class="img-responsive">
+						</picture>
+					</a>
+					<!-- <h4 class="title_spec_let text-uppercase hidden-xs">Specialists</h4>
 					<ul class="list-unstyled hidden-xs">
 						<li><a class="active" href="#">Einstein Rare Books</a></li>
 						<li><a href="#">Jakarta Travel Agency</a></li>
@@ -210,7 +228,8 @@
 						<li><a href="#">Shishkabob &amp; Sons</a></li>
 						<li><a href="#">Lucky Ticket Airlines</a></li>
 						<li><a href="#">View All</a></li>
-					</ul>
+					</ul> -->
+					
 				</div>
 			</aside>
 			<!-- END literature_nav -->
@@ -248,6 +267,12 @@
 				</section>
 				<!-- END list_grid -->
 			</div>
+			<a href="#" class="simple_image visible-xs">
+				<picture>
+					<source media="(max-width: 767px)" srcset="images/simple_img_mobile.jpg, images/2x/simple_img_mobile.jpg 2x">
+					<img src="" alt="" class="img-responsive">
+				</picture>
+			</a>
 		</div>
 	</div>
 

@@ -56,10 +56,8 @@
 	position: relative;
 	max-width: 250px;
 }
-.lead_dealer .box_img {
-	display: block;
-	position: relative;
-}
+.lead_dealer .box_img {position: relative;}
+.lead_dealer .box_img picture {display: block;}
 .lead_dealer .wrapp_overlay {
 	background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 66%);
 	align-content: flex-end;
@@ -90,13 +88,83 @@
 	text-transform: uppercase;
 }
 /* END lead_dealer_list */
+
+/*version 2*/
+.version2 .lead_dealer_list .wrapp_lead_dealer {margin-bottom: 20px;}
+.version2 .lead_dealer .wrapp_overlay {
+	align-content: flex-start;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0) 66%);
+	padding-top: 27px;
+}
+.version2 .lead_dealer .txt {
+	color: #6a6a6a;
+	font-size: 14px;
+	line-height: 1.428571428571429em;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	max-height: 5.714285714285714em;
+	overflow: hidden;
+	margin-top: 23px;
+}
+.version2 .collectors_list {margin-top: 20px;}
+.version2 .box_notification .item_notific {
+	margin-top: -7px;
+	padding: 20px 18px 0 17px;
+}
+.version2 .item_notific .txt_box {margin: 0 19px;}
+.version2 .item_notific .info {margin: 8px 0 12px;}
+.version2 .box_product_item .describe_txt {
+	display: block;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	max-height: 4.5em;
+	overflow: hidden;
+}
+.version2 .item_notific .share_link {
+	color: #e8e8e8;
+	flex: 0 0 25px;
+	font-size: 23px;
+}
+.version2 .item_notific .share_link:hover {color: #0e1886;}
+.version2 .tool_for_start {
+	border: 1px solid #e2e2e2;
+	color: #afafaf;
+	font: 13px/1.23em 'proxima_novalight', 'Open Sans', sans-serif;
+	margin: 18px 0 0 auto;
+	padding: 37px 37px 24px;
+	max-width: 375px;
+}
+.version2 .tool_for_start .main_title {
+	color: #666;
+	font-size: 16px;
+	margin: 1px 0 26px;
+}
+.version2 .tool_for_start .tool_list {margin-bottom: 41px;}
+.version2 .tool_for_start .tool_list li {
+	color: #0e1886;
+	letter-spacing: 0.09em;
+	margin-bottom: 14px;
+}
+.version2 .tool_for_start .tool_list .fa {
+	color: #05228b;
+	font-size: 12px;
+	margin-right: 5px;
+}
+.version2 .tool_for_start p {margin-bottom: 17px;}
+@media (max-width: 992px) {.version2 .tool_for_start {margin-right: auto;}}
+/*END version 2*/
+
+
+
+
 @media (max-width: 1200px) {.lead_dealer_list .wrapp_lead_dealer {padding: 7px;}}
 @media (max-width: 992px) {
 	.lead_dealer_list .wrapp_lead_dealer {
 		padding: 5px;
 		width: 33.3333333333333333%;
 	}
-	.lead_dealer .wrapp_overlay {padding: 7px;}
+	.lead_dealer .wrapp_overlay, .version2 .lead_dealer .wrapp_overlay {padding: 7px;}
 	.lead_dealer .wrapp_overlay .company_name {font-size: 15px;}
 }
 @media (max-width: 550px) {.lead_dealer_list .wrapp_lead_dealer {width: 50%;}}
