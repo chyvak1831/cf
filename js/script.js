@@ -54,18 +54,18 @@ $(document).ready(function(){
 
 
 	// customscrollbar
-		(function customScroll () {
-			if ($( ".scroll_wrapper" ).length) {
-				window.onload = function () {
-					window.dima = baron({
-						root: '.scroll_wrapper',
-						scroller: '.scroller',
-						bar: '.scroller_bar',
-						barOnCls: 'baron'
-					});
-				};
+	(function customScroll () {
+		if ($( ".scroll_wrapper" ).length) {
+			window.onload = function () {
+				window.dima = baron({
+					root: '.scroll_wrapper',
+					scroller: '.scroller',
+					bar: '.scroller_bar',
+					barOnCls: 'baron'
+				});
 			};
-		})();
+		};
+	})();
 	// END customscrollbar
 
 

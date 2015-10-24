@@ -91,6 +91,7 @@
 
 /*version 2*/
 .version2 .lead_dealer_list .wrapp_lead_dealer {margin-bottom: 20px;}
+.version2.dealer_intro  .titles_dealer_intro {padding-top: 20px;}
 .version2 .lead_dealer .wrapp_overlay {
 	align-content: flex-start;
 	background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0) 66%);
@@ -114,7 +115,9 @@
 }
 .version2 .item_notific .txt_box {margin: 0 19px;}
 .version2 .item_notific .info {margin: 8px 0 12px;}
+.version2 .box_notification .item_notific .content_txt {color: #000;}
 .version2 .box_product_item .describe_txt {
+	font-family: 'proxima_novaregular';
 	display: block;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -129,7 +132,7 @@
 .version2 .item_notific .share_link:hover {color: #0e1886;}
 .version2 .tool_for_start {
 	border: 1px solid #e2e2e2;
-	color: #afafaf;
+	color: #666;
 	font: 13px/1.23em 'proxima_novalight', 'Open Sans', sans-serif;
 	margin: 18px 0 0 auto;
 	padding: 37px 37px 24px;
@@ -140,7 +143,10 @@
 	font-size: 16px;
 	margin: 1px 0 26px;
 }
-.version2 .tool_for_start .tool_list {margin-bottom: 41px;}
+.version2 .tool_for_start .tool_list {
+	font-family: 'proxima_novaregular';
+	margin-bottom: 41px;
+}
 .version2 .tool_for_start .tool_list li {
 	color: #0e1886;
 	letter-spacing: 0.09em;
@@ -152,6 +158,16 @@
 	margin-right: 5px;
 }
 .version2 .tool_for_start p {margin-bottom: 17px;}
+.version2 .bt_show_more {
+	background-image: linear-gradient(to top, rgba(193, 193, 193, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 2.9px 0.2px rgba(0, 0, 0, 0.1);
+	color: #0e1886;
+	font: 13px/1.2em 'proxima_novasemibold', 'Open Sans', sans-serif;
+	margin-top: 30px;
+	padding: 9px;
+}
+.version2 .bt_show_more:hover {opacity: .5;}
 @media (max-width: 992px) {.version2 .tool_for_start {margin-right: auto;}}
 /*END version 2*/
 
