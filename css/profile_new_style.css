@@ -1,0 +1,115 @@
+.profile_small_title {
+	color: #000;
+	display: flex;
+	font-weight: 300;
+    justify-content: space-between;
+    padding: 0;
+	text-transform: none;
+}
+.profile_main_content .profile_small_title {
+    font-size: 19px;
+	line-height: 35px;
+	letter-spacing: 0.0263157894736842em;
+	margin: 27px 0px 16px;
+}
+.keywords .profile_small_title {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0px 0px 5px;
+}
+.profile_small_title .view_all, .profile_small_title a, .profile_small_title .jsEditCloneBt {
+	color: #02028f;
+	font-size: 12px;
+	margin-right: 9px;
+}
+.profile_small_title a .fa-pencil, .keywords a .fa-pencil, .profile_small_title a .fa-plus {
+	color: #cfcfcf;
+	margin-right: 3px;
+}
+.main_wrapp_profile .profile_box {
+	margin-bottom: 34px;
+}
+.main_wrapp_profile .profile_box .box_edit_profile {
+	color: #737373;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.4px;
+	line-height: 23px;
+}
+.profile_box .user_icon {
+	background: url(../images/users_icon.png);
+	background-size: cover;
+	display: inline-block;
+	height: 12px;
+	margin: 0 11px 0 3px;
+	width: 14px;
+}
+.box_icon .user_icon, .fellow_modal .modal-header .user_icon{
+	background: url(../images/users_icon_lg.png);
+	background-size: cover;
+	display: inline-block;
+}
+.box_icon .user_icon {
+	height: 16px;
+    margin: 0 5px 0 2px;
+    width: 18px;
+}
+.fellow_modal .modal-header .user_icon {
+	height: 40px;
+	margin: 0 0 6px 8px;
+	width: 47px;
+}
+.fellow_modal .header_txt {
+	padding-left: 30px;
+}
+.profile_set_nav a .fa {
+	margin: 0px 11px 0px 3px;
+}
+.profile_set_nav a {
+	font-size: 14px;
+	line-height: 30px;
+}
+.want_list {
+	margin: 5px 0;
+}
+.want_list li {
+	padding: 4px 0;
+}
+.want_list .title {
+	color: #737373;
+	font-size: 13px;
+	min-height: 23px;
+	letter-spacing: 0.45px;
+}
+.want_list li .edit_want, .want_list li .delete_want {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 1em;
+	margin-bottom: 13px;
+}
+.want_list .book_author {
+	color: #000;
+	margin-right: 5px;
+}
+.want_list .title .fa {
+	font-size: 12px;
+	top: 5px;
+}
+.want_listing .scroller {
+	max-height: 150px;
+}
+/*уточнить*/
+.profile_name {
+	margin: 35px 0px 4px;
+}
+.keywords .label, .keywords .box_edit_profile a {
+	background-color: #f7f7f7;
+	color: #000;
+	display: inline-block;
+	font: 12px 'proxima_novasemibold', 'Open Sans', sans-serif;
+	margin: 5px 0;
+}
+.keywords .box_edit_profile .select2-search-choice-close {
+	margin: 0;
+	top: 3px;
+}

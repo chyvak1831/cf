@@ -295,11 +295,37 @@ $(document).ready(function(){
 		emptytext: '',
 		emptytext: 'What topics and authors are you most interested in?',
 		select2: {
-			tags: ['Astrophysics', 'Particle Physics', 'Space', 'Great Discoveries', '20th Century Scientists', 'Classical Science'],
-			tokenSeparators: [",", " "]
+			tags: ['Astrophysics', 'Particle Physics', 'Space', 'Great Discoveries', '20th Century Scientists', 'Classical Science']
+		},
+		display: function(value) {
+			$.each(value,function(i){
+				// value[i] needs to have its HTML stripped, as every time it's read, it contains
+				// the HTML markup. If we don't strip it first, markup will recursively be added
+				// every time we open the edit widget and submit new values.
+				value[i] = "<span class='label'>" + $('<p>' + value[i] + '</p>').text() + "</span>";
+			});
+			$(this).html(value.join(" "));
 		},
 		mode: 'inline'
 	});
+	$('.jsEditableTags').on('shown', function() {
+		var editable = $(this).data('editable');
+		var value = editable.value
+		console.log(value)
+		$.each(value,function(i){
+			value[i] = $('<p>' + value[i] + '</p>').text()
+		});
+	});
+	$('.jsEditableTags').on('hidden', function() {
+		var editable = $(this).data('editable');
+		var value = editable.value
+		$.each(value,function(i){
+			value[i] = $('<p>' + value[i] + '</p>').text()
+		});
+	});
+	
+	$('.jsEditableTags').editable('toggle').editable('toggle')
+
 	$('.jsEditCollection, .jsEditWantListings, .jsEditableTags').on('hidden', function(e, reason) {
 		if($(this).hasClass('editable-empty')) {
 			$(this).closest('.jsEditParent').addClass('empty_editable');
